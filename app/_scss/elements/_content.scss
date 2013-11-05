@@ -1,0 +1,28 @@
+@import "../../_bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "../../_bower_components/neat/app/assets/stylesheets/neat";
+@import "../defaults/all_defaults";
+
+.main-content{
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.blog-post-link{
+    text-decoration: none;
+}
+
+.blog-post{
+    padding: 15px 0px;    
+    text-decoration: none;
+    border-bottom: 1px solid darken($main-bg-color, 10);
+
+    .post-title, .post-subtitle{
+        color: $main-font-color;
+    }
+
+    .post-subtitle{
+        color: lighten($main-font-color, 20);
+        font-weight: 400;
+    }
+}

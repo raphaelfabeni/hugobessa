@@ -1,0 +1,12 @@
+/*/////////// ONE SIDE INSET SHADOW ///////////*/
+@mixin one-side-inset-shadow($blur: 10px, $color: rgba(0, 0, 0, .5), $side: "top"){
+    @if $side == "top" {
+        box-shadow: 0px #{$blur} #{$blur} #{$blur * -1} #{$color} inset
+    } @else if $side == "right" {
+        box-shadow: #{$blur * -1} 0px #{$blur} #{$blur * -1} #{$color} inset
+    } @else if $side == "bottom" {
+        box-shadow: 0px #{$blur * -1} #{$blur} #{$blur * -1} #{$color} inset
+    } @else if $side == "left" {
+        box-shadow: #{$blur} 0px  #{$blur} #{$blur * -1} #{$color} inset
+    }
+}

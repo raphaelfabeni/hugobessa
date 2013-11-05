@@ -1,0 +1,20 @@
+@import "../_bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "../_bower_components/neat/app/assets/stylesheets/neat";
+@import "defaults/all_defaults";
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: $base-font-size;
+    font-family: NotoSans, sans-serif;
+    color: $main-font-color;
+    background-color: $main-bg-color;
+}
+
+/*/////////// ELEMENTS ///////////*/
+
+@import "elements/header";
+@import "elements/content";

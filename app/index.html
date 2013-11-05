@@ -1,0 +1,18 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<main class="main-content" role="main">
+  {% for post in site.posts %}
+  <a class="blog-post-link" href="{{ post.url }}">
+    <article class="blog-post">
+      <h1 class="post-title">{{ post.title }}</h1>
+      {% if post.subtitle %}
+      <h2 class="post-subtitle gamma-size">{{ post.subtitle }}</h2>
+      {% endif %}
+      <time class="post-date">{{ post.date | date: "%d/%m/%Y" }}</time>
+    </article>
+  </a>
+  {% endfor %}
+</main>
