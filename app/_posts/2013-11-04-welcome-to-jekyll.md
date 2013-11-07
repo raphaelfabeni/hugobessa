@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to Jekyll!"
 subtitle: "Este é um subtítulo. Eles podem conter vários caracteres :-)"
 date:   2013-11-04 22:51:14
-categories: jekyll update
+categories: jekyll meta
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

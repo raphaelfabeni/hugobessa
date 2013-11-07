@@ -5,7 +5,7 @@ title: Your New Jekyll Site
 
 {% for post in site.posts %}
 <article class="blog-post">
-    <a class="blog-post__link" href="{{ post.url }}"><h1 class="blog-post__title beta-size">{{ post.title }}</h1></a>
+    <a class="blog-post__link" href="{{ site.baseurl }}{{ post.url }}"><h1 class="blog-post__title beta-size">{{ post.title }}</h1></a>
     {% if post.subtitle %}
     <h2 class="blog-post__subtitle epsilon-size">{{ post.subtitle }}</h2>
     {% endif %}

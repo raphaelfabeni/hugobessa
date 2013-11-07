@@ -9,3 +9,6 @@ future: false
 
 # Compile posts in the _drafts directory.
 show_drafts: false
+
+# Compile with the correct path
+baseurl: /hugobessa
