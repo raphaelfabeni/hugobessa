@@ -1,6 +1,10 @@
 @import "../_bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../_bower_components/neat/app/assets/stylesheets/neat";
-@import "defaults/all_defaults";
+@import "defaults/vars";
+
+/*/////////// MODULES ///////////*/
+@import "defaults/font-face";
+@import "defaults/font-classes";
 
 html, body{
     margin: 0;
@@ -18,3 +22,4 @@ body{
 
 @import "elements/header";
 @import "elements/content";
+@import "elements/footer";

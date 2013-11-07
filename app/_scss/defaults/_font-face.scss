@@ -1,0 +1,5 @@
+@import "../../_bower_components/bourbon/app/assets/stylesheets/bourbon";
+/*/////////// FONT LOADING ///////////*/
+
+@include font-face(NotoSans, '/fonts/notosans-regular', normal);
+@include font-face(NotoSans, '/fonts/notosans-bold', bold);

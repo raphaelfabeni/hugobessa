@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Yo Jekyll!"
+title: "Yo Jekyll! Olá tudo bem, como vai? Este é um título realmente muito grande que nunca deve ser escrito"
+subtitle: "Um grande grande grande grande grande grande grande grande grande grande grande grande grande grande grande  grande grande grande subtítulo"
 categories: jekyll update
 ---
 

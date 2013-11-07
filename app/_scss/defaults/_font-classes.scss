@@ -1,0 +1,31 @@
+@import "fonts";
+/*/////////// CLASSES ///////////*/
+
+.giga-size{
+    font-size: $giga-size;
+}
+.mega-size{
+    font-size: $mega-size;
+}
+.kilo-size{
+    font-size: $kilo-size;
+}
+
+h1, .alpha-size{
+    font-size: $h1-size;
+}
+h2, .beta-size{
+    font-size: $h2-size;
+}
+h3, .gamma-size{
+    font-size: $h3-size;
+}
+h4, .delta-size{
+    font-size: $h4-size;
+}
+h5, .epsilon-size{
+    font-size: $h5-size;
+}
+h6, .zeta-size{
+    font-size: $h6-size;
+}

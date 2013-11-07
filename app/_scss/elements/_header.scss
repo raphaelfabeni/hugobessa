@@ -1,5 +1,7 @@
 @import "../defaults/mixins";
 @import "../defaults/colors";
+@import "../defaults/fonts";
+@import "../defaults/breakpoints";
 
 /*///////////////////////
 
@@ -16,14 +18,36 @@
     width: 100%;
     height: auto;
 
-    color: $header-font-color;
-
     padding: 1em;
     text-align: center;
 
     @include one-side-inset-shadow(20px, rgba(0, 0, 0, .3), "bottom");
 }
 
-.site-title, .site-subtitle{
+.site-title__link, .site-subtitle{
+    color: $header-font-color;
     text-shadow: 0px 0px 60px rgba(0, 0, 0, .5);
+}
+
+.site-title__link{
+    text-decoration: none;
+
+    &:hover, &:focus{
+        text-decoration: underline;
+    }
+}
+
+@media all and (max-width: $middle-breakpoint) {
+    .content-header{
+        padding: .5em;
+        @include one-side-inset-shadow(10px, rgba(0, 0, 0, .3), "bottom");
+    }
+
+    .site-title{
+        font-size: $h1-size;
+    }
+
+    .site-subtitle{
+        font-size: $h4-size;
+    }
 }

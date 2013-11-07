@@ -3,16 +3,12 @@ layout: default
 title: Your New Jekyll Site
 ---
 
-<main class="main-content" role="main">
-  {% for post in site.posts %}
-  <a class="blog-post-link" href="{{ post.url }}">
-    <article class="blog-post">
-      <h1 class="post-title">{{ post.title }}</h1>
-      {% if post.subtitle %}
-      <h2 class="post-subtitle gamma-size">{{ post.subtitle }}</h2>
-      {% endif %}
-      <time class="post-date">{{ post.date | date: "%d/%m/%Y" }}</time>
-    </article>
-  </a>
-  {% endfor %}
-</main>
+{% for post in site.posts %}
+<article class="blog-post">
+    <a class="blog-post__link" href="{{ post.url }}"><h1 class="blog-post__title beta-size">{{ post.title }}</h1></a>
+    {% if post.subtitle %}
+    <h2 class="blog-post__subtitle epsilon-size">{{ post.subtitle }}</h2>
+    {% endif %}
+    <time class="blog-post__meta zeta-size">{{ post.categories | join: " / " }} - {{ post.date | date: "%d/%m/%Y" }}</time>
+</article>
+{% endfor %}
