@@ -4,29 +4,21 @@
 
 /*/////////// GENERIC ///////////*/
 .middle{
-    max-width: 650px;
+    max-width: 40em;
     margin-left: auto;
     margin-right: auto;
 }
 
-a[target="_blank"]:after{
-    content: " " "\00bb";
-}
-
 .main-content{
-    margin: 20px auto;
+    margin: 1.333em auto;
     text-align: center;
-    padding: 0px 10px;
+    padding: 0 .625em;
 }
 
 .blog-post{
-    padding: 50px 0px 15px;
+    margin: 1.25em 0 2.5em;
+    padding: 1em 0;
     text-decoration: none;
-    text-align: left;
-
-    & + &{
-        border-top: 2px solid darken($main-bg-color, 10);
-    }
 
     a{
         color: $main-font-color;
@@ -48,24 +40,12 @@ a[target="_blank"]:after{
         line-height: 1.2em;
     }
 
-    .blog-post__subtitle{
-        color: lighten($main-font-color, 20);
-    }
-
-    .blog-post__subtitle{
-        font-weight: 400;
-    }
-
     .blog-post__meta{
         color: lighten($main-font-color, 30);   
     }
 }
 
 /*/////////// POSTS ///////////*/
-
-.post-header{
-    border-bottom: 2px solid darken($main-bg-color, 10);
-}
 
 .highlight{
     max-height: 30em;
@@ -74,10 +54,10 @@ a[target="_blank"]:after{
 }
 
 @media only screen and (max-width: $middle-breakpoint) {
-    .blog-post{
-        padding: 15px 0px;
+    body{
+        font-size: 80%;
     }
-    .highlight{
-        font-size: 70%;
+    .blog-post{
+        padding: 1em 0;
     }
 }

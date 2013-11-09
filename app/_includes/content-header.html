@@ -1,4 +1,6 @@
 <header class="content-header">
-    <a href="{{ baseurl }}/" class="site-title__link"><h1 class="site-title mega-size">{{ site.author.name }}</h1></a>
-    <h2 class="site-subtitle">{{ site.description }}</h2>
+    <a href="{{ baseurl }}/" class="site-title__link"><h1 class="site-title giga-size">{{ site.author.name }}</h1></a>
+    {% unless page.categories %}
+    <h2 class="site-description delta-size middle">Oi, eu sou um <strong>desenvolvedor front-end</strong> que acredita no poder da criatividade para mudar a forma como as pessoas pensam, agem e vivem.</h2>
+    {% endunless %}
 </header>

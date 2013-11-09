@@ -11,43 +11,42 @@
 
 .content-header{
     background-color: $header-bg-color;
-    background-image: url(../img/site/home/header-image.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
     width: 100%;
     height: auto;
 
-    padding: 1em;
+    padding: 3em;
     text-align: center;
 
-    @include one-side-inset-shadow(20px, rgba(0, 0, 0, .3), "bottom");
-}
-
-.site-title__link, .site-subtitle{
     color: $header-font-color;
-    text-shadow: 0px 0px 60px rgba(0, 0, 0, .5);
 }
 
 .site-title__link{
+    color: $header-font-color;   
+    font-family: IronLeague, sans-serif;
+    font-weight: 400;
     text-decoration: none;
+    text-transform: uppercase;
 
     &:hover, &:focus{
         text-decoration: underline;
     }
 }
 
-@media all and (max-width: $middle-breakpoint) {
+.site-title{
+    margin: 0;
+    line-height: 1em;
+}
+
+.site-description{
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: $middle-breakpoint) {
     .content-header{
-        padding: .5em;
-        @include one-side-inset-shadow(10px, rgba(0, 0, 0, .3), "bottom");
+        padding: 1em;
     }
-
     .site-title{
-        font-size: $h1-size;
-    }
-
-    .site-subtitle{
-        font-size: $h4-size;
+        font-size: 4em;
     }
 }
