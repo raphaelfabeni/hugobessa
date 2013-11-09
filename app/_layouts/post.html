@@ -3,11 +3,8 @@ layout: default
 ---
 <article class="blog-post middle">
     <header class="post-header">
-        <small class="blog-post__meta zeta-size">{{ page.categories | join: " / " }} - {{ page.date | date: "%d/%m/%Y" }}</small>
         <h1 class="blog-post__title alpha-size">{{ page.title }}</h1>
-        {% if page.subtitle %}
-        <h2 class="blog-post__subtitle delta-size">{{ page.subtitle }}</h2>
-        {% endif %}
+        <small class="blog-post__meta zeta-size">{{ page.categories | join: " / " }} - {{ page.date | date: "%d/%m/%Y" }}</small>
     </header>
     <div class="post-content">
         {{ content }}    
