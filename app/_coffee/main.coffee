@@ -17,7 +17,7 @@ App =
 
         App.count = -1
 
-        App.words = ["UM", "DESENVOLVEDOR", "FRONT-END", "TENTANDO", "MUDAR", "A", "FORMA", "COMO", "AS", "PESSOAS", "PENSAM", "AGEM", "VIVEM"]
+        App.words = ["UM", "DESENVOLVEDOR", "FRONT-END", "TENTANDO", "MUDAR", "A", "FORMA", "COMO", "AS", "PESSOAS", "PENSAM", "AGEM", "E", "VIVEM"]
 
         App.anm()
 
