@@ -45,18 +45,33 @@
     }
 }
 
-.post-content{
-    text-align: left;
-    font-size: 1.3em
-}
-
 /*/////////// POSTS ///////////*/
 
-.highlight{
-    max-height: 30em;
-    overflow: scroll;
-    -webkit-touch-scrolling: scroll;
+.post-content{
+    text-align: left;
+    font-size: 1.3em;
+
+    p code{
+        padding: .3em;
+        background-color: darken($main-bg-color, 3);
+        border: 1px solid darken($main-bg-color, 15);
+        border-radius: 3px;
+    }
+
+    .highlight{
+        max-height: 30em;
+        overflow: scroll;
+        -webkit-touch-scrolling: scroll;
+        background-color: darken($main-bg-color, 3);
+        border: 1px solid #D8D8D8;
+
+        pre{
+            margin: 0;
+        }
+    }
 }
+
+
 
 @media only screen and (max-width: $middle-breakpoint) {
     body{
