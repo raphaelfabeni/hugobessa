@@ -1,15 +1,12 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-subtitle: "Este é um subtítulo. Eles podem conter vários caracteres :-)"
+title:  "Bem-vindo ao meu novo blog"
+subtitle: "Um"
 date:   2013-11-04 22:51:14
 categories: jekyll meta
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
-
-Jekyll also offers powerful support for code snippets:
+Bom, este é o meu novo site. Amarelado, com fontes gigantes e sem dezenas de firulas visuais. Um site, apenas. Daqueles que mostram o que realmente importam e nada mais.
 
 {% highlight ruby linenos %}
 def print_hi(name)

@@ -3,4 +3,20 @@
     {% unless page.categories %}
     <h2 class="site-description delta-size middle">Oi, eu sou um <strong>desenvolvedor front-end</strong> que acredita no poder da criatividade para mudar a forma como as pessoas pensam, agem e vivem.</h2>
     {% endunless %}
+
+    <ul class="social-links mega-size">
+        {% if site.author.github %}
+        <li><a class="icon-github" target="_blank" href="https://github.com/{{ site.author.github }}/" title="Github"></a></li>
+        {% endif %}
+        {% if site.author.twitter %}
+        <li><a class="icon-twitter" target="_blank" href="https://twitter.com/{{ site.author.twitter }}/" title="Twitter"></a></li>
+        {% endif %}
+        {% if site.author.googleplus %}
+        <li><a class="icon-google-plus" target="_blank" href="https://plus.google.com/{{ site.author.googleplus }}/" title="Google Plus"></a></li>
+        {% endif %}
+        {% if site.author.facebook %}
+        <li><a class="icon-facebook" target="_blank" href="https://facebook.com/{{ site.author.facebook }}/" title="Facebook"></a></li>
+        {% endif %}
+    </ul>
+    
 </header>
