@@ -341,6 +341,13 @@ module.exports = function (grunt) {
         'coffee:dist',
         'copy:dist'
       ]
+    },
+    'gh-pages': {
+      options: {
+        base: 'dist',
+        dotfiles: true
+      },
+      src: '**/*'
     }
   });
 
@@ -393,7 +400,8 @@ module.exports = function (grunt) {
     'svgmin',
     'rev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'gh-pages'
     ]);
 
   grunt.registerTask('default', [
