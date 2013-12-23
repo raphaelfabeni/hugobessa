@@ -11,14 +11,6 @@ App =
             App.stopRandom()
         )
 
-        document.addEventListener("touchstart", (event) ->
-            App.startRandom()
-        )
-
-        document.addEventListener("touchend", (event) ->
-            App.stopRandom()
-        )
-
 
     startRandom: ->
 

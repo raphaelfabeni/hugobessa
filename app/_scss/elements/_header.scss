@@ -50,6 +50,9 @@
 
     li {
         display: inline-block;
+        + li{
+            margin-left: .3em;
+        }
     }
     
     a{
