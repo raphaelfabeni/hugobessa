@@ -6,13 +6,13 @@
 # Use _config.build.yml to override these settings on `grunt build`.
 
 name: hugobessa
-description: Desenvolvedor Front-End
 
 author:
   name: Hugo Bessa
   email: hugobessaa@gmail.com
   github: hugobessaa
   twitter: hugobessaa
+  googleplus: +HugoBessa
 
 # Exclude directories and/or files from the conversion.
 # Grunt moves image files and asset directories.
