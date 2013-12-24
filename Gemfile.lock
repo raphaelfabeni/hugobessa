@@ -1,6 +1,8 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    albino (1.3.3)
+      posix-spawn (>= 0.3.6)
     blankslate (2.1.2.4)
     classifier (1.3.3)
       fast-stemmer (>= 1.0.0)
@@ -41,7 +43,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  albino (~> 1.3)
   csscss (~> 1.3)
   jekyll (~> 1.2.1)
-  redcarpet
+  redcarpet (~> 2.3)
   sass (>= 3.2)
