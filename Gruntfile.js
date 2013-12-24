@@ -417,6 +417,6 @@ module.exports = function (grunt) {
     'test',
     'build',
     'gh-pages'
-  ])
+  ]);
 
 };
