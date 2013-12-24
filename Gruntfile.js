@@ -403,8 +403,7 @@ module.exports = function (grunt) {
     'svgmin',
     'rev',
     'usemin',
-    'htmlmin',
-    'gh-pages'
+    'htmlmin'
     ]);
 
   grunt.registerTask('default', [
@@ -412,4 +411,12 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  grunt.registerTask('deploy', [
+    'check',
+    'test',
+    'build',
+    'gh-pages'
+  ])
+
 };
