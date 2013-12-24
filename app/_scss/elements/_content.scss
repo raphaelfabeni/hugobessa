@@ -86,6 +86,8 @@
 
         font-size: .9em;
 
+        -webkit-text-size-adjust: 100%;
+
         pre{
             margin: 0;
         }
@@ -96,10 +98,6 @@
             color: darken($main-bg-color, 25);
             @include user-select(none);
         }
-
-        .highlight{
-            font-size: 7px;
-        }
     }
 }
 
@@ -109,6 +107,7 @@
     body{
         font-size: 90%;
     }
+
     .blog-post{
         padding: 1.2em 0;
     }
