@@ -34,6 +34,7 @@
     .blog-post__link{
         text-decoration: none;
 
+
         &:hover .blog-post__title{
             text-decoration: underline;
         }
@@ -41,7 +42,8 @@
     }
     
     .blog-post__title{
-        color: $main-font-color;
+        color: $secondary-font-color;
+        font-weight: 400;
         margin: 0;
         line-height: 1.2em;
     }
@@ -56,7 +58,7 @@
 .post-content{
     margin-top: 4em;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1.1em;
 
     p code{
         padding: .3em;
@@ -82,9 +84,9 @@
 
 @media only screen and (max-width: $middle-breakpoint) {
     body{
-        font-size: 80%;
+        font-size: 90%;
     }
     .blog-post{
-        padding: 1em 0;
+        padding: 1.2em 0;
     }
 }
