@@ -77,6 +77,7 @@
     }
 
     .highlighttable{
+        display: block;
         max-height: 30em;
         width: 100%;
         overflow: scroll;
@@ -94,6 +95,10 @@
             border-right: 1px solid darken($main-bg-color, 10);
             color: darken($main-bg-color, 25);
             @include user-select(none);
+        }
+
+        .highlight{
+            font-size: 7px;
         }
     }
 }
