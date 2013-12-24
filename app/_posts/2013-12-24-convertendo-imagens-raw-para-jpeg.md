@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Convertendo imagens RAW para jpeg"
+title:  "Convertendo imagens RAW para jpeg usando Shell Script"
 date:   2013-12-24 12:45:00
 categories: shell
 ---
@@ -11,7 +11,7 @@ Para ter certeza que eu vou poder aproveitar todas as fotos que capturaram momen
 
 Pra isso, uso um simples Shell Script que converte arquivos de fotos em RAW (.NEF) em JPEG e ainda gera uma segunda versão enxuta de cada clique com 1600px de tamanho.
 
-### nefToJpeg.sh
+#### nefToJpeg.sh
 {% highlight bash linenos=table %}
 #!/bin/bash
 
@@ -34,4 +34,6 @@ for f in *.NEF;
 done;
 {% endhighlight %}
 
-Bem simples e direto ao ponto. [Este script está lá no meu Github Gist também](https://gist.github.com/hugobessaa/7628357). Espero que seja útil para você ;-).
+Bem simples e direto ao ponto. Para utilizar, basta usar `cd pasta-de-fotos` e `sh nefToJpeg.sh` no seu terminal. [Este script está lá no meu Github Gist também](https://gist.github.com/hugobessaa/7628357).
+
+Espero que tenha sido útil para você ;-).
