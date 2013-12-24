@@ -19,6 +19,7 @@
     margin: 1.333em auto;
     text-align: center;
     padding: 0 .625em;
+    @include animation(fadeInUp .7s ease-in-out);
 }
 
 .blog-post{
