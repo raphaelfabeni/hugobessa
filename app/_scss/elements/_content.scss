@@ -28,8 +28,16 @@
     text-decoration: none;
 
     a{
-        color: $main-font-color;
+        color: $secondary-font-color;
         font-weight: 500;
+
+        &:focus, &:hover{
+            color: lighten($secondary-font-color, 10);
+        }
+
+        &:visited{
+            color: darken($secondary-font-color, 15);
+        }
     }
 
     .blog-post__link{
@@ -63,20 +71,29 @@
 
     p code{
         padding: .3em;
-        background-color: darken($main-bg-color, 3);
-        border: 1px solid darken($main-bg-color, 15);
+        background-color: darken($main-bg-color, 1);
+        border: 1px solid darken($main-bg-color, 10);
         border-radius: 3px;
     }
 
-    .highlight{
+    .highlighttable{
         max-height: 30em;
+        width: 100%;
         overflow: scroll;
         -webkit-touch-scrolling: scroll;
-        background-color: darken($main-bg-color, 3);
-        border: 1px solid #D8D8D8;
+        border: 1px solid darken($main-bg-color, 10);
+
+        font-size: .9em;
 
         pre{
             margin: 0;
+        }
+
+        .linenos{
+            padding-right: .2em;
+            border-right: 1px solid darken($main-bg-color, 10);
+            color: darken($main-bg-color, 25);
+            @include user-select(none);
         }
     }
 }
