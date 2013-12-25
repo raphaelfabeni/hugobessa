@@ -62,6 +62,18 @@
     }
 }
 
+.previous-post{
+    font-size: 85%;
+    margin-top: 4.625em;
+
+
+    .previous-post__title{
+        font-size: 1em;
+        font-weight: 400;
+        color: darken($main-bg-color, 25);
+    }
+}
+
 /*/////////// POSTS ///////////*/
 
 .post-content{
