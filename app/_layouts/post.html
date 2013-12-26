@@ -17,6 +17,7 @@ layout: default
 {% endif %}
 {% if page.previous %}
 <section class="previous-post blog-post">
+    <span class="icon-arrow-down"></span>
     <h1 class="previous-post__title">Publicação anterior</h1>
     <a class="blog-post__link" href="{{ site.baseurl }}{{ page.previous.url }}"><h1 class="blog-post__title beta-size">{{ page.previous.title }}</h1></a>
     <time class="blog-post__meta zeta-size">{{ page.previous.date | date: "%d/%m/%Y" }}</time>
