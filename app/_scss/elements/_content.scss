@@ -69,14 +69,19 @@
     margin-top: 2em;
     text-align: left;
     font-size: 1.1em;
-    line-height: 1.5em;
+    line-height: 1.7em;
 
-    p code{
-        padding: .3em;
-        background-color: darken($main-bg-color, 1);
-        border: 1px solid darken($main-bg-color, 10);
-        border-radius: 3px;
+    p {
+        margin: 1.7em 0;
+        
+        code{
+            padding: .3em;
+            background-color: darken($main-bg-color, 1);
+            border: 1px solid darken($main-bg-color, 10);
+            border-radius: 3px;
+        }
     }
+
 
     .highlighttable{
         display: block;
