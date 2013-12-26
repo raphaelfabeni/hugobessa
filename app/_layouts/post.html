@@ -10,11 +10,13 @@ layout: default
         {{ content }}    
     </div>
 </article>
+
 {% if site.disqus %}
-<section class="blog-comments middle">
+<section class="blog-comments middle" id="comments">
     {% include disqus.html %}
 </section>
 {% endif %}
+
 {% if page.previous %}
 <section class="previous-post blog-post">
     <span class="icon-arrow-down"></span>

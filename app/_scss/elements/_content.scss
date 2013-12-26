@@ -62,17 +62,6 @@
     }
 }
 
-.previous-post{
-    font-size: 85%;
-    margin-top: 4.625em;
-    color: lighten($main-font-color, 30);
-
-
-    .previous-post__title{
-        font-size: 1em;
-        font-weight: 400;
-    }
-}
 
 /*/////////// POSTS ///////////*/
 
@@ -115,7 +104,19 @@
     }
 }
 
+/*/////////// PREVIOUS POSTS ///////////*/
 
+.previous-post{
+    font-size: 85%;
+    margin-top: 4.625em;
+    color: lighten($main-font-color, 30);
+
+
+    .previous-post__title{
+        font-size: 1em;
+        font-weight: 400;
+    }
+}
 
 @media only screen and (max-width: $middle-breakpoint) {
     body{
