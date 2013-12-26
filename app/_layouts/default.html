@@ -18,10 +18,12 @@
     {% include content-header.html %}
 
     <main class="main-content middle" role="main">    
-    {{ content }}
+      {{ content }}
     </main>
-
-    {% include content-footer.html %}
+    
+    {% unless page.categories %}
+     {% include content-footer.html %}
+    {% endunless %}
 
     {% include scripts.html %}
     {% include googleanalytics.html %}
