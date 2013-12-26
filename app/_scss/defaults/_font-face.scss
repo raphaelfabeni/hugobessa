@@ -1,6 +1,5 @@
 @import "../../_bower_components/bourbon/app/assets/stylesheets/bourbon";
 /*/////////// FONT LOADING ///////////*/
 
-@include font-face(NotoSans, '../fonts/notosans-regular', normal);
-@include font-face(NotoSans, '../fonts/notosans-bold', bold);
-@include font-face(IronLeague, '../fonts/ironleague', bold);
+@include font-face(SourceSansPro, '../fonts/sourcesanspro-regular-webfont', normal);
+@include font-face(SourceSansPro, '../fonts/sourcesanspro-semibold-webfont', bold);

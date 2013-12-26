@@ -58,28 +58,29 @@
     }
 
     .blog-post__meta{
-        color: lighten($main-font-color, 30);   
+        color: lighten($main-font-color, 30);
     }
 }
 
 .previous-post{
     font-size: 85%;
     margin-top: 4.625em;
+    color: lighten($main-font-color, 30);
 
 
     .previous-post__title{
         font-size: 1em;
         font-weight: 400;
-        color: darken($main-bg-color, 25);
     }
 }
 
 /*/////////// POSTS ///////////*/
 
 .post-content{
-    margin-top: 4em;
+    margin-top: 2em;
     text-align: left;
     font-size: 1.1em;
+    line-height: 1.5em;
 
     p code{
         padding: .3em;
@@ -97,6 +98,7 @@
         border: 1px solid darken($main-bg-color, 10);
 
         font-size: .9em;
+        line-height: 1.1em;
 
         -webkit-text-size-adjust: 100%;
 
