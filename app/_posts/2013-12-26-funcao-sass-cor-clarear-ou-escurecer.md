@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Função Sass para definir uma cor de texto baseada em uma cor de fundo."
+title:  "Função Sass para clarear ou escurecer uma cor baseando-se na luminosidade da cor de fundo"
 date:   2013-12-26 17:26:00
 categories: sass
 ---
