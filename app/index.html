@@ -7,6 +7,6 @@ description: Um desenvolvedor front-end que acredita no poder da criatividade pa
 {% for post in site.posts %}
 <article class="blog-post">
     <a class="blog-post__link" href="{{ site.baseurl }}{{ post.url }}"><h1 class="blog-post__title beta-size">{{ post.title }}</h1></a>
-    <time class="blog-post__meta zeta-size">{{ post.date | date: "%d/%m/%Y" }}</time>
+    <span class="blog-post__meta zeta-size">{{ post.categories | join: "/" }} - <time>{{ post.date | date: "%d/%m/%Y" }}</time>
 </article>
 {% endfor %}
