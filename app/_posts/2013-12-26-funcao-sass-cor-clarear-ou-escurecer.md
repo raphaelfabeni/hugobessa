@@ -35,4 +35,4 @@ O único problema desses dois é que se você troca de uma cor escura para uma c
 
 Usando a função `highlight($color, $amount)`, você escolhe apenas a quantidade de diferença entre as cores você quer, já que ela clareia ou escurece a cor baseando-se na luminosidade. Além disso, é possível mudar o limite de luminosidade passando um terceiro argumento como uma porcentagem (o padrão é 50%).
 
-[Diversas outras funções](http://sass-lang.com/documentation/Sass/Script/Functions.html#rgb_functions) de cores para Sass estão disponíveis. Existe também um interessante plugin feito pelo *Team Sass*, o [Color Schemer](https://github.com/Team-Sass/color-schemer) que cria esquemas de cores, tem blend modes e um monte de outras coisas.
+[Diversas outras funções](http://sass-lang.com/documentation/Sass/Script/Functions.html#rgb_functions) de cores para Sass estão disponíveis. Existe também um interessante plugin feito pelo *Team Sass*, o [Color Schemer](https://github.com/Team-Sass/color-schemer), que cria esquemas de cores, tem blend modes e um monte de outras coisas.
