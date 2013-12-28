@@ -167,10 +167,11 @@ module.exports = function (grunt) {
     image_resize: {
       dist: {
         options: {
-          width: 1200,
-          height: 1200,
+          width: 900,
+          height: 900,
           upscale: true,
-          crop: true
+          crop: true,
+          quality: 0.35
         },
         files: [{
           expand: true,
