@@ -16,14 +16,14 @@
 }
 
 .main-content{
-    margin: 4em auto 1.333em;
+    margin: 1em auto 1.333em;
     text-align: center;
     padding: 0 .625em;
     @include animation(fadeInUp .7s ease-in-out);
 }
 
 .blog-post{
-    margin: 1.25em 0 2.5em;
+    margin: 0em 0 2.5em;
     padding: 1em 0;
     text-decoration: none;
 
@@ -123,6 +123,7 @@
     .previous-post__title{
         font-size: 1em;
         font-weight: 400;
+        margin-top: 0;
     }
 }
 

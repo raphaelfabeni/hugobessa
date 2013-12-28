@@ -164,6 +164,22 @@ module.exports = function (grunt) {
         }]
       }
     },
+    image_resize: {
+      dist: {
+        options: {
+          width: 1200,
+          height: 1200,
+          upscale: true,
+          crop: true
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= yeoman.app %>/img/posts',
+          src: '**/*.{jpg,png,gif}',
+          dest: '.tmp/img/posts'
+        }]
+      }
+    },
     jekyll: {
       options: {
         bundleExec: true,
@@ -396,6 +412,7 @@ module.exports = function (grunt) {
     'jekyll:dist',
     'concurrent:dist',
     'useminPrepare',
+    'image_resize',
     'concat',
     'cssmin',
     'uglify',

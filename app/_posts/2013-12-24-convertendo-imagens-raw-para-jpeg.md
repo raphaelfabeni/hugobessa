@@ -1,6 +1,9 @@
 ---
 layout: post
 title:  "Convertendo imagens RAW para jpeg usando Shell Script"
+header-image:
+  src: "posts/2013-12-24-convertendo-imagens-raw-para-jpeg/macbook-mostrando-o-site-de-hugo-bessa.jpg"
+  alt: "MacBook Pro Retina mostrando o site de Hugo Bessa"
 date:   2013-12-24 12:45:00
 categories: shell
 ---
