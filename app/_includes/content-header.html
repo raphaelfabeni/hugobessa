@@ -1,19 +1,18 @@
 <header class="content-header">
-    <a href="{{ baseurl }}/" class="site-title__link"><h1 class="site-title giga-size js-change-phrase">{{ site.author.name }}</h1></a>
-    {% unless page.categories %}
-    <h2 class="site-description delta-size middle">Um <strong>desenvolvedor front-end</strong> que acredita no poder da criatividade para mudar a forma como as pessoas pensam, agem e vivem. <a href="{{ site.baseurl }}sobre" class="more-about">E mais algumas coisas</a>.</h2>
+    <div class="header-image">
+        <img src="{{ baseurl }}/img/{{ page.header-image.src }}" alt="{{ page.header-image.alt }}">
+        <div class="overlay"></div>
+    </div>
 
-    <ul class="social-links mega-size">
-        {% if site.author.github %}
-        <li><a class="icon-github" target="_blank" href="https://github.com/{{ site.author.github }}/" title="Github"></a></li><!--
-        {% endif %}
-        {% if site.author.twitter %}
-        --><li><a class="icon-twitter" target="_blank" href="https://twitter.com/{{ site.author.twitter }}/" title="Twitter"></a></li><!--
-        {% endif %}
-        {% if site.author.googleplus %}
-        --><li><a class="icon-google-plus" target="_blank" href="https://plus.google.com/{{ site.author.googleplus }}/" title="Google Plus"></a></li>
-        {% endif %}
-    </ul>
-    {% endunless %}
+    <a href="{{ baseurl }}/" class="site-avatar">
+        <img src="{{ baseurl }}/img/site/home/avatar.jpg" alt="Avatar com uma foto de Hugo Bessa" width="120" height="auto">
+    </a>
     
+    {% unless page.categories %}
+        {% include content-header--index.html %}
+    {% else %}
+        {% include content-header--post.html %}
+    {% endunless %}
 </header>
+
+

@@ -1,5 +1,6 @@
 @import "../../_bower_components/bourbon/app/assets/stylesheets/bourbon";
 /*/////////// FONT LOADING ///////////*/
 
-@include font-face(SourceSansPro, '../fonts/sourcesanspro-regular-webfont', normal);
-@include font-face(SourceSansPro, '../fonts/sourcesanspro-semibold-webfont', bold);
+@include font-face(SourceSansPro, '../fonts/sourcesanspro-regular-webfont', 400);
+@include font-face(SourceSansPro, '../fonts/sourcesanspro-semibold-webfont', 600);
+@include font-face(icons, '../fonts/icons', 400);

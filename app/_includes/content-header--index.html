@@ -1,0 +1,17 @@
+<a href="{{ baseurl }}/" class="site-title__link"><h1 class="site-title kilo-size js-change-phrase">{{ site.author.name }}</h1></a>
+
+<h2 class="site-description delta-size middle">Um <strong>desenvolvedor front-end</strong> que acredita no poder da criatividade para mudar a forma como as pessoas pensam, agem e vivem. <a href="{{ site.baseurl }}sobre" class="more-about">E mais algumas coisas</a>.</h2>
+
+<ul class="social-links mega-size">
+    {% if site.author.github %}
+    <li><a class="icon-github" target="_blank" href="https://github.com/{{ site.author.github }}/" title="Github"></a></li><!--
+    {% endif %}
+    {% if site.author.twitter %}
+    --><li><a class="icon-twitter" target="_blank" href="https://twitter.com/{{ site.author.twitter }}/" title="Twitter"></a></li><!--
+    {% endif %}
+    {% if site.author.googleplus %}
+    --><li><a class="icon-google-plus" target="_blank" href="https://plus.google.com/{{ site.author.googleplus }}/" title="Google Plus"></a></li>
+    {% endif %}
+</ul>
+
+<div class="icon-arrow-down kilo-size header-arrow-down"></div>
