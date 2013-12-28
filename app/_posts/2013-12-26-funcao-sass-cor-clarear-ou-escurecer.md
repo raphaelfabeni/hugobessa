@@ -2,6 +2,9 @@
 layout: post
 title:  "Função Sass para clarear ou escurecer uma cor baseando-se na luminosidade da cor de fundo"
 date:   2013-12-26 17:26:00
+header-image:
+  src: "posts/2013-12-26-funcao-sass-cor-clarear-ou-escurecer/exemplo-de-codigo-no-codepen.jpg"
+  alt: "Exemplo de código da função Sass no Codepen.io"
 categories: sass
 ---
 

@@ -44,9 +44,10 @@
 
     overflow: hidden;
 
-    > img{
-        width: 100%;
-    }
+    background-color: $header-bg-color;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .overlay{
         position: absolute;
@@ -58,6 +59,7 @@
         background-color: transparent;
         @include background-image(
             linear-gradient(
+                rgba($main-bg-color, .2),
                 rgba($main-bg-color, .6) 55%,
                 rgba($main-bg-color, 1) 90%
             ));
