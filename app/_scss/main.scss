@@ -17,6 +17,8 @@ body{
     font-family: SourceSansPro, sans-serif;
     color: $main-font-color;
     background-color: $main-bg-color;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /*/////////// ELEMENTS ///////////*/

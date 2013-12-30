@@ -6,10 +6,33 @@
     <title>{{ page.title }}</title>
     <meta name="description" content="{{ page.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
     <meta name="author" content="Hugo Bessa">
+
+    <!-- Google Meta Tags -->
     <link rel="author" href="https://plus.google.com/+HugoBessa/">
     <meta name="robots" content="index, follow">
+  
+    {% comment %}
+    <!--
+    This is a future release, as Github Pages are incompatible with Facebook
+    Open Graph and Twitter Cards.
+    -->
+    {% capture page_image %}{% if page.header-image %}{{ site.fullurl }}/{{ page.header-image.src }}{% else %}{{ site.fullurl | append: '/img/site/home/avatar.jpg' }}{% endif %}{% endcapture %}
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="{{ page_image }}" />
+    <meta property="og:description" content="{{ page.description }}" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="{% if page.header-image %}summary_large_image{% else %}summary{% endif %}">
+    <meta name="twitter:site" content="{{ site.author.twitter }}">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.description }}">
+    <meta name="twitter:creator" content="{{ site.author.twitter }}">
+    <meta name="twitter:image" content="{{ page_image }}">
+    {% endcomment %}
 
     <!-- build:css({app,.tmp}) /css/main.css -->
     <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
