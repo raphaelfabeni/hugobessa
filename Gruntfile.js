@@ -190,17 +190,17 @@ module.exports = function (grunt) {
     image_resize: {
       dist: {
         options: {
-          width: 900,
-          height: 900,
+          width: 2000,
+          height: 1600,
           upscale: true,
           crop: true,
-          quality: 0.35
+          quality: 0.5
         },
         files: [{
           expand: true,
           cwd: '<%= yeoman.app %>/img/posts',
           src: '**/*.{jpg,png,gif}',
-          dest: '.tmp/img/posts'
+          dest: '<%= yeoman.dist %>/img/posts'
         }]
       }
     },
@@ -331,7 +331,8 @@ module.exports = function (grunt) {
             '<%= yeoman.dist %>/js/**/*.js',
             '<%= yeoman.dist %>/css/**/*.css',
             '<%= yeoman.dist %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}',
-            '<%= yeoman.dist %>/fonts/**/*.{eot*,otf,svg,ttf,woff}'
+            '<%= yeoman.dist %>/fonts/**/*.{eot*,otf,svg,ttf,woff}',
+            '!<%= yeoman.dist %>/img/posts/**'
           ]
         }
       }

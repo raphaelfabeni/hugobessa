@@ -7,12 +7,14 @@
 
 name: hugobessa
 
+# Author information
 author:
   name: Hugo Bessa
   email: hugobessaa@gmail.com
   github: hugobessaa
   twitter: hugobessaa
   googleplus: +HugoBessa
+  facebook_id: 100000910238457
 
 # Exclude directories and/or files from the conversion.
 # Grunt moves image files and asset directories.
@@ -52,4 +54,4 @@ pygments: true
 
 # Base url is for assets. Full url is for non-relative urls, such as Facebook meta tags
 baseurl: 
-fullurl: http://hugobessa.com.br
+fullurl: https://162.243.62.89
