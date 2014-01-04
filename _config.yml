@@ -14,9 +14,6 @@ author:
   twitter: hugobessaa
   googleplus: +HugoBessa
 
-# Disqus shortname for comments
-disqus: hugobessa
-
 # Exclude directories and/or files from the conversion.
 # Grunt moves image files and asset directories.
 exclude: ['img', 'css', 'js', 'fonts',
@@ -30,7 +27,7 @@ include: ['.htaccess']
 # date  /:categories/:year/:month/:day/:title.html
 # pretty  /:categories/:year/:month/:day/:title/
 # none  /:categories/:title.html
-permalink: /:categories/:title/
+permalink: /:title/
 
 # Publish posts with future date.
 # _config.build.yml sets this to false on `grunt build`

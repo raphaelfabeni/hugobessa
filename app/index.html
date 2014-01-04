@@ -10,6 +10,6 @@ header-image:
 {% for post in site.posts %}
 <article class="blog-post">
     <a class="blog-post__link" href="{{ site.baseurl }}{{ post.url }}"><h1 class="blog-post__title beta-size">{{ post.title }}</h1></a>
-    <span class="blog-post__meta zeta-size">{{ post.categories | join: "/" }} - <time>{{ post.date | date: "%d/%m/%Y" }}</time>
 </article>
+<hr class="blog-post__divisor">
 {% endfor %}

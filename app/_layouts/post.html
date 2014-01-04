@@ -3,19 +3,20 @@ layout: default
 ---
 <article class="blog-post middle">
     <div class="post-content">
-        {{ content }}    
+        {{ content }}
     </div>
 </article>
+{% if page.share == null || page.share == true %}
+<section class="social-share middle beta-size">
+    {% capture canonical %}{{ site.fullurl }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endcapture %}
+    <a href="https://twitter.com/intent/tweet?url={{ canonical }}&amp;text={% if page.title %}{{ page.title | escape | truncate:100 | replace:' ','%20' }}{% else %}{{ site.title | escape | truncate:100 | replace:' ','%20' }}{% endif %}&amp;via={{ site.author.twitter }}" target="_blank" class="icon-twitter-share"></a>
 
-{% if site.disqus %}
-<section class="blog-comments middle" id="comments">
-    {% include disqus.html %}
+    <a href="https://www.facebook.com/sharer.php?s=100&amp;p%5Burl%5D={{ canonical }}" target="_blank" class="icon-facebook-share"></a>
 </section>
 {% endif %}
 
 {% if page.previous %}
 <section class="previous-post blog-post">
-    <span class="icon-arrow-down"></span>
     <h1 class="previous-post__title">Publicação anterior</h1>
     <a class="blog-post__link" href="{{ site.baseurl }}{{ page.previous.url }}"><h1 class="blog-post__title beta-size">{{ page.previous.title }}</h1></a>
     <time class="blog-post__meta zeta-size">{{ page.previous.date | date: "%d/%m/%Y" }}</time>

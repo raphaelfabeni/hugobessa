@@ -16,6 +16,7 @@
 }
 
 .main-content{
+    display: block;
     margin: 1em auto 1.333em;
     text-align: center;
     padding: 0 .625em;
@@ -54,7 +55,6 @@
         color: $secondary-font-color;
         margin: 0;
         line-height: 1.2em;
-        max-width: 80em;
     }
 
     .blog-post__meta{
@@ -62,6 +62,19 @@
     }
 }
 
+.blog-post__divisor{
+    border: none;
+    border-top: 3px solid darken($main-bg-color, 10);
+    width: 80%;
+    margin: 3em auto;
+}
+
+.blog-post__title{
+    max-width: 1040px;
+    max-width: 65rem;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*/////////// POSTS ///////////*/
 
@@ -86,13 +99,17 @@
     }
 
 
-    .highlighttable{
+    .highlight{
         display: block;
         max-height: 30em;
         width: 100%;
+        padding: .7em;
+
         overflow: scroll;
         -webkit-touch-scrolling: scroll;
+
         border: 1px solid darken($main-bg-color, 10);
+        background-color: darken($main-bg-color, 1);
 
         font-size: .9em;
         line-height: 1.1em;
@@ -109,6 +126,15 @@
             color: darken($main-bg-color, 25);
             @include user-select(none);
         }
+    }
+}
+
+/*/////////// SOCIAL SHARE ///////////*/
+.social-share{
+    
+    > a{
+        text-decoration: none;
+        color: lighten($main-font-color, 30);
     }
 }
 

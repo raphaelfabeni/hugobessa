@@ -392,7 +392,7 @@ module.exports = function (grunt) {
           './': 'dist/**'
         },
         options: {
-          srcBasePath: "dist/",
+          srcBasePath: 'dist/',
           path: '<%= secret.path %>',
           host: '<%= secret.host %>',
           username: '<%= secret.username %>',

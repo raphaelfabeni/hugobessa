@@ -89,10 +89,6 @@
     font-weight: 400;
     text-decoration: none;
     text-transform: uppercase;
-
-    &:hover, &:focus{
-        text-decoration: underline;
-    }
 }
 
 .site-title{
@@ -105,7 +101,7 @@
 
 .site-description{
     font-weight: 400;
-    margin-bottom: 0;
+    margin-bottom: 2.5em;
 }
 
 .more-about{
