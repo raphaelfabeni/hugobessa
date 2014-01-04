@@ -58,6 +58,29 @@ module.exports = function (grunt) {
         ]
       }
     },
+    browser_sync: {
+      options: {
+        watchTask: true,
+        ghostMode: {
+          scroll: true,
+          links: true,
+          forms: true,
+          clicks: true,
+          events: true
+        },
+        devMode: true
+      },
+
+      dist: {
+        files: [
+          '.jekyll/**/*.html',
+          '{.tmp,<%= yeoman.app %>}/css/**/*.css',
+          '{.tmp,<%= yeoman.app %>}/<%= js %>/**/*.js',
+          '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
+        ]
+      }
+
+    },
     connect: {
       options: {
         open: false,
@@ -362,12 +385,22 @@ module.exports = function (grunt) {
         'copy:dist'
       ]
     },
-    'gh-pages': {
-      options: {
-        base: 'dist',
-        dotfiles: true
-      },
-      src: '**/*'
+    secret: grunt.file.readJSON('secret.json'),
+    sftp: {
+      production: {
+        files: {
+          './': 'dist/**'
+        },
+        options: {
+          srcBasePath: "dist/",
+          path: '<%= secret.path %>',
+          host: '<%= secret.host %>',
+          username: '<%= secret.username %>',
+          password: '<%= secret.password %>',
+          createDirectories: true,
+          directoryPermissions: parseInt(755, 8)
+        }
+      }
     }
   });
 
@@ -434,7 +467,7 @@ module.exports = function (grunt) {
     'check',
     'test',
     'build',
-    'gh-pages'
+    'sftp'
   ]);
 
 };
