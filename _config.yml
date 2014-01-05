@@ -1,8 +1,5 @@
 # Base Jekyll configuration
 
-# Grunt handles some Jekyll configuration. If you set something here and
-# it doesn't work, check if it is set in the Gruntfile.
-
 # Use _config.build.yml to override these settings on `grunt build`.
 
 name: hugobessa
@@ -54,4 +51,4 @@ pygments: true
 
 # Base url is for assets. Full url is for non-relative urls, such as Facebook meta tags
 baseurl: 
-fullurl: https://www.hugobessa.com.br
+fullurl: http://www.hugobessa.com.br
