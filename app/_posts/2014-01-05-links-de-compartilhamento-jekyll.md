@@ -1,9 +1,6 @@
 ---
 layout: post
 title:  "Links de compartilhamento para Twitter e Facebook no Jekyll"
-header-image:
-  src: "posts/2014-01-05-links-de-compartilhamento-jekyll/link-publicado-no-facebook.jpg"
-  alt: "Link sendo publicado no Facebook"
 date:   2014-01-05 02:24:00
 categories: jekyll
 ---
