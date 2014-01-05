@@ -14,11 +14,11 @@ Na hora de criar uma *stylesheet* escalável com cores que podem mudar na próxi
 
 O único problema desses dois é que se você troca de uma cor escura para uma clara ou vice-versa, elas podem não funcionar da maneira que você queria que elas funcionassem. Pensando nisso, eu fiz uma função simples para manter estas funções escaláveis.
 
-{% highlight scss linenos=table %}
+```scss
 /**
- * @params:  {Color}
- *           {Number} percentage
- *           {Number} percentage
+ * @param: {Color}
+ * @param: {Number} percentage
+ * @param: {Number} percentage
  *
  * @returns: {Color}
  **/
@@ -31,7 +31,7 @@ O único problema desses dois é que se você troca de uma cor escura para uma c
   }
   @return $color;
 }
-{% endhighlight %}
+```
 
 <p><p data-height="367" data-theme-id="0" data-slug-hash="ztIid" data-user="hugobessaa" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/hugobessaa/pen/ztIid'>Highlight color Sass Function</a> by Hugo (<a href='http://codepen.io/hugobessaa'>@hugobessaa</a>) on <a href='http://codepen.io'>CodePen</a></p></p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
