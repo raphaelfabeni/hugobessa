@@ -3,6 +3,9 @@ layout: post
 title:  "Links de compartilhamento para Twitter e Facebook no Jekyll"
 date:   2014-01-05 02:24:00
 categories: jekyll
+soundtrack:
+  music: "Clarão - Ponto Nulo No Céu"
+  url: "http://www.youtube.com/watch?v=jPjUjVVRxeA"
 ---
 
 O **[Jekyll](http://jekyllrb.com "Jekyll")** é um gerador de sites e blogs estáticos que ganhou bastante visibilidade nos últimos meses, principalmente por ser o único suportado oficialmente pelo [GitHub Pages](http://pages.github.com "GitHub Pages"). Este blog, inclusive, [foi construído com ele](https://github.com/hugobessaa/hugobessa "Código fonte deste blog").

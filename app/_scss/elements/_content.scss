@@ -128,6 +128,12 @@
     }
 }
 
+/*/////////// MUSIC INFO ///////////*/
+.icon-music--post{
+    display: inline-block;
+    vertical-align: middle;
+}
+
 /*/////////// SOCIAL SHARE ///////////*/
 .social-share{
     
@@ -136,6 +142,8 @@
         color: lighten($main-font-color, 30) !important;
     }
 }
+
+
 
 /*/////////// PREVIOUS POSTS ///////////*/
 
