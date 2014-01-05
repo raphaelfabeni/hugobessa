@@ -2,9 +2,9 @@
 layout: post
 title:  "Links de compartilhamento para Twitter e Facebook no Jekyll"
 header-image:
-  src: "posts/2013-12-24-convertendo-imagens-raw-para-jpeg/macbook-mostrando-o-site-de-hugo-bessa.jpg"
-  alt: "MacBook Pro Retina mostrando o site de Hugo Bessa"
-date:   2014-01-05 12:45:00
+  src: "posts/2014-01-05-links-de-compartilhamento-jekyll/link-publicado-no-facebook.jpg"
+  alt: "Link sendo publicado no Facebook"
+date:   2014-01-05 02:24:00
 categories: jekyll
 ---
 
