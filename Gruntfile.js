@@ -387,19 +387,16 @@ module.exports = function (grunt) {
       ]
     },
     secret: grunt.file.readJSON('secret.json'),
-    sftp: {
-      production: {
-        files: {
-          './': 'dist/**'
-        },
+    rsync: {
+      options: {
+        args: ['--verbose'],
+        recursive: true
+      },
+      dist: {
         options: {
-          srcBasePath: 'dist/',
-          path: '<%= secret.path %>',
-          host: '<%= secret.host %>',
-          username: '<%= secret.username %>',
-          password: '<%= secret.password %>',
-          createDirectories: true,
-          directoryPermissions: parseInt(755, 8)
+          src: './<%= yeoman.dist %>/',
+          dest: '<%= secret.path %>',
+          host: '<%= secret.username %>@<%= secret.host %>'
         }
       }
     }
@@ -468,7 +465,7 @@ module.exports = function (grunt) {
     'check',
     'test',
     'build',
-    'sftp'
+    'rsync'
   ]);
 
 };
