@@ -10,7 +10,7 @@ soundtrack:
 
 O **[Jekyll](http://jekyllrb.com "Jekyll")** é um gerador de sites e blogs estáticos que ganhou bastante visibilidade nos últimos meses, principalmente por ser o único suportado oficialmente pelo [GitHub Pages](http://pages.github.com "GitHub Pages"). Este blog, inclusive, [foi construído com ele](https://github.com/hugobessaa/hugobessa "Código fonte deste blog").
 
-Desde que escolhi usá-lo para este projeto, venho procurando forma de trazer mais funcionalidades interessantes para minhas páginas. Os **botões de compartilhamento para Twitter e Facebook** são uma delas — o mais legal é que é bem simples implementá-los no Jekyll.
+Desde que escolhi usá-lo para este projeto, venho procurando formas de trazer mais funcionalidades interessantes para minhas páginas. Os **botões de compartilhamento para Twitter e Facebook** são uma delas — o mais legal é que é bem simples implementá-los no Jekyll.
 
 Pegando emprestado um [código de um post do Cooltrainer](https://cooltrainer.org/2013/08/13/getting-social-with-jekyll/ "código de um post do Cooltrainer"), fiz apenas algumas alterações para que eles se adaptassem ao ambiente do meu site. Primeiro, precisamos da url da página atual, utilizando a forma como o [Octopress](http://octopress.org "Octopress") pega a url canônica.
 
@@ -32,7 +32,7 @@ retire-os antes de utilizar no seu site.
 {% endraw %}
 ```
 
-Agora, podemos usar adicionar os links de compartilhamento:
+Agora, podemos adicionar os links de compartilhamento:
 
 ```html
 {% raw %}
