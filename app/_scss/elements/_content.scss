@@ -30,7 +30,6 @@
 
     a{
         color: $secondary-font-color;
-        font-weight: 500;
 
         &:focus, &:hover{
             color: lighten($secondary-font-color, 10);
