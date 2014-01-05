@@ -1,5 +1,5 @@
 <header class="content-header">
-    <div class="header-image" style="background-image: url('{{ baseurl }}/img/{{ page.header-image.src }}');">
+    <div class="header-image" {% if page.header-image %}style="background-image: url('{{ baseurl }}/img/{{ page.header-image.src }}');"{% endif %}>
         <div class="overlay"></div>
     </div>
 
