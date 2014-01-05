@@ -1,1 +1,5 @@
+{% unless page.link %}
 <h1 class="blog-post__title alpha-size">{{ page.title }}</h1>
+{% else %}
+<h1 class="blog-post__title alpha-size"><a class="blog-post__link" href="{{ site.baseurl }}{{ page.link }}" target="_blank">{{ page.title }} →</a></h1>
+{% endunless %}

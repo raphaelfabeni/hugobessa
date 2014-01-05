@@ -39,16 +39,6 @@
             color: darken($secondary-font-color, 15);
         }
     }
-
-    .blog-post__link{
-        text-decoration: none;
-
-
-        &:hover .blog-post__title{
-            text-decoration: underline;
-        }
-
-    }
     
     .blog-post__title{
         color: $secondary-font-color;
@@ -60,6 +50,28 @@
         color: lighten($main-font-color, 30);
     }
 }
+
+.blog-post__link{
+        text-decoration: none;
+        color: inherit;
+
+        &:hover .blog-post__title{
+            text-decoration: underline;
+        }
+
+    }
+
+.blog-post__permalink{
+    text-decoration: none;
+
+    font-weight: 600;
+    color: lighten($main-font-color, 30) !important;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
 
 .blog-post__divisor{
     border: none;
@@ -128,6 +140,17 @@
     }
 }
 
+.post-content__index{
+    color: lighten($main-font-color, 30) !important;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 0;
+
+    > p:last-child{
+        margin-bottom: 0;
+    }
+}
+
 /*/////////// MUSIC INFO ///////////*/
 .icon-music--post{
     display: inline-block;
@@ -142,8 +165,6 @@
         color: lighten($main-font-color, 30) !important;
     }
 }
-
-
 
 /*/////////// PREVIOUS POSTS ///////////*/
 

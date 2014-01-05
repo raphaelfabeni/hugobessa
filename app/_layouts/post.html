@@ -4,10 +4,12 @@ layout: default
 <article class="blog-post middle">
     <div class="post-content">
         {{ content }}
+
         {% if page.soundtrack %}
         <p><small><em>Escrito ao som de <span class="icon-music icon-music--post"></span> {% if page.soundtrack.url %}<a href="{{ page.soundtrack.url }}" target="_blank">{{ page.soundtrack.music }}</a>{% else %}{{ page.soundtrack.music }}{% endif %}</em></small></p>
         {% endif %}
     </div>
+    
     {% if page.share == null || page.share == true %}
     <section class="social-share middle beta-size">
         {% capture canonical %}{{ site.fullurl }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endcapture %}
