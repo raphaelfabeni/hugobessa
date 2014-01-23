@@ -140,7 +140,7 @@ module.exports = function (grunt) {
     sass: {
       options: {
         bundleExec: true,
-        debugInfo: false,
+        debugInfo: true,
         lineNumbers: false,
         loadPath: 'app/_bower_components'
       },

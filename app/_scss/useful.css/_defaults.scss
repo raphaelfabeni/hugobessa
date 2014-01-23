@@ -1,0 +1,106 @@
+/**
+  * $DEFAULTS
+  * 
+  * useful.css will use these around the framework.
+  * Redefine these in another file, imported after.
+  * 
+  */
+
+
+
+
+
+
+
+/** 
+  * $DEBUG
+  * 
+  * Set to true if you want some tips (not used yet)
+  * 
+  */
+
+$debug-mode: false !default;
+
+
+
+
+
+
+
+/**
+  * $BORDER-BOX
+  * 
+  * Should all elements get `box-sizing: border-box`?
+  * Read this: http://paulirish.com/2012/box-sizing-border-box-ftw
+  * 
+  */
+
+$global-border-box: true !default;
+
+
+
+
+
+
+
+/** 
+  * $BASE
+  * 
+  * Base stuff
+  * 
+  */
+
+$base-font-size:    16px !default;
+$base-line-height:  24px !default;
+
+$base-font:         "Helvetica Neue", sans-serif !default;
+$base-ui-color:     #ccc !default;
+$base-round:        4px !default;
+
+
+
+
+
+
+
+/**
+  * $BREAKPOINTS
+  *
+  * Breakpoints for media-queries
+  * Don't worry: they are translated to em unit when applied to a media-querie
+  */
+
+$lap-start:         481px !default;
+$desk-start:        1024px !default; 
+$desk-wide-start:   1200px !default; 
+
+
+
+
+
+
+
+/**
+  * $FONT_SIZES
+  *
+  * Font sizes variables
+  *
+  */
+
+
+
+/*/////////// $DEFAULT ///////////*/
+
+$giga-size:       6em !default;
+$mega-size:       4em !default;
+$kilo-size:       2.625em !default;
+
+$alpha-size:      2em !default;
+$beta-size:       1.625em !default; 
+$gamma-size:      1.375em !default; 
+$delta-size:      1.125em !default; 
+$epsilon-size:    1em !default; 
+$zeta-size:       0.925em !default; 
+
+$milli-size:      0.725em !default;
+$micro-size:      0.5em !default;

@@ -4,6 +4,11 @@
 
 name: hugobessa
 
+
+# Theme options
+title: Hugo Bessa
+description: "Um desenvolvedor front-end"
+
 # Author information
 author:
   name: Hugo Bessa

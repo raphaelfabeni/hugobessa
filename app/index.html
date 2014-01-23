@@ -2,22 +2,8 @@
 layout: default
 title: Hugo Bessa
 description: Um desenvolvedor front-end que acredita no poder da criatividade para mudar a forma como as pessoas pensam, agem e vivem.
-header-image:
-  src: "site/home/header-image.jpg"
-  alt: "Computador com o Sublime Text 3 na tela e uma caneca"
 ---
 
 {% for post in site.posts %}
-<article class="blog-post">
-    {% unless post.link %}
-    <a class="blog-post__link" href="{{ site.baseurl }}{{ post.url }}"><h1 class="blog-post__title beta-size">{{ post.title }}</h1></a>
-    {% else %}
-    <a class="blog-post__link" href="{{ site.baseurl }}{{ post.link }}" target="_blank"><h1 class="blog-post__title gamma-size">{{ post.title }} →</h1></a>
-    <a class="blog-post__permalink epsilon-size" href="{{ site.baseurl }}{{ post.url }}">§</a>
-    <div class="post-content post-content__index zeta-size">
-        {{ post.content }}
-    </div>
-    {% endunless %}
-</article>
-<hr class="blog-post__divisor">
+
 {% endfor %}

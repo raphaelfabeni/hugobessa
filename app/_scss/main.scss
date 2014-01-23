@@ -1,16 +1,20 @@
-@import "../_bower_components/bourbon/app/assets/stylesheets/bourbon";
-@import "defaults/vars";
+/*/////////// $DEFAULTS ///////////*/
+// @import "defaults/vars";
 
-/*/////////// MODULES ///////////*/
-@import "defaults/font-face";
-@import "defaults/font-classes";
-@import "defaults/icons";
-@import "defaults/keyframes";
+/*/////////// $FRAMEWORKS ///////////*/
+@import "../_bower_components/bourbon/app/assets/stylesheets/bourbon";
+
+/*/////////// $USEFUL.CSS-COMPONENTS ///////////*/
+@import "useful.css/useful.css";
+@import "useful.css/components/typo";
 
 html, body{
     margin: 0;
     padding: 0;
 }
+
+$main-font-color: black;
+$main-bg-color: white;
 
 body{
     font-size: $base-font-size;
@@ -20,9 +24,3 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
-/*/////////// ELEMENTS ///////////*/
-
-@import "elements/header";
-@import "elements/content";
-@import "elements/footer";

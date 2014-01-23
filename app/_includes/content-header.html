@@ -1,17 +1,7 @@
-<header class="content-header">
-    <div class="header-image" {% if page.header-image %}style="background-image: url('{{ baseurl }}/img/{{ page.header-image.src }}');"{% endif %}>
-        <div class="overlay"></div>
+<header class="content-header island middle">
+    <div class="gw">
+        <div class="g one-whole">
+            <h1><a href="{{ site.fullurl }}" class="link-simple">{{ site.title }}</a> <span class="gamma-size">- {{site.description}}</h1>
+        </div>
     </div>
-
-    <a href="{{ baseurl }}/" class="site-avatar">
-        <img src="{{ baseurl }}/img/site/home/avatar.jpg" alt="Avatar com uma foto de Hugo Bessa" width="120" height="auto">
-    </a>
-    
-    {% unless page.categories %}
-        {% include content-header--index.html %}
-    {% else %}
-        {% include content-header--post.html %}
-    {% endunless %}
 </header>
-
-
