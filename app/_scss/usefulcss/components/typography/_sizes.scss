@@ -1,10 +1,10 @@
-@import "../defaults";
-@import "../base/mixins";
+@import "../../defaults";
+@import "../../base/mixins";
 
 /**
-  * $TYPOGRAPHY
+  * $SIZES
   *
-  * Typography styles and classes
+  * Typography sizes for layouts
   *
   */
 
@@ -66,6 +66,7 @@ h6, .zeta-size{
   * $SMALL
   */
 
+small,
 .smallprint,
 .milli-size{
     @include font-size($milli-size, false);

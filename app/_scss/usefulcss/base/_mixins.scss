@@ -14,7 +14,4 @@
   */
 @mixin font-size($font-size, $line-height: true) {
     font-size: $font-size;
-    @if $line-height == true{
-        line-height:ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
-    }
 }
