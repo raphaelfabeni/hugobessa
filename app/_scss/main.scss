@@ -5,8 +5,9 @@
 @import "../_bower_components/bourbon/app/assets/stylesheets/bourbon";
 
 /*/////////// $USEFUL.CSS-COMPONENTS ///////////*/
-@import "useful.css/useful.css";
-@import "useful.css/components/typo";
+@import "usefulcss/useful.css";
+@import "usefulcss/components/typography/sizes";
+@import "usefulcss/components/typography/alignments";
 
 html, body{
     margin: 0;
