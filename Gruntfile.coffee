@@ -12,7 +12,7 @@ module.exports = (grunt) ->
             assets: '_assets/'
             coffee: '_coffee/'
             build:  
-                dev: '.tmp/'
+                dev: '.dev/'
                 prod: 'dist/'
             fonts:  'fonts/'
             sass:   '_scss/'
@@ -28,15 +28,15 @@ module.exports = (grunt) ->
 
             compass:
                 files: ['<%= paths.app %><%= paths.assets %><%= paths.sass %>**/*.{scss,sass}']
-                tasks: ['compass']
+                tasks: ['compass:dev']
 
             coffee:
                 files: '<%= paths.app %><%= paths.assets %><%= paths.coffee %>**/*.coffee'
-                tasks: ['coffee']
+                tasks: ['coffee:dev']
 
             jekyll:
                 files: '<%= paths.app %>**/*.{html,md}'
-                tasks: ['jekyll']
+                tasks: ['buildDev']
 
         # Browser-sync: sync navigation and file changes
         browser_sync:
@@ -50,24 +50,28 @@ module.exports = (grunt) ->
                     clicks: true
 
             dev:
-                bsFiles: [
-                    '<%= paths.build.dev %><%= paths.css %>**/*.css'
-                    '<%= paths.build.dev %><%= paths.img %>**/*.{png,jpg,gif}'
-                    '<%= paths.build.dev %><%= paths.js %>**/*.js'
-                    '<%= paths.build.dev %>**/*.html'
-                ]
-                server:
-                    baseDir: '<%= paths.build.dev %>'
+                bsFiles:
+                    src: [
+                            '<%= paths.build.dev %><%= paths.assets %><%= paths.css %>**/*.css'
+                            '<%= paths.build.dev %><%= paths.assets %><%= paths.img %>**/*.{png,jpg,gif}'
+                            '<%= paths.build.dev %><%= paths.assets %><%= paths.js %>**/*.js'
+                            '<%= paths.build.dev %>**/*.html'
+                        ]
+                options:
+                    server:
+                        baseDir: '<%= paths.build.dev %>'
 
             prod:
-                bsFiles: [
-                    '<%= paths.build.prod %><%= paths.css %>**/*.css'
-                    '<%= paths.build.prod %><%= paths.img %>**/*.{png,jpg,gif}'
-                    '<%= paths.build.prod %><%= paths.js %>**/*.js'
-                    '<%= paths.build.prod %>**/*.html'
-                ]
-                server:
-                    baseDir: '<%= paths.build.prod %>'
+                bsFiles: 
+                    src: [
+                        '<%= paths.build.prod %><%= paths.css %>**/*.css'
+                        '<%= paths.build.prod %><%= paths.img %>**/*.{png,jpg,gif}'
+                        '<%= paths.build.prod %><%= paths.js %>**/*.js'
+                        '<%= paths.build.prod %>**/*.html'
+                    ]
+                options:
+                    server:
+                        baseDir: '<%= paths.build.prod %>'
 
         # Coffee: compiles CoffeeScript files
         coffee:
@@ -88,25 +92,28 @@ module.exports = (grunt) ->
                 src: '**/*.scss'
                 ext: '.css'
                 expand: true
-                dest: '<%= paths.build.dev %><%= paths.assets %><%= paths.sass %>'
+                dest: '<%= paths.build.dev %><%= paths.assets %><%= paths.css %>'
 
             prod:    
                 cwd: '<%= paths.app %><%= paths.assets %><%= paths.sass %>'
                 src: '**/*.scss'
                 ext: '.css'
                 expand: true
-                dest: '<%= paths.build.prod %><%= paths.assets %><%= paths.sass %>'
+                dest: '<%= paths.build.prod %><%= paths.assets %><%= paths.css %>'
 
         # Jekyll: generates the blog
         jekyll:
             options:
                 src: '<%= paths.app %>'
-                # watch: true
+                config: ['_config.yml', '_config.build.yml']
+                bundleExec: true
+                keep_files: ['_assets/*']
             
             dev:
                 options:
                     dest: '<%= paths.build.dev %>'
-                    drafts: true
+                    config: '_config.yml'
+                    # drafts: true
 
             prod:
                 options:
@@ -152,11 +159,15 @@ module.exports = (grunt) ->
             prod: ['<%= paths.build.prod']
 
     # complex tasks
-    grunt.registerTask('serve', [
+    grunt.registerTask('buildDev',[
         'clean:dev'
         'jekyll:dev'
         'coffee:dev'
         'sass:dev'
+    ])
+
+    grunt.registerTask('serve', [
+        'buildDev'
         'browser_sync:dev'
         'watch'
     ])

@@ -19,6 +19,7 @@ Thumbs.db
 *.swn
 *.swo
 *.swp
+*.lock
 ._*
 *~
 
