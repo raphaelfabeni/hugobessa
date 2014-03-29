@@ -28,7 +28,7 @@ module.exports = (grunt) ->
 
             compass:
                 files: ['<%= paths.app %><%= paths.assets %><%= paths.sass %>**/*.{scss,sass}']
-                tasks: ['compass:dev']
+                tasks: ['sass:dev']
 
             coffee:
                 files: '<%= paths.app %><%= paths.assets %><%= paths.coffee %>**/*.coffee'

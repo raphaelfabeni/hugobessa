@@ -1,0 +1,57 @@
+/*------------------------------------*\
+    #CONTENT
+\*------------------------------------*/
+
+body{
+    font-family: Lato, sans-serif;
+    background-color: $inuit-base-background-color;
+    color: $inuit-base-text-color;
+    font-size: $inuit-base-font-size;
+    line-height: $inuit-base-line-height;
+    font-weight: 300;
+}
+
+.container{
+    @include outer-container;
+    @include pad(0px default);
+}
+
+.post{
+    margin-top: $inuit-base-spacing-unit * 1.5;
+
+    + .post{
+        position: relative;
+        padding-top: $inuit-base-spacing-unit * 3;
+        margin-top: $inuit-base-spacing-unit * 3;
+
+        &:before{
+            content: "";
+            display: block;
+            width: $max-width / 4;
+            height: $inuit-base-spacing-unit / 8;
+            background-color: darken($inuit-base-background-color, 5);
+
+            position: absolute;
+            top: 0;
+            // horizontal center hack
+            left: 50%;
+            margin-left: ($max-width / 4) / 2 * -1;
+        }
+    }
+
+}
+    .post__title{
+        @extend %beta;
+        @extend .me0;
+        line-height: 1.4;
+    }
+
+    .post__timestamp{
+        @extend .mt;
+        @extend %delta;
+        color: lighten($inuit-base-text-color, 60);
+    }
+
+    .post__content{
+        @extend .mt;
+    }

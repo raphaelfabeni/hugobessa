@@ -1,0 +1,40 @@
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+
+.header{
+    background-color: $color-dark-cyan;
+    color: highlight($color-detail, 10);
+    border-bottom: quarter($inuit-base-spacing-unit) solid darken($color-dark-cyan, 3);
+
+    a{
+        color: $color-earth;
+
+        &:hover, &:focus{
+            color: lighten($color-earth, 7);
+        }
+    }
+}
+
+.header__title{
+    @extend .mb0;
+    a{
+        text-decoration: none;
+        &:hover, &:focus{
+            text-decoration: underline;
+        }
+    }
+}
+
+.header__description{
+    @extend .mt0;
+    line-height: 1.3em;
+}
+
+.header__nav{
+    li + li{
+        &::before{
+            content: " - ";
+        }
+    }
+}

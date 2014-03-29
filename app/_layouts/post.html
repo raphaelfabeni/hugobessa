@@ -1,0 +1,19 @@
+{% include header.html %}
+    
+    <main class="main-content container" role="main">    
+        <article class="post">
+            {% if page.link %}
+            <h1 class="post__title"><a href="{{ page.link }}">{{ page.title }}</a></h1>
+            {% else %}
+            <h1 class="post__title"><a href="{{ page.url }}" class="link--clean">{{ page.title }}</a></h1>
+            {% endif %}
+
+            <time class="post__timestamp">{{ page.date | date: "%B %d, %Y" }}</time>
+
+            <div class="post__content">
+                {{ content }}
+            </div>
+        </article>
+    </main>
+    
+{% include footer.html %}

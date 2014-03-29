@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+
+a{
+    color: $color-detail;
+
+    &:hover, &:focus{
+        color: lighten($color-detail, 7);
+    }
+}
+
+ul, ol{
+    margin-left: $inuit-base-spacing-unit;
+}
+
+blockquote{
+    margin-left: 0;
+    padding-left: $inuit-base-spacing-unit;
+    border-left: ($inuit-base-spacing-unit / 6) solid $color-detail;
+    font-style: italic;
+    color: lighten($inuit-base-text-color, 50);
+}
+
+pre{
+    background-color: darken($inuit-base-background-color, 1);
+    border: 1px solid darken($inuit-base-background-color, 6);
+    padding: quarter($inuit-base-spacing-unit);
+    border-radius: 3px;
+    font-size: 70%;
+    line-height: 1.7;
+}
