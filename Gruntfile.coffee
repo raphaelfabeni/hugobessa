@@ -42,6 +42,7 @@ module.exports = (grunt) ->
         browser_sync:
             options:
                 watchTask: true
+                reloadDelay: 1000
 
                 ghostMode:
                     scroll: true
