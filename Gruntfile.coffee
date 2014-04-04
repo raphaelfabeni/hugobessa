@@ -16,7 +16,7 @@ module.exports = (grunt) ->
                 prod: 'dist/'
             fonts:  'fonts/'
             sass:   '_scss/'
-            img:    'img/'
+            img:    'images/'
             css:    'css/'
             js:     'js/'
 
@@ -26,7 +26,7 @@ module.exports = (grunt) ->
                 nospawn: true
                 livereload: false
 
-            compass:
+            sass:
                 files: ['<%= paths.app %><%= paths.assets %><%= paths.sass %>**/*.{scss,sass}']
                 tasks: ['sass:dev']
 
@@ -155,8 +155,18 @@ module.exports = (grunt) ->
 
         # Clean: remove files from folder
         clean: 
-            dev: ['<%= paths.build.dev']
-            prod: ['<%= paths.build.prod']
+            dev: ['<%= paths.build.dev %>']
+            prod: ['<%= paths.build.prod %>']
+
+        # Copy: copy files from a folder to another folder
+        copy:
+            dev:
+                files: [
+                    expand: true
+                    cwd: '<%= paths.app %><%= paths.assets %><%= paths.img %>'
+                    src: ['**']
+                    dest: '<%= paths.build.dev %><%= paths.assets %><%= paths.img %>'
+                ]
 
     # complex tasks
     grunt.registerTask('buildDev',[
@@ -164,6 +174,7 @@ module.exports = (grunt) ->
         'jekyll:dev'
         'coffee:dev'
         'sass:dev'
+        'copy:dev'
     ])
 
     grunt.registerTask('serve', [

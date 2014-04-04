@@ -3,16 +3,22 @@
     <main class="main-content container" role="main">    
         <article class="post">
             {% if page.link %}
-            <h1 class="post__title"><a href="{{ page.link }}">{{ page.title }}</a></h1>
+            <h1 class="post__title"><a href="{{ page.link }}">{{ page.title }} →</a></h1>
             {% else %}
-            <h1 class="post__title"><a href="{{ page.url }}" class="link--clean">{{ page.title }}</a></h1>
+            <h1 class="post__title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
             {% endif %}
 
-            <time class="post__timestamp">{{ page.date | date: "%B %d, %Y" }}</time>
+            <small class="post__info">
+                <time datetime="{{ page.date | date: "%Y-%d-%m" }}">{{ page.date | date: "%B %d, %Y" }}</time>
+                &nbsp;-&nbsp;
+                <a href="{{ page.url }}" title="Permalink for {{ page.title }}">permalink</a>
+            </small>
 
             <div class="post__content">
                 {{ content }}
             </div>
+
+            {% include post-footer.html %}
         </article>
     </main>
     

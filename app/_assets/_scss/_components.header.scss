@@ -3,21 +3,43 @@
 \*------------------------------------*/
 
 .header{
-    background-color: $color-dark-cyan;
-    color: highlight($color-detail, 10);
-    border-bottom: quarter($inuit-base-spacing-unit) solid darken($color-dark-cyan, 3);
+    @extend .pe;
+    background-color: $color-black;
+    color: $color-white;
 
     a{
-        color: $color-earth;
+        color: $color-white;
 
         &:hover, &:focus{
-            color: lighten($color-earth, 7);
+            background-color: $color-gray;
         }
     }
 }
 
 .header__title{
-    @extend .mb0;
+    @extend .m0;
+    @include span-columns(12 of 12);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+
+    @media all and (min-width: $break-desk) {
+        @include span-columns(5 of 12);
+        text-align: left;
+    }
+
+    .header__logo{
+        display: block;
+        margin: 0 auto;
+
+        @media all and (min-width: $break-desk) {
+            margin: 0;
+            display: inline-block;
+            position: relative;
+            top: 8px;
+        }
+    }
+
     a{
         text-decoration: none;
         &:hover, &:focus{
@@ -26,15 +48,28 @@
     }
 }
 
-.header__description{
-    @extend .mt0;
-    line-height: 1.3em;
-}
-
 .header__nav{
+    @extend .m0;
+    @include span-columns(12 of 12);
+    text-align: center;
+    
+    @media all and (min-width: $break-desk) {
+        @include span-columns(7 of 12);
+        @include omega;
+        text-align: right;
+        line-height: 52px;
+    }
+
     li + li{
-        &::before{
-            content: " - ";
+        margin-left: halve($inuit-base-spacing-unit);
+    }
+
+    a{
+        text-decoration: none;
+
+        &:hover, &:focus{
+            text-decoration: underline;
+            background-color: transparent;
         }
     }
 }

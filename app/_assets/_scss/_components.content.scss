@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 body{
-    font-family: Lato, sans-serif;
+    font-family: HelveticaNeue, Helvetica, sans-serif;
     background-color: $inuit-base-background-color;
     color: $inuit-base-text-color;
     font-size: $inuit-base-font-size;
@@ -13,16 +13,16 @@ body{
 
 .container{
     @include outer-container;
-    @include pad(0px default);
+    @include pad(0px $inuit-base-spacing-unit / 3);
 }
 
 .post{
     margin-top: $inuit-base-spacing-unit * 1.5;
-
+    /* division line */
     + .post{
         position: relative;
         padding-top: $inuit-base-spacing-unit * 3;
-        margin-top: $inuit-base-spacing-unit * 3;
+        margin-top: $inuit-base-spacing-unit;
 
         &:before{
             content: "";
@@ -39,19 +39,57 @@ body{
         }
     }
 
-}
-    .post__title{
-        @extend %beta;
-        @extend .me0;
-        line-height: 1.4;
+    /* post specific styles */
+    img{
+        text-align: center;
+        width: 100%;
+        $photo-width: 45em;
+        @media all and (min-width: $photo-width + ($photo-width - $max-width)){
+            width: $photo-width;
+            margin-left: (($photo-width - $max-width) / -2) - .5em;
+        }
+        
+        /* legend */
+        & + small{
+            display: block;
+            @extend %delta;
+            text-align: center;
+        }
     }
 
-    .post__timestamp{
+    /* better spacing for headings */
+    h2, h3, h4, h5, h6{
+        @extend .mb0;
+
+        + p{
+            @extend .mt0;
+        }
+    }
+
+}
+
+    .post__title{
+        @extend .me0;
+        line-height: 1.3;
+        a{
+            text-decoration: none;        
+        }
+    }
+
+    .post__info{
         @extend .mt;
-        @extend %delta;
         color: lighten($inuit-base-text-color, 60);
+        a{
+            text-decoration: none;
+        }
     }
 
     .post__content{
         @extend .mt;
+    }
+
+    .post--footer{
+        text-align: center;
+        font-style: italic;
+        @extend %gamma;
     }

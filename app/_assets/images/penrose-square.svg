@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Penrose Square</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Portrait" sketch:type="MSArtboardGroup" transform="translate(-7.000000, -34.000000)" stroke="#000000" fill="#FFFFFF">
+            <g id="Logo" sketch:type="MSLayerGroup" transform="translate(8.000000, 35.000000)">
+                <g id="Penrose-Square" sketch:type="MSShapeGroup">
+                    <path d="M0,22.7842201 L23.0743217,45 L25.9578474,42.0588446 L5.33683106,22.0769264 L28,-5.60325086e-16 L22.8344481,-5.60325086e-16 L0,22.7842201 Z" id="face"></path>
+                    <path d="M28,0 L50,22.7520605 L50,28 L28.1073854,5.47388682 L8.95995121,25.3898613 L6,22.3852672 L28,0 Z" id="face"></path>
+                    <path d="M50,28.0243477 L28.410932,50 L23,49.7773914 L44.5070863,27.9652179 L25.2712272,8.71596361 L27.9463562,6 L50,28.0243477 Z" id="face"></path>
+                    <path d="M44,27.8279014 L22.4862258,50 L5.3006473e-17,27.1662155 L5.3006473e-17,23 L22.4862258,45.5726601 L41.5440288,25.2561004 L44,27.8279014 Z" id="face"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

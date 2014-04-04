@@ -2,13 +2,13 @@
     #COLORS
 \*------------------------------------*/
 
-$color-dark-cyan: #036564;
-$color-earth: #E8DDCB;
-$color-white: #fff;
 $color-black: #000;
+$color-white: #fff;
+$color-gray: lighten($color-black, 30);
+$color-light-gray: lighten($color-black, 90);
 
 $color-text: $color-black;
-$color-detail: $color-dark-cyan;
+$color-detail: $color-black;
 $color-background: $color-white;
 
 $inuit-base-text-color: $color-text;

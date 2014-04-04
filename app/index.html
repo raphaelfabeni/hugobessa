@@ -1,17 +1,21 @@
 ---
 layout: default
-title: Hugo Bessa
+title: Hugo Bessa - front-end mad scientist and collaboration enthusiast
 ---
 
 {% for post in site.posts %}
 <article class="post">
     {% if post.link %}
-    <h1 class="post__title"><a href="{{ post.link }}">{{ post.title }}</a></h1>
+    <h1 class="post__title"><a href="{{ post.link }}">{{ post.title }} →</a></h1>
     {% else %}
-    <h1 class="post__title"><a href="{{ post.url }}" class="link--clean">{{ post.title }}</a></h1>
+    <h1 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
     {% endif %}
 
-    <time class="post__timestamp">{{ post.date | date: "%B %d, %Y" }}</time>
+    <small class="post__info">
+        <time datetime="{{ post.date | date: "%Y-%d-%m" }}">{{ post.date | date: "%B %d, %Y" }}</time>
+        &nbsp;-&nbsp;
+        <a href="{{ post.url }}" title="Permalink for {{ post.title }}">permalink</a>
+    </small>
 
     <div class="post__content">
         {{ post.content }}
