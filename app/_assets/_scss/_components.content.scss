@@ -59,7 +59,8 @@ body{
 
     /* better spacing for headings */
     h2, h3, h4, h5, h6{
-        @extend .mb0;
+        @extend .mb-;
+        line-height: 1.2;
 
         + p{
             @extend .mt0;
