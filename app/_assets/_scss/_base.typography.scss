@@ -41,4 +41,8 @@ pre{
     font-size: 70%;
     line-height: 1.5;
     -webkit-overflow-scrolling: touch; /* smooth iOS scrolling */
+
+    .p{
+        padding: 0 !important;
+    }
 }
