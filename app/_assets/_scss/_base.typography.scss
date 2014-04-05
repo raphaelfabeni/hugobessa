@@ -22,13 +22,23 @@ blockquote{
     color: lighten($inuit-base-text-color, 50);
 }
 
-pre{
+%code-box{
     background-color: darken($inuit-base-background-color, 1);
     border: 1px solid darken($inuit-base-background-color, 6);
-    padding: quarter($inuit-base-spacing-unit);
     border-radius: 3px;
+    padding: $inuit-base-spacing-unit / 6;
+}
+
+p{
+    > code{
+        @extend %code-box;
+    }
+}
+
+pre{
+    @extend %code-box;
+
     font-size: 70%;
     line-height: 1.5;
-
     -webkit-overflow-scrolling: touch; /* smooth iOS scrolling */
 }
