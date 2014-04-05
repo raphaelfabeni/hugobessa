@@ -173,5 +173,5 @@ module.exports = function(grunt) {
     ]);
 
     // default task
-    grunt.registerTask('default', ['browser_sync', 'watch']);
+    grunt.registerTask('default', ['serve']);
 };
