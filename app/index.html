@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Hugo Bessa - front-end mad scientist and collaboration enthusiast
+title: Hugo Bessa - desenvolvedor front-end e entusiasta de colaboração
 ---
 
 {% for post in site.posts %}
@@ -12,9 +12,9 @@ title: Hugo Bessa - front-end mad scientist and collaboration enthusiast
     {% endif %}
 
     <small class="post__info">
-        <time datetime="{{ post.date | date: "%Y-%d-%m" }}">{{ post.date | date: "%B %d, %Y" }}</time>
+        <time datetime="{{ post.date | date: "%Y-%d-%m" }}">{{ post.date | date: "%d/%m/%Y" }}</time>
         &nbsp;-&nbsp;
-        <a href="{{ post.url }}" title="Permalink for {{ post.title }}">permalink</a>
+        <a href="{{ post.url }}" title="Permalink para {{ post.title }}">permalink</a>
     </small>
 
     <div class="post__content">
