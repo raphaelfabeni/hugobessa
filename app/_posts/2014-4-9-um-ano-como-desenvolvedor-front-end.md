@@ -13,7 +13,7 @@ A [Mkt Virtual](http://www.mktvirtual.com.br "Site da Mkt Virtual") me deu a opo
 Eu sobrevivi durante esses 365 dias e vou te contar como.
 
 ![Eu palestrando sobre Grunt no primeiro Mkt Meet Up]({{ site.baseurl }}/_assets/images/posts/one-year-as-front-end-developer/hugo-bessa-mkt-meet-up.jpg)
-<small>*Eu palestrando sobre Grunt no primeiro [Mkt Meet Up](http://www.eventick.com.br/mkt-meet-up)*</small>
+<small>*Palestrando sobre Grunt no primeiro [Mkt Meet Up](http://www.eventick.com.br/mkt-meet-up)*</small>
 
 ## Eu não desisti
 Meu primeiro mês no meu novíssimo emprego foi um inferno. Até as coisas mais simples exigiam um grande esforço, muitas abas abertas no Chrome e bastante exercício de tentativa e erro. Cada desafio, mesmo pequeno, parecia enorme para mim.
