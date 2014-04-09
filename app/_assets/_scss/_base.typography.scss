@@ -23,20 +23,22 @@ blockquote{
 }
 
 %code-box{
-    background-color: darken($inuit-base-background-color, 1);
-    border: 1px solid darken($inuit-base-background-color, 6);
+    background-color: darken($inuit-base-background-color, 2);
+    border: 1px solid darken($inuit-base-background-color, 7);
     border-radius: 3px;
-    padding: $inuit-base-spacing-unit / 6;
 }
 
 p{
     > code{
         @extend %code-box;
+        padding: 1.5px;
     }
 }
 
 pre{
     @extend %code-box;
+
+    padding: $inuit-base-spacing-unit / 6;
 
     font-size: 70%;
     line-height: 1.5;
