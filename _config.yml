@@ -56,8 +56,7 @@ redcarpet:
     'smart',
     'autolink',
     'tables',
-    'with_toc_data',
-    'footnotes'
+    'with_toc_data'
   ]
 
 # Use Pygments to highlight code blocks
