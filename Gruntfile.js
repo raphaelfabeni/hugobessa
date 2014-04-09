@@ -185,14 +185,14 @@ module.exports = function(grunt) {
     });
 
     // complex tasks
-    grunt.registerTask('buildDev',[
+    grunt.registerTask('buildDev', [
         'clean:dev',
         'jekyll:dev',
         'sass:dev',
         'copy:dev'
     ]);
 
-    grunt.registerTask('build',[
+    grunt.registerTask('build', [
         'clean:prod',
         'jekyll:prod',
         'sass:prod',
