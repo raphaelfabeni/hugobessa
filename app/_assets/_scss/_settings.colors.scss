@@ -5,9 +5,10 @@
 $color-black: #000;
 $color-white: #fff;
 $color-gray: lighten($color-black, 30);
+$color-dark-gray: lighten($color-black, 20);
 $color-light-gray: lighten($color-black, 90);
 
-$color-text: $color-black;
+$color-text: $color-dark-gray;
 $color-detail: $color-black;
 $color-background: $color-white;
 

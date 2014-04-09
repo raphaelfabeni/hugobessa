@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 body{
-    font-family: HelveticaNeue, Helvetica, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
     background-color: $inuit-base-background-color;
     color: $inuit-base-text-color;
     font-size: $inuit-base-font-size;
@@ -72,17 +72,11 @@ body{
     .post__title{
         @extend .me0;
         line-height: 1.3;
-        a{
-            text-decoration: none;        
-        }
     }
 
     .post__info{
         @extend .mt;
-        color: lighten($inuit-base-text-color, 60);
-        a{
-            text-decoration: none;
-        }
+        color: lighten($inuit-base-text-color, 40);
     }
 
     .post__content{
