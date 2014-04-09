@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    #FUNCTIONS
+\*------------------------------------*/
+
+// Highlights color
+// http://hugobessa.com.br/funcao-sass-cor-clarear-ou-escurecer/
+@function highlight($color, $amount, $threshold: 50%){
+    @if lightness($color) > $threshold{
+        @return darken($color, $amount);
+    }
+    @if lightness($color) <= $threshold{
+        @return lighten($color, $amount);
+    }
+    @return $color;
+}

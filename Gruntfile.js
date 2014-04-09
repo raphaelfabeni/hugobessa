@@ -1,472 +1,215 @@
-// Generated on 2013-11-05 using generator-jekyllrb 0.4.1
-'use strict';
+'use-strict';
+module.exports = function(grunt) {
 
-// Directory reference:
-//   css: css
-//   sass: _scss
-//   javascript: js
-//   coffeescript: _coffee
-//   images: img
-//   fonts: fonts
+    // Load'em all!
+    require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
-module.exports = function (grunt) {
-  // Show elapsed time after tasks run
-  require('time-grunt')(grunt);
-  // Load all Grunt tasks
-  require('load-grunt-tasks')(grunt);
+    grunt.initConfig({
 
-  grunt.initConfig({
-    // Configurable paths
-    yeoman: {
-      app: 'app',
-      dist: 'dist'
-    },
-    watch: {
-      sass: {
-        files: ['<%= yeoman.app %>/_scss/**/*.{scss,sass}'],
-        tasks: ['sass:server']
-      },
-      autoprefixer: {
-        files: ['<%= yeoman.app %>/css/**/*.css'],
-        tasks: ['copy:stageCss', 'autoprefixer:server']
-      },
-      coffee: {
-        files: ['<%= yeoman.app %>/_coffee/**/*.coffee'],
-        tasks: ['coffee:dist']
-      },
-      coffeeTest: {
-        files: ['test/spec/**/*.coffee'],
-        tasks: ['coffee:test']
-      },
-      jekyll: {
-        files: [
-          '<%= yeoman.app %>/**/*.{html,yml,md,mkd,markdown}',
-          '_config.yml',
-          '!<%= yeoman.app %>/_bower_components'
-        ],
-        tasks: ['jekyll:server']
-      },
-      livereload: {
-        options: {
-          livereload: '<%= connect.options.livereload %>'
+        // Project paths
+        paths: {
+            app:    'app/',
+            assets: '_assets/',
+            build: { 
+                dev: '.dev/',
+                prod: 'dist/'
+            },
+            fonts:  'fonts/',
+            sass:   '_scss/',
+            img:    'images/',
+            css:    'css/',
+            js:     'js/'
         },
-        files: [
-          '.jekyll/**/*.html',
-          '{.tmp,<%= yeoman.app %>}/css/**/*.css',
-          '{.tmp,<%= yeoman.app %>}/<%= js %>/**/*.js',
-          '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
-        ]
-      }
-    },
-    browser_sync: {
-      options: {
-        watchTask: true,
-        ghostMode: {
-          scroll: true,
-          links: true,
-          forms: true,
-          clicks: true,
-          events: true
+
+        // Watch: trigger tasks on file changes/add
+        watch: {
+            options: {
+                nospawn: true,
+                livereload: false,
+            },
+            sass: {
+                files: ['<%= paths.app %><%= paths.assets %><%= paths.sass %>**/*.{scss,sass}'],
+                tasks: ['sass:dev']
+            },
+            jekyll: {
+                files: '<%= paths.app %>**/*.{html,md}',
+                tasks: ['buildDev']
+            }
         },
-        devMode: true
-      },
 
-      dist: {
-        files: [
-          '.jekyll/**/*.html',
-          '{.tmp,<%= yeoman.app %>}/css/**/*.css',
-          '{.tmp,<%= yeoman.app %>}/<%= js %>/**/*.js',
-          '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
-        ]
-      }
+        // Browser-sync: sync navigation and file changes
+        browser_sync: {
+            options: {
+                watchTask: true,
+                reloadDelay: 1000,
 
-    },
-    connect: {
-      options: {
-        open: false,
-        port: 9000,
-        livereload: 35729,
-        // change this to '0.0.0.0' to access the server from outside
-        hostname: '0.0.0.0'
-      },
-      livereload: {
-        options: {
-          open: true,
-          base: [
-            '.tmp',
-            '.jekyll',
-            '<%= yeoman.app %>'
-          ]
-        }
-      },
-      dist: {
-        options: {
-          open: true,
-          base: [
-            '<%= yeoman.dist %>'
-          ]
-        }
-      },
-      test: {
-        options: {
-          base: [
-            '.tmp',
-            '.jekyll',
-            'test',
-            '<%= yeoman.app %>'
-          ]
-        }
-      }
-    },
-    clean: {
-      dist: {
-        files: [{
-          dot: true,
-          src: [
-            '.tmp',
-            '<%= yeoman.dist %>/*',
-            // Running Jekyll also cleans the target directory.  Exclude any
-            // non-standard `keep_files` here (e.g., the generated files
-            // directory from Jekyll Picture Tag).
-            '!<%= yeoman.dist %>/.git*'
-          ]
-        }]
-      },
-      server: [
-        '.tmp',
-        '.jekyll'
-      ]
-    },
-    sass: {
-      options: {
-        bundleExec: true,
-        debugInfo: false,
-        lineNumbers: false,
-        loadPath: 'app/_bower_components'
-      },
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.app %>/_scss',
-          src: ['main.scss', 'syntax.scss'],
-          dest: '.tmp/css',
-          ext: '.css'
-        }]
-      },
-      server: {
-        options: {
-          debugInfo: true,
-          lineNumbers: true
+                ghostMode: {
+                    scroll: true,
+                    links: true,
+                    forms: true,
+                    clicks: true
+                }
+            },
+            dev: {
+                bsFiles: {
+                    src: [
+                        '<%= paths.build.dev %><%= paths.assets %><%= paths.css %>**/*.css',
+                        '<%= paths.build.dev %><%= paths.assets %><%= paths.img %>**/*.{png,jpg,gif}',
+                        '<%= paths.build.dev %><%= paths.assets %><%= paths.js %>**/*.js',
+                        '<%= paths.build.dev %>**/*.html'
+                    ]
+                },
+                options: {
+                    server: {
+                        baseDir: '<%= paths.build.dev %>'
+                    }
+                }
+            },
+            prod:{
+                bsFiles: {
+                    src: [
+                        '<%= paths.build.prod %><%= paths.css %>**/*.css',
+                        '<%= paths.build.prod %><%= paths.img %>**/*.{png,jpg,gif}',
+                        '<%= paths.build.prod %><%= paths.js %>**/*.js',
+                        '<%= paths.build.prod %>**/*.html'
+                    ],
+                },
+                options: {
+                    server: {
+                        baseDir: '<%= paths.build.prod %>'
+                    }
+                }
+            }
         },
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.app %>/_scss',
-          src: '**/*.{scss,sass}',
-          dest: '.tmp/css',
-          ext: '.css'
-        }]
-      }
-    },
-    coffee: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.app %>/_coffee',
-          src: '**/*.coffee',
-          dest: '.tmp/js',
-          ext: '.js'
-        }]
-      },
-      test: {
-        files: [{
-          expand: true,
-          cwd: 'test/spec',
-          src: '**/*.coffee',
-          dest: '.tmp/spec',
-          ext: '.js'
-        }]
-      }
-    },
-    image_resize: {
-      dist: {
-        options: {
-          width: 2000,
-          height: 1600,
-          upscale: true,
-          crop: true,
-          quality: 0.5
+
+        // Sass: compiles SCSS files
+        sass: {
+            dev: {
+                cwd: '<%= paths.app %><%= paths.assets %><%= paths.sass %>',
+                src: '**/*.scss',
+                ext: '.css',
+                expand: true,
+                dest: '<%= paths.build.dev %><%= paths.assets %><%= paths.css %>'
+            },
+            prod: {
+                cwd: '<%= paths.app %><%= paths.assets %><%= paths.sass %>',
+                src: '**/*.scss',
+                ext: '.css',
+                expand: true,
+                dest: '<%= paths.build.prod %><%= paths.assets %><%= paths.css %>'
+            }
         },
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.app %>/img/posts',
-          src: '**/*.{jpg,png,gif}',
-          dest: '<%= yeoman.dist %>/img/posts'
-        }]
-      }
-    },
-    jekyll: {
-      options: {
-        bundleExec: true,
-        config: '_config.yml,_config.build.yml',
-        src: '<%= yeoman.app %>'
-      },
-      dist: {
-        options: {
-          dest: '<%= yeoman.dist %>',
-        }
-      },
-      server: {
-        options: {
-          config: '_config.yml',
-          dest: '.jekyll'
-        }
-      },
-      check: {
-        options: {
-          doctor: true
-        }
-      }
-    },
-    // UseminPrepare will only scan a single page for usemin blocks. If you
-    // use usemin blocks that aren't in index.html, create a usemin manifest
-    // page (hackery!) and point this task there.
-    useminPrepare: {
-      options: {
-        dest: '<%= yeoman.dist %>'
-      },
-      html: '<%= yeoman.dist %>/index.html'
-    },
-    usemin: {
-      options: {
-        basedir: '<%= yeoman.dist %>',
-        dirs: ['<%= yeoman.dist %>/**/*']
-      },
-      html: ['<%= yeoman.dist %>/**/*.html'],
-      css: ['<%= yeoman.dist %>/css/**/*.css']
-    },
-    htmlmin: {
-      dist: {
-        options: {
-          collapseWhitespace: true,
-          collapseBooleanAttributes: true,
-          removeAttributeQuotes: true,
-          removeRedundantAttributes: true
+
+        // Jekyll: generates the blog
+        jekyll: {
+            options: {
+                src: '<%= paths.app %>',
+                bundleExec: true,
+                keep_files: ['_assets/*']
+            },
+            dev: {
+                options: {
+                    dest: '<%= paths.build.dev %>',
+                    config: '_config.yml'
+                    // drafts: true,
+                }
+            },
+            prod: {
+                options: {
+                    dest: '<%= paths.build.prod %>',
+                    config: ['_config.yml', '_config.build.yml']
+                }
+            }
         },
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.dist %>',
-          src: '**/*.html',
-          dest: '<%= yeoman.dist %>'
-        }]
-      }
-    },
-    // Usemin adds files to concat
-    concat: {},
-    // Usemin adds files to uglify
-    uglify: {},
-    // Usemin adds files to cssmin
-    cssmin: {
-      dist: {
-        options: {
-          check: 'gzip'
-        }
-      }
-    },
-    imagemin: {
-      dist: {
-        options: {
-          progressive: true
+
+        // Imagemin: optimizes images
+        imagemin: {
+            prod: {
+                options: {
+                    optimizationLevel: 7,
+                    progressive: true
+                },
+                files: [{
+                    expand: true,
+                    cwd: '<%= paths.app %><%= paths.assets %><%= paths.img %>',
+                    src: '**/*.{png,jpg,gif}',
+                    dest: '<%= paths.build.prod %><%= paths.img %>'
+                }]
+            }
         },
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.dist %>',
-          src: '**/*.{jpg,jpeg,png}',
-          dest: '<%= yeoman.dist %>'
-        }]
-      }
-    },
-    svgmin: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.dist %>',
-          src: '**/*.svg',
-          dest: '<%= yeoman.dist %>'
-        }]
-      }
-    },
-    copy: {
-      dist: {
-        files: [{
-          expand: true,
-          dot: true,
-          cwd: '<%= yeoman.app %>',
-          src: [
-            'CNAME',
-            // Jekyll processes and moves HTML and text files
-            // Usemin moves CSS and javascript inside of Usemin blocks
-            // Copy moves asset files and directories
-            'img/**/*',
-            'fonts/**/*',
-            
-            // Like Jekyll, exclude files & folders prefixed with an underscore
-            '!**/_*{,/**}'
-            // Explicitly add any files your site needs for distribution here
-            //'_bower_components/jquery/jquery.js',
-            //'favicon.ico',
-            //'apple-touch*.png'
-            
-          ],
-          dest: '<%= yeoman.dist %>'
-        }]
-      }
-    },
-    rev: {
-      options: {
-        length: 4
-      },
-      dist: {
-        files: {
-          src: [
-            '<%= yeoman.dist %>/js/**/*.js',
-            '<%= yeoman.dist %>/css/**/*.css',
-            '<%= yeoman.dist %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}',
-            '<%= yeoman.dist %>/fonts/**/*.{eot*,otf,svg,ttf,woff}',
-            '!<%= yeoman.dist %>/img/posts/**'
-          ]
+
+        // Clean: remove files from folder
+        clean: {
+            dev: ['<%= paths.build.dev %>'],
+            prod: ['<%= paths.build.prod %>']
+        },
+
+        // Copy: copy files from a folder to another folder
+        copy: {
+            dev: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= paths.app %><%= paths.assets %><%= paths.img %>',
+                    src: ['**'],
+                    dest: '<%= paths.build.dev %><%= paths.assets %><%= paths.img %>'
+                }]
+            },
+            prod: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= paths.app %><%= paths.assets %><%= paths.img %>',
+                    src: ['**'],
+                    dest: '<%= paths.build.prod %><%= paths.assets %><%= paths.img %>'
+                }]
+            }
+        },
+
+        // get the contents of secret.json file
+        secret: grunt.file.readJSON('secret.json'),
+
+        // Rsync: copy files from local computer to VPS
+        rsync: {
+            options: {
+                args: ['--verbose'],
+                recursive: true,
+                compareMode: 'checksum'
+            },
+            dist: {
+                options: {
+                    src: '<%= paths.build.prod %>',
+                    dest: '<%= secret.path %>',
+                    host: '<%= secret.username %>@<%= secret.host %>'
+                }
+            }
         }
-      }
-    },
-    jshint: {
-      options: {
-        jshintrc: '.jshintrc',
-        reporter: require('jshint-stylish')
-      },
-      all: [
-        'Gruntfile.js',
-        '<%= yeoman.app %>/js/**/*.js',
-        'test/spec/**/*.js',
-        '!<%= yeoman.app %>/js/vendor/**/*'
-      ]
-    },
-    csscss: {
-      options: {
-        bundleExec: true,
-        minMatch: 2,
-        ignoreSassMixins: false,
-        colorize: true,
-        shorthand: false,
-        verbose: true
-      },
-      check: {
-       src: ['<%= yeoman.app %>/css/**/*.css',
-             '<%= yeoman.app %>/_scss/**/*.scss']
-      }
-    },
-    csslint: {
-      options: {
-        csslintrc: '.csslintrc'
-      },
-      check: {
-        src: [
-          '<%= yeoman.app %>}/css/**/*.css',
-          '<%= yeoman.app %>}/_scss/**/*.scss'
-        ]
-      }
-    },
-    concurrent: {
-      server: [
-        'sass:server',
-        'coffee:dist',
-        'jekyll:server'
-      ],
-      dist: [
-        'sass:dist',
-        'coffee:dist',
-        'copy:dist'
-      ]
-    },
-    secret: grunt.file.readJSON('secret.json'),
-    rsync: {
-      options: {
-        args: ['--verbose'],
-        recursive: true,
-        compareMode: 'checksum'
-      },
-      dist: {
-        options: {
-          src: './<%= yeoman.dist %>/',
-          dest: '<%= secret.path %>',
-          host: '<%= secret.username %>@<%= secret.host %>'
-        }
-      }
-    }
-  });
+    });
 
-  // Define Tasks
-  grunt.registerTask('serve', function (target) {
-    if (target === 'dist') {
-      return grunt.task.run(['build', 'connect:dist:keepalive']);
-    }
-
-    grunt.task.run([
-      'clean:server',
-      'concurrent:server',
-      'connect:livereload',
-      'watch'
-    ]);
-  });
-
-  grunt.registerTask('server', function () {
-    grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
-    grunt.task.run(['serve']);
-  });
-
-  // No real tests yet. Add your own.
-  grunt.registerTask('test', [
-  //   'clean:server',
-  //   'concurrent:test',
-  //   'connect:test'
-  ]);
-
-  grunt.registerTask('check', [
-    'clean:server',
-    'jekyll:check',
-    'sass:server',
-    'coffee:dist',
-    'jshint:all',
-    'csscss:check',
-    'csslint:check'
-  ]);
-
-  grunt.registerTask('build', [
-    'clean:dist',
-    // Jekyll cleans files from the target directory, so must run first
-    'jekyll:dist',
-    'concurrent:dist',
-    'useminPrepare',
-    'image_resize',
-    'concat',
-    'cssmin',
-    'uglify',
-    'imagemin',
-    'svgmin',
-    'rev',
-    'usemin',
-    'htmlmin'
+    // complex tasks
+    grunt.registerTask('buildDev', [
+        'clean:dev',
+        'jekyll:dev',
+        'sass:dev',
+        'copy:dev'
     ]);
 
-  grunt.registerTask('default', [
-    'check',
-    'test',
-    'build'
-  ]);
+    grunt.registerTask('build', [
+        'clean:prod',
+        'jekyll:prod',
+        'sass:prod',
+        'copy:prod'
+    ]);
 
-  grunt.registerTask('deploy', [
-    'check',
-    'test',
-    'build',
-    'rsync'
-  ]);
+    grunt.registerTask('serve', [
+        'buildDev',
+        'browser_sync:dev',
+        'watch'
+    ]);
 
+    grunt.registerTask('deploy', [
+        'build',
+        'rsync'
+    ]);
+
+    // default task
+    grunt.registerTask('default', ['serve']);
 };

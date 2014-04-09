@@ -16,9 +16,9 @@ O único problema desses dois é que se você troca de uma cor escura para uma c
 
 ```scss
 /**
- * @param: {Color}
- * @param: {Number} percentage
- * @param: {Number} percentage
+ * @params:  {Color}
+ *           {Number} percentage
+ *           {Number} percentage
  *
  * @returns: {Color}
  **/

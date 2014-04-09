@@ -1,0 +1,50 @@
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+
+a{
+    color: $color-detail;
+
+    &:hover, &:focus{
+        background-color: $color-light-gray;
+    }
+}
+
+ul, ol{
+    margin-left: halve($inuit-base-spacing-unit);
+}
+
+blockquote{
+    @extend .ms0;
+    padding-left: $inuit-base-spacing-unit;
+    border-left: ($inuit-base-spacing-unit / 6) solid $color-detail;
+    font-style: italic;
+    color: lighten($inuit-base-text-color, 50);
+}
+
+%code-box{
+    background-color: darken($inuit-base-background-color, 2);
+    border: 1px solid darken($inuit-base-background-color, 7);
+    border-radius: 3px;
+}
+
+p{
+    > code{
+        @extend %code-box;
+        padding: 1.5px;
+    }
+}
+
+pre{
+    @extend %code-box;
+
+    padding: $inuit-base-spacing-unit / 6;
+
+    font-size: 70%;
+    line-height: 1.5;
+    -webkit-overflow-scrolling: touch; /* smooth iOS scrolling */
+
+    .p{
+        padding: 0 !important;
+    }
+}

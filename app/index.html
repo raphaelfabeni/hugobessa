@@ -1,23 +1,27 @@
 ---
 layout: default
-title: Hugo Bessa
-description: Um desenvolvedor front-end que acredita no poder da criatividade para mudar a forma como as pessoas pensam, agem e vivem.
-header-image:
-  src: "site/home/header-image.jpg"
-  alt: "Computador com o Sublime Text 3 na tela e uma caneca"
+title: Hugo Bessa - desenvolvedor front-end e entusiasta de colaboração
 ---
 
 {% for post in site.posts %}
-<article class="blog-post">
-    {% unless post.link %}
-    <a class="blog-post__link" href="{{ site.baseurl }}{{ post.url }}"><h1 class="blog-post__title beta-size">{{ post.title }}</h1></a>
+<article class="post">
+    {% if post.link %}
+    <h1 class="post__title"><a href="{{ post.link }}">{{ post.title }} →</a></h1>
     {% else %}
-    <a class="blog-post__link" href="{{ site.baseurl }}{{ post.link }}" target="_blank"><h1 class="blog-post__title gamma-size">{{ post.title }} →</h1></a>
-    <a class="blog-post__permalink epsilon-size" href="{{ site.baseurl }}{{ post.url }}">§</a>
-    <div class="post-content post-content__index zeta-size">
+    <h1 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    {% endif %}
+
+    <small class="post__info">
+        <time datetime="{{ post.date | date: "%Y-%d-%m" }}">{{ post.date | date: "%d/%m/%Y" }}</time>
+        &nbsp;-&nbsp;
+        <a href="{{ post.url }}" title="Permalink para {{ post.title }}">permalink</a>
+    </small>
+
+    <div class="post__content">
         {{ post.content }}
     </div>
-    {% endunless %}
+
 </article>
-<hr class="blog-post__divisor">
 {% endfor %}
+
+{% include post-footer.html %}

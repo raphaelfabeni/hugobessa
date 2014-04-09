@@ -1,17 +1,15 @@
-<header class="content-header">
-    <div class="header-image" {% if page.header-image %}style="background-image: url('{{ baseurl }}/img/{{ page.header-image.src }}');"{% endif %}>
-        <div class="overlay"></div>
+<header class="header">
+    <div class="container">
+
+        <h1 class="header__title">
+            <img class="header__logo" src="{{ site.baseurl }}/_assets/images/penrose-square.svg" width="40px" height="40px" alt="">
+            <a href="{{ site.baseurl }}/" title="{{ site.title }}">{{ site.title }}</a>
+        </h1>
+
+        <ul class="nav header__nav">
+            <li><a href="{{ site.baseurl }}/sobre">/sobre</a></li>
+            <li><a href="https://twitter.com/hugobessaa">/twitter</a></li>
+            <li><a href="https://github.com/hugobessaa">/github</a></li>
+        </ul>
     </div>
-
-    <a href="{{ baseurl }}/" class="site-avatar">
-        <img src="{{ baseurl }}/img/site/home/avatar.jpg" alt="Avatar com uma foto de Hugo Bessa" width="120" height="auto">
-    </a>
-    
-    {% unless page.categories %}
-        {% include content-header--index.html %}
-    {% else %}
-        {% include content-header--post.html %}
-    {% endunless %}
 </header>
-
-
