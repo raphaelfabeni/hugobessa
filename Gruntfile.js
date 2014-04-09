@@ -117,7 +117,7 @@ module.exports = function(grunt) {
             },
             prod: {
                 options: {
-                    dest: '<%= paths.build.prod',
+                    dest: '<%= paths.build.prod %>',
                     config: ['_config.yml', '_config.build.yml']
                 }
             }
@@ -154,6 +154,15 @@ module.exports = function(grunt) {
                     src: ['**'],
                     dest: '<%= paths.build.dev %><%= paths.assets %><%= paths.img %>'
                 }]
+            },
+            prod: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= paths.app %><%= paths.assets %><%= paths.img %>',
+                    src: ['**'],
+                    dest: '<%= paths.build.prod %><%= paths.assets %><%= paths.img %>'
+                }]
+            }
             }
         }
     });
@@ -164,6 +173,13 @@ module.exports = function(grunt) {
         'jekyll:dev',
         'sass:dev',
         'copy:dev'
+    ]);
+
+    grunt.registerTask('build',[
+        'clean:prod',
+        'jekyll:prod',
+        'sass:prod',
+        'copy:prod'
     ]);
 
     grunt.registerTask('serve', [
