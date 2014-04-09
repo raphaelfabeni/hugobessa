@@ -104,7 +104,6 @@ module.exports = function(grunt) {
         jekyll: {
             options: {
                 src: '<%= paths.app %>',
-                config: ['_config.yml', '_config.build.yml'],
                 bundleExec: true,
                 keep_files: ['_assets/*']
             },
@@ -163,6 +162,24 @@ module.exports = function(grunt) {
                     dest: '<%= paths.build.prod %><%= paths.assets %><%= paths.img %>'
                 }]
             }
+        },
+
+        // get the contents of secret.json file
+        secret: grunt.file.readJSON('secret.json'),
+
+        // Rsync: copy files from local computer to VPS
+        rsync: {
+            options: {
+                args: ['--verbose'],
+                recursive: true,
+                compareMode: 'checksum'
+            },
+            dist: {
+                options: {
+                    src: '<%= paths.build.prod %>',
+                    dest: '<%= secret.path %>',
+                    host: '<%= secret.username %>@<%= secret.host %>'
+                }
             }
         }
     });
@@ -186,6 +203,11 @@ module.exports = function(grunt) {
         'buildDev',
         'browser_sync:dev',
         'watch'
+    ]);
+
+    grunt.registerTask('deploy', [
+        'build',
+        'rsync'
     ]);
 
     // default task
