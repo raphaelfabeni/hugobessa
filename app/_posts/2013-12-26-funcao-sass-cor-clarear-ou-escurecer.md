@@ -32,9 +32,7 @@ O único problema desses dois é que se você troca de uma cor escura para uma c
   @return $color;
 }
 ```
-
-<p><p data-height="367" data-theme-id="0" data-slug-hash="ztIid" data-user="hugobessaa" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/hugobessaa/pen/ztIid'>Highlight color Sass Function</a> by Hugo (<a href='http://codepen.io/hugobessaa'>@hugobessaa</a>) on <a href='http://codepen.io'>CodePen</a></p></p>
-<script async src="//codepen.io/assets/embed/ei.js"></script>
+![Exemplo da aplicação da função highlight]({{ site.baseurl }}/_assets/images/posts/funcao-sass-cor-clarear-ou-escurecer/highlight-sass-function-example.jpg)
 
 Usando a função `highlight($color, $amount)`, você escolhe apenas a quantidade de diferença entre as cores você quer, já que ela clareia ou escurece a cor baseando-se na luminosidade. Além disso, é possível mudar o limite de luminosidade passando um terceiro argumento como uma porcentagem (o padrão é 50%).
 
