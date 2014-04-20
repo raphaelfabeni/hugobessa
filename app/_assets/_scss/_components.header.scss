@@ -3,73 +3,28 @@
 \*------------------------------------*/
 
 .header{
-    @extend .pe;
-    background-color: $color-black;
+    @extend .pe\+;
+    background-color: $color-detail;
+    @include linear-gradient(#F0402F, #F00C2C);
     color: $color-white;
 
     a{
         color: $color-white;
-
-        &:hover, &:focus{
-            background-color: $color-gray;
-        }
+        text-decoration: none;
     }
 }
 
 .header__title{
     @extend .m0;
-    @include span-columns(12 of 12);
-    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: 400;
     text-align: center;
-    font-weight: 300;
-
-    @media all and (min-width: $break-desk) {
-        @include span-columns(5 of 12);
-        text-align: left;
-    }
-
-    .header__logo{
-        display: block;
-        margin: 0 auto;
-
-        @media all and (min-width: $break-desk) {
-            margin: 0;
-            display: inline-block;
-            position: relative;
-            top: 8px;
-        }
-    }
+    line-height: 1em;
 
     a{
         text-decoration: none;
         &:hover, &:focus{
             text-decoration: underline;
-        }
-    }
-}
-
-.header__nav{
-    @extend .m0;
-    @include span-columns(12 of 12);
-    text-align: center;
-    
-    @media all and (min-width: $break-desk) {
-        @include span-columns(7 of 12);
-        @include omega;
-        text-align: right;
-        line-height: 52px;
-    }
-
-    li + li{
-        margin-left: halve($inuit-base-spacing-unit);
-    }
-
-    a{
-        text-decoration: none;
-
-        &:hover, &:focus{
-            text-decoration: underline;
-            background-color: transparent;
         }
     }
 }

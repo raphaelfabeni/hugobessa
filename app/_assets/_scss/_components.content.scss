@@ -11,6 +11,10 @@ body{
     font-weight: 300;
 }
 
+*{
+    outline-color: $color-detail;
+}
+
 .container{
     @include outer-container;
     @include pad(0px $inuit-base-spacing-unit / 3);
