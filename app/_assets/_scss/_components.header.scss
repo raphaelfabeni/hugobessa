@@ -14,17 +14,21 @@
     }
 }
 
-.header__title{
-    @extend .m0;
-    font-size: 4em;
-    font-weight: 400;
-    text-align: center;
-    line-height: 1em;
+    .header__title{
+        @extend .m0;
+        font-size: 4em;
+        font-weight: 400;
+        text-align: center;
+        line-height: 1em;
 
-    a{
-        text-decoration: none;
-        &:hover, &:focus{
-            text-decoration: underline;
+        a{
+            text-decoration: none;
+            &:hover, &:focus{
+                text-decoration: underline;
+            }
         }
     }
+
+.site-nav{
+    text-align: center;
 }

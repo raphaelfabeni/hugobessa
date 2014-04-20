@@ -7,3 +7,9 @@
 
     </div>
 </header>
+<nav class="site-nav">
+    <ul class="nav nav--tabs">
+        <li><a href="{{ site.baseurl }}/" class="{% if page.nav == null %}active{% endif %}">blog</a></li>
+        <li><a href="{{ site.baseurl }}/sobre" class="{% if page.nav == 1 %}active{% endif %}">sobre</a></li>
+    </ul>
+</nav>

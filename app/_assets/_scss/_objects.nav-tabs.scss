@@ -1,0 +1,20 @@
+/*------------------------------------*\
+    #NAV--TABS
+\*------------------------------------*/
+
+.nav--tabs{
+    a{
+        color: $color-gray;
+        text-decoration: none;
+        border-bottom: 2px solid $color-gray;
+        
+        &.active, &:hover, &:focus{
+            color: $color-detail;
+            border-color: $color-detail;
+        }
+    }
+
+    li + li{
+        margin-left: halve($inuit-base-spacing-unit);
+    }
+}
