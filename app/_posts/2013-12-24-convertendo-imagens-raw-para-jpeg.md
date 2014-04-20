@@ -14,8 +14,10 @@ Para ter certeza que eu vou poder aproveitar todas as fotos que capturaram momen
 
 Pra isso, uso um simples Shell Script que converte arquivos de fotos em RAW (.NEF) em JPEG e ainda gera uma segunda versão enxuta de cada clique com 1600px de tamanho.
 
+<!--more-->
+
 #### nefToJpeg.sh
-{% highlight bash linenos=table %}
+```bash
 #!/bin/bash
 
 # cria as pastas necessárias.
@@ -35,7 +37,7 @@ for f in *.NEF;
   # (largura ou altura, o que couber primeiro) e salva na pasta 'share'
   sips -Z 1600 "jpegs/$jpg" -o "jpegs/share/$jpg"
 done;
-{% endhighlight %}
+```
 
 Bem simples e direto ao ponto. Para utilizar, basta usar `cd pasta-de-fotos` e `sh nefToJpeg.sh` no seu terminal. [Este script está lá no meu Github Gist também](https://gist.github.com/hugobessaa/7628357).
 

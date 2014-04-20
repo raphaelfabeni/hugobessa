@@ -10,6 +10,8 @@ categories: sass
 
 Foi-se o tempo que a web tinha o fundo branco (o cinza já morreu faz tempo também), letras pretas serifadas e links azuis. Designers ajudaram a transformar a web em um local colorido e bonito.
 
+<!--more-->
+
 Na hora de criar uma *stylesheet* escalável com cores que podem mudar na próxima data comemorativa, as funções de cores do Sass são uma grande mão na roda. Se você já usou `darken($color)` ou `lighten($color)` para criar cores de `:hover`, `:visited` e de bordas, você sabe do que estou falando.
 
 O único problema desses dois é que se você troca de uma cor escura para uma clara ou vice-versa, elas podem não funcionar da maneira que você queria que elas funcionassem. Pensando nisso, eu fiz uma função simples para manter estas funções escaláveis.

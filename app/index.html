@@ -18,7 +18,12 @@ title: Hugo Bessa - desenvolvedor front-end e entusiasta de colaboração
     </small>
 
     <div class="post__content">
-        {{ post.content }}
+        {{ post.excerpt }}
+        {% unless post.link %}
+            <p class="read-more">
+                <a href="{{ post.url }}">Continue lendo →</a>
+            </p>
+        {% endunless %}
     </div>
 
 </article>

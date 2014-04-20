@@ -46,6 +46,8 @@ show_drafts: true
 paginate: 15
 paginate_path: 'page:num'
 
+excerpt_separator: <!--more-->
+
 # Markdown library
 markdown: redcarpet
 # Markdown library options

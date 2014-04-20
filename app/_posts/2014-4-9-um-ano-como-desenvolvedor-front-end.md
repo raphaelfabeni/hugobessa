@@ -12,6 +12,8 @@ A [Mkt Virtual](http://www.mktvirtual.com.br "Site da Mkt Virtual") me deu a opo
 
 Eu sobrevivi durante esses 365 dias e vou te contar como.
 
+<!--more-->
+
 ![Eu palestrando sobre Grunt no primeiro Mkt Meet Up]({{ site.baseurl }}/_assets/images/posts/one-year-as-front-end-developer/hugo-bessa-mkt-meet-up.jpg)
 <small>*Palestrando sobre Grunt no primeiro [Mkt Meet Up](http://www.eventick.com.br/mkt-meet-up)*</small>
 
