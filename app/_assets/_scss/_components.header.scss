@@ -5,7 +5,7 @@
 .header{
     @extend .pe\+;
     background-color: $color-detail;
-    @include linear-gradient(#F0402F, #F00C2C);
+    background-image: url(../images/pattern.jpg);
     color: $color-white;
 
     a{
