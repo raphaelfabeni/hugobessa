@@ -7,7 +7,9 @@ categories: git
 
 Não versionar seus arquivos pode ser uma grande dor de cabeça. Afinal, quem nunca desejou ter salvado uma versão alternativa quando o `Undo` não deu mais conta de voltar todas as alterações feitas nas últimas horas? Eu já, e várias vezes.
 
-Por isso, agora todos os projetos que participo são versionados com Git. E, durante meu primeiro ano como desenvolvedor front-end, eu colecionei alguns comandos bem úteis que aumentam bastante minha produtividade ao utilizar esta ferramenta.
+Por isso, agora todos os projetos que participo são versionados com [Git](http://pt.wikipedia.org/wiki/Git). E, durante [meu primeiro ano como desenvolvedor front-end]({{ site.fullurl }}/posts/um-ano-como-desenvolvedor-front-end/), eu colecionei alguns comandos bem úteis que aumentam bastante minha produtividade ao utilizar esta ferramenta.
+
+<!--more-->
 
 ## 1 - Adicionando modificações interativamente
 Cortar a linha de raciocínio durante a implementação de uma funcionalidade não é uma boa ideia. Portanto, é normal que mais de uma alteração seja feita no projeto entre um commit e outro. Para manter as boas práticas de utilização do Git, precisamos então dividir as alterações dentro do mesmo arquivo em pacotes, algo que não é possível usando apenas o clássico `git add <file>`.
@@ -29,19 +31,19 @@ git log --format='%an' . | \
 
 Com esse comando, você lista os usuários ativos no repositório na branch atual, rankeados pela quantidade de commits.
 
-O legal deste comando é que basta trocar o `.` por qualquer outro path para criar a lista de acordo com a atividade dentro daquela pasta. Então fica fácil saber quem está alterando mais os *controllers*, *models* ou as *views* de um aplicativo.
+O legal deste comando é que basta trocar o `.` por qualquer outro path para criar a lista de acordo com a atividade dentro daquela pasta/arquivo. Então fica fácil saber quem está alterando mais os *controllers*, *models* ou as *views* de um aplicativo.
 
 ## 3 - Log com gráfico e cores
-Um dos motivos de antes eu usar o [SourceTree](http://www.sourcetreeapp.com "Site do aplicativo SourceTree") com o Git era justamente sua visualização dos gráficos das branchs e merges dentro do aplicativo. Porém, após descobrir este comando shell, fiz a transição completa para o Terminal:
+Um dos motivos de antes eu usar o [SourceTree](http://www.sourcetreeapp.com "Site do aplicativo SourceTree") com o Git era justamente sua visualização dos gráficos das branchs e merges. Porém, após descobrir este comando shell, fiz a transição completa para o Terminal:
 
 ```bash
 git log \
   --graph \
   --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' \
-  --abbrev-commit
+  --oneline
 ```
 
-O que ele faz aqui é basicamente listar os commits do respositório de uma forma bem visual, com cores e gráficos. Você pode inclusive escrever um caminho para um arquivo no final do comando e receber um log apenas das alterações feitas naquele arquivo.
+O que ele faz aqui é basicamente listar os commits do repositório de uma forma bem visual, com cores e gráficos. Você pode inclusive escrever um caminho para um arquivo no final do comando e receber um log apenas das alterações feitas naquele arquivo.
 
 ## 4 - Informações sobre alterações em um commit
 
@@ -49,7 +51,7 @@ O que ele faz aqui é basicamente listar os commits do respositório de uma form
 git diff-tree --no-commit-id --shortstat -r <commit-hash>
 ```
 
-Rodando este comando, você pode ver informações gerais sobre as alterações feitas em um commit `<commit-hash>`. Se você preferir uma resposta mais completa, pode subistituir a flag `--shortstat` por `--stat`, `--numstat` ou `--dirstat`. Leia a [documentação do `diff-tree`](http://git-scm.com/docs/git-diff-tree) para entender o que cada uma dessas flags faz e conhecer outras opções interessantes.
+Rodando este comando, você pode ver informações gerais sobre as alterações feitas em um commit `<commit-hash>`. Se você preferir uma resposta mais completa, pode substituir a flag `--shortstat` por `--stat`, `--numstat` ou `--dirstat`. Leia a [documentação do `diff-tree`](http://git-scm.com/docs/git-diff-tree) para entender o que cada uma dessas flags faz e conhecer outras opções interessantes.
 
 ## 5 - Sincronizar fork no Github
 Uma das grandes funcionalidades do Github é permitir que usuários criem *forks* de repositórios. Assim como atualizar uma branch, também é necessário atualizar seus forks com as últimas alterações no repositório principal.
