@@ -5,17 +5,19 @@ title: Hugo Bessa - desenvolvedor front-end e entusiasta de colaboração
 
 {% for post in site.posts %}
 <article class="post">
-    {% if post.link %}
-    <h1 class="post__title"><a href="{{ post.link }}">{{ post.title }} →</a></h1>
-    {% else %}
-    <h1 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    {% endif %}
+    <header class="post__header">
+        {% if post.link %}
+        <h1 class="post__title"><a href="{{ post.link }}">{{ post.title }} →</a></h1>
+        {% else %}
+        <h1 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        {% endif %}
 
-    <small class="post__info">
-        <time datetime="{{ post.date | date: "%Y-%d-%m" }}">{{ post.date | date: "%d/%m/%Y" }}</time>
-        &nbsp;-&nbsp;
-        <a href="{{ post.url }}" title="Permalink para {{ post.title }}">permalink</a>
-    </small>
+        <small class="post__info">
+            <time datetime="{{ post.date | date: "%Y-%d-%m" }}">{{ post.date | date: "%d/%m/%Y" }}</time>
+            &nbsp;•&nbsp;
+            <a href="{{ post.url }}" title="Permalink para {{ post.title }}">permalink</a>
+        </small>
+    </header>
 
     <div class="post__content">
         {{ post.excerpt }}
