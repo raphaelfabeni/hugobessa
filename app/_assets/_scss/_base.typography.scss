@@ -25,10 +25,10 @@ ul, ol{
 
 blockquote{
     @extend .ms0;
-    padding-left: $inuit-base-spacing-unit;
-    border-left: ($inuit-base-spacing-unit / 6) solid $color-detail;
+    padding-left: halve($inuit-base-spacing-unit);
+    border-left: 2px solid lighten($inuit-base-text-color, 30);
     font-style: italic;
-    color: lighten($inuit-base-text-color, 50);
+    color: lighten($inuit-base-text-color, 40);
 }
 
 %code-box{
