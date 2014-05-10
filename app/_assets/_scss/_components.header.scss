@@ -11,6 +11,10 @@
         color: $color-white;
         text-decoration: none;
     }
+
+    @media all and (max-width: $max-width){
+        padding: halve($inuit-base-spacing-unit) 0 !important;
+    }
 }
 
     .header__title{
@@ -25,6 +29,10 @@
             &:hover, &:focus{
                 text-decoration: underline;
             }
+        }
+
+        @media all and (max-width: $max-width){
+            @include inuit-font-size($inuit-heading-size-1);
         }
     }
 
