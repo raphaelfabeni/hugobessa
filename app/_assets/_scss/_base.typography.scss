@@ -3,15 +3,19 @@
 \*------------------------------------*/
 
 a{
-    color: $color-detail;
+    color: $color-link;
+
+    &:hover, &:focus{
+        color: lighten($color-link, 7);
+    }
 
     &:visited{
-        color: darken($color-detail, 10);
+        color: darken($color-link, 7);
     }
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-weight: 300;
+    font-weight: 500;
     color: $color-detail;
 }
 
@@ -36,7 +40,7 @@ blockquote{
 p{
     > code{
         @extend %code-box;
-        padding: 1.5px;
+        padding: 1.5px quarter($inuit-base-spacing-unit);
     }
 }
 
