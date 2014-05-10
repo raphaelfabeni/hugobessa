@@ -17,7 +17,7 @@ body{
 
 .container{
     @include outer-container;
-    @include pad(0px $inuit-base-spacing-unit / 3);
+    @include pad(0px halve($inuit-base-spacing-unit));
 }
 
 .post{
