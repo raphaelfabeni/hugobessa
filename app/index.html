@@ -7,7 +7,7 @@ title: Hugo Bessa - desenvolvedor front-end e entusiasta de colaboração
 <article class="post">
     <header class="post__header">
         {% if post.link %}
-        <h1 class="post__title"><a href="{{ post.link }}">{{ post.title }} →</a></h1>
+        <h1 class="post__title post__title--external"><a href="{{ post.link }}">{{ post.title }} →</a></h1>
         {% else %}
         <h1 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
         {% endif %}

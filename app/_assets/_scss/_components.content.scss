@@ -74,6 +74,12 @@ body{
             }
         }
 
+        .post__title--external {
+            a {
+                color: $color-link;
+            }
+        }
+
         .post__info{
             @extend .mt;
             color: lighten($inuit-base-text-color, 40);

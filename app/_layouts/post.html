@@ -4,7 +4,7 @@
         <article class="post">
             <header class="post__header">
                 {% if page.link %}
-                <h1 class="post__title"><a href="{{ page.link }}">{{ page.title }} →</a></h1>
+                <h1 class="post__title post__title--external"><a href="{{ page.link }}">{{ page.title }} →</a></h1>
                 {% else %}
                 <h1 class="post__title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
                 {% endif %}
