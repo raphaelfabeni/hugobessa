@@ -1,18 +1,20 @@
 {% include header.html %}
-    
-    <main class="main-content container" role="main">    
-        <article class="post">
-            {% if page.link %}
-            <h1 class="post__title"><a href="{{ page.link }}">{{ page.title }} →</a></h1>
-            {% else %}
-            <h1 class="post__title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
-            {% endif %}
 
-            <small class="post__info">
-                <time datetime="{{ page.date | date: "%Y-%d-%m" }}">{{ page.date | date: "%d/%m/%Y" }}</time>
-                &nbsp;-&nbsp;
-                <a href="{{ page.url }}" title="Permalink for {{ page.title }}">permalink</a>
-            </small>
+    <main class="main-content container" role="main">
+        <article class="post">
+            <header class="post__header">
+                {% if page.link %}
+                <h1 class="post__title"><a href="{{ page.link }}">{{ page.title }} →</a></h1>
+                {% else %}
+                <h1 class="post__title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
+                {% endif %}
+
+                <small class="post__info">
+                    <time datetime="{{ page.date | date: "%Y-%d-%m" }}">{{ page.date | date: "%d/%m/%Y" }}</time>
+                    &nbsp;•&nbsp;
+                    <a href="{{ page.url }}" title="Permalink for {{ page.title }}">permalink</a>
+                </small>
+            </header>
 
             <div class="post__content">
                 {{ content }}
@@ -20,5 +22,5 @@
         </article>
         {% include post-footer.html %}
     </main>
-    
+
 {% include footer.html %}

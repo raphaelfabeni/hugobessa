@@ -59,21 +59,25 @@ body{
 
 }
 
-    .post__title{
-        @extend .me0;
-        line-height: 1.3;
-        font-weight: 600;
+    .post__header{
+        text-align: center;
+    }
 
-        a{
-            text-decoration: none;
-            color: $color-detail;
+        .post__title{
+            @extend .me0;
+            line-height: 1.3;
+            font-weight: 600;
+
+            a{
+                text-decoration: none;
+                color: $color-detail;
+            }
         }
-    }
 
-    .post__info{
-        @extend .mt;
-        color: lighten($inuit-base-text-color, 40);
-    }
+        .post__info{
+            @extend .mt;
+            color: lighten($inuit-base-text-color, 40);
+        }
 
     .post__content{
         @extend .mt;
