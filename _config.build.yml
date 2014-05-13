@@ -11,6 +11,6 @@ future: false
 show_drafts: false
 
 # Compile with the correct path
-baseurl: 
-fullurl: http://hugobessa.com.br
-url: http://hugobessa.com.br
+baseurl:
+fullurl: http://www.hugobessa.com.br
+url: http://www.hugobessa.com.br
