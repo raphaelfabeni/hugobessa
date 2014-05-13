@@ -4,11 +4,9 @@
 
 .header{
     @extend .pe\+;
-    background-color: $color-detail;
-    color: $color-white;
 
     a{
-        color: $color-white;
+        color: $color-black;
         text-decoration: none;
     }
 
