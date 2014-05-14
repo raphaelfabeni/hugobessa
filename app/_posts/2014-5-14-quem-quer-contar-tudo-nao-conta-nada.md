@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Quem quer contar tudo não conta nada"
+featured-image: "/_assets/images/posts/quem-quer-contar-tudo-nao-conta-nada/times-square.jpg"
 date:   2014-5-14 19:46:00
 categories: design
 ---
