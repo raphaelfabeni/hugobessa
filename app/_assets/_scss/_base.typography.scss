@@ -28,6 +28,16 @@ blockquote{
     border-left: 2px solid lighten($inuit-base-text-color, 30);
     font-style: italic;
     color: lighten($inuit-base-text-color, 40);
+
+    &.pullquote{
+        @extend %alpha;
+        @extend .me;
+        padding: 0;
+        border: none;
+        color: $inuit-base-text-color;
+
+        text-align: center;
+    }
 }
 
 %code-box{
