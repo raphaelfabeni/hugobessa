@@ -26,3 +26,7 @@ Pegue como exemplo o [Medium](http://medium.com). Mesmo que você esteja lendo a
 Ao chegar no final da página de um artigo no Medium, ele não será mais a informação mais importante da página, afinal, você já o leu. Então, links sobre o autor e a publicação e links para continuar lendo são mostrados.
 
 Foque no que é importante para quem recebe a informação.
+
+---
+
+*Este post foi [publicado originalmente no Medium](https://medium.com/arquitetura-de-informacao/92feb0408dd1). Para se adaptar a este blog, algumas alterações foram realizadas.*
