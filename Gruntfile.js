@@ -10,7 +10,7 @@ module.exports = function(grunt) {
         paths: {
             app:    'app/',
             assets: '_assets/',
-            build: { 
+            build: {
                 dev: '.dev/',
                 prod: 'dist/'
             },
@@ -196,7 +196,8 @@ module.exports = function(grunt) {
         'clean:prod',
         'jekyll:prod',
         'sass:prod',
-        'copy:prod'
+        'copy:prod',
+        'imagemin:prod'
     ]);
 
     grunt.registerTask('serve', [
