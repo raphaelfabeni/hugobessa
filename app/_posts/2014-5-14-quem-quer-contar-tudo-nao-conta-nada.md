@@ -11,6 +11,9 @@ Sejam histórias da sua infância, contos fantásticos ou serviços realizados, 
 
 Quantas vezes você demorou para achar a informação que queria em um daqueles panfletos que entregam na rua? Quantas vezes demorou para achar o telefone para delivery, que estava escrito em uma fonte pequena lá no rodapé no site do restaurante?
 
+![Times Square]({{ site.baseurl }}/_assets/images/posts/quem-quer-contar-tudo-nao-conta-nada/times-square.jpg)
+<small>*Créditos: Ludovic Bertron, no [Flickr](http://www.eventick.com.br/mkt-meet-up)*</small>
+
 Um site que tenta passar todas as informações de uma só vez é como uma rua cheia de outdoors que agride os olhos de quem por ali passa. A informação precisa ser apresentada em doses medidas cuidadosamente.
 
 Ao tentar dar importância para tudo, tudo fica sem importância. Liste as três informações mais importantes que você precisa passar. Foque apenas na primeira.
