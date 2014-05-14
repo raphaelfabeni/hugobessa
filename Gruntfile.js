@@ -136,7 +136,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: '<%= paths.app %><%= paths.assets %><%= paths.img %>',
                     src: '**/*.{png,jpg,gif}',
-                    dest: '<%= paths.build.prod %><%= paths.img %>'
+                    dest: '<%= paths.build.prod %><%= paths.assets %><%= paths.img %>'
                 }]
             }
         },
