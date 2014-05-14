@@ -67,3 +67,10 @@ pre{
         padding: 0 !important;
     }
 }
+
+hr{
+    margin: ($inuit-base-spacing-unit * 1.5) auto;
+    width: 30%;
+    border: 0;
+    border-top: 3px solid darken($color-background, 8);
+}
