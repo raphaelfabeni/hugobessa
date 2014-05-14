@@ -2,6 +2,8 @@
     #CONTENT
 \*------------------------------------*/
 
+@import "components.content-post";
+
 body{
     font-family: "Georgia", serif;
     background-color: $inuit-base-background-color;
@@ -19,82 +21,3 @@ body{
     @include pad(0px halve($inuit-base-spacing-unit));
 }
 
-.post{
-    margin-top: $inuit-base-spacing-unit * 1.5;
-
-    + .post{
-        position: relative;
-        padding-top: $inuit-base-spacing-unit * 3;
-        margin-top: $inuit-base-spacing-unit;
-    }
-
-    /* post specific styles */
-    img{
-        text-align: center;
-        width: 100%;
-        $photo-width: 45em;
-        @media all and (min-width: $photo-width + ($photo-width - $max-width)){
-            width: $photo-width;
-            margin-left: (($photo-width - $max-width) / -2) - .5em;
-        }
-
-        /* legend */
-        & + small{
-            display: block;
-            @extend %delta;
-            text-align: center;
-        }
-    }
-
-    /* better spacing for headings */
-    h2, h3, h4, h5, h6{
-        @extend .mb-;
-        line-height: 1.2;
-
-        + p{
-            @extend .mt0;
-        }
-    }
-
-}
-
-    .post__header{
-        text-align: center;
-    }
-
-        .post__title{
-            @extend .me0;
-            line-height: 1.1;
-            font-weight: 600;
-
-            a{
-                text-decoration: none;
-                color: $color-detail;
-            }
-        }
-
-        .post__title--external {
-            a {
-                color: $color-link;
-            }
-        }
-
-        .post__info{
-            @extend .mt;
-            color: lighten($inuit-base-text-color, 40);
-        }
-
-    .post__content{
-        @extend .mt;
-    }
-
-    .post--footer{
-        text-align: center;
-        font-style: italic;
-        @extend %gamma;
-    }
-
-    .read-more{
-        text-transform: uppercase;
-        font-weight: 500;
-    }
