@@ -14,7 +14,7 @@
     <meta name="robots" content="index, follow">
     <link rel="dns-prefetch" href="http://www.google-analytics.com">
 
-    {% capture page_image %}{% if page.header-image %}{{ site.fullurl }}/img/{{ page.header-image.src }}{% else %}{{ site.fullurl | append: '/img/site/home/avatar.jpg' }}{% endif %}{% endcapture %}
+    {% capture page_image %}{% if page.featured-image %}{{ page.featured-image }}{% else %}{{ site.fullurl | append: '/_assets/images/hugo-bessa.jpg' }}{% endif %}{% endcapture %}
 
     {% capture canonical %}{{ site.fullurl }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endcapture %}
 
