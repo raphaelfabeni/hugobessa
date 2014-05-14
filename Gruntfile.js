@@ -92,6 +92,9 @@ module.exports = function(grunt) {
                 dest: '<%= paths.build.dev %><%= paths.assets %><%= paths.css %>'
             },
             prod: {
+                options: {
+                    outputStyle: 'compressed'
+                },
                 cwd: '<%= paths.app %><%= paths.assets %><%= paths.sass %>',
                 src: '**/*.scss',
                 ext: '.css',
