@@ -53,6 +53,10 @@
             a{
                 text-decoration: none;
                 color: $color-detail;
+
+                &:hover, &:focus{
+                    text-decoration: underline;
+                }
             }
         }
 
