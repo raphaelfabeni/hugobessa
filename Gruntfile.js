@@ -92,9 +92,6 @@ module.exports = function(grunt) {
                 dest: '<%= paths.build.dev %><%= paths.assets %><%= paths.css %>'
             },
             prod: {
-                options: {
-                    outputStyle: 'compressed'
-                },
                 cwd: '<%= paths.app %><%= paths.assets %><%= paths.sass %>',
                 src: '**/*.scss',
                 ext: '.css',
@@ -138,6 +135,19 @@ module.exports = function(grunt) {
                     src: '**/*.{png,jpg,gif}',
                     dest: '<%= paths.build.prod %><%= paths.assets %><%= paths.img %>'
                 }]
+            }
+        },
+
+        // Uncss: removes not used css cruft (mostly from inuit)
+        uncss: {
+            prod: {
+                options: {
+                    htmlroot: '<%= paths.build.prod %>',
+                    report: 'gzip'
+                },
+                files: {
+                    '<%= paths.build.prod %><%= paths.assets %><%= paths.css %>main.min.css': ['<%= paths.build.prod %>**/*.html']
+                }
             }
         },
 
