@@ -240,7 +240,10 @@ module.exports = function(grunt) {
         'jekyll:prod',
         'sass:prod',
         'copy:prod',
-        'imagemin:prod'
+        'imagemin:prod',
+        'uncss:prod',
+        'cssmin:prod',
+        'htmlmin:prod'
     ]);
 
     grunt.registerTask('serve:dev', [
