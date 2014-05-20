@@ -33,14 +33,13 @@ module.exports = function(grunt) {
             },
             jekyll: {
                 files: '<%= paths.app %>**/*.{html,md}',
-                tasks: ['buildDev']
+                tasks: ['build:dev']
             }
         },
 
         // Browser-sync: sync navigation and file changes
         browser_sync: {
             options: {
-                watchTask: true,
                 reloadDelay: 1000,
 
                 ghostMode: {
@@ -60,6 +59,7 @@ module.exports = function(grunt) {
                     ]
                 },
                 options: {
+                    watchTask: true,
                     server: {
                         baseDir: '<%= paths.build.dev %>'
                     }
@@ -75,6 +75,7 @@ module.exports = function(grunt) {
                     ],
                 },
                 options: {
+                    watchTask: false,
                     server: {
                         baseDir: '<%= paths.build.prod %>'
                     }
@@ -227,14 +228,14 @@ module.exports = function(grunt) {
     });
 
     // complex tasks
-    grunt.registerTask('buildDev', [
+    grunt.registerTask('build:dev', [
         'clean:dev',
         'jekyll:dev',
         'sass:dev',
         'copy:dev'
     ]);
 
-    grunt.registerTask('build', [
+    grunt.registerTask('build:prod', [
         'clean:prod',
         'jekyll:prod',
         'sass:prod',
@@ -242,17 +243,22 @@ module.exports = function(grunt) {
         'imagemin:prod'
     ]);
 
-    grunt.registerTask('serve', [
-        'buildDev',
+    grunt.registerTask('serve:dev', [
+        'build:dev',
         'browser_sync:dev',
         'watch'
     ]);
 
+    grunt.registerTask('serve:prod', [
+        'build:prod',
+        'browser_sync:prod',
+    ]);
+
     grunt.registerTask('deploy', [
-        'build',
+        'build:prod',
         'rsync'
     ]);
 
     // default task
-    grunt.registerTask('default', ['serve']);
+    grunt.registerTask('default', ['serve:dev']);
 };
