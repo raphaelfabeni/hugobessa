@@ -146,8 +146,19 @@ module.exports = function(grunt) {
                     report: 'gzip'
                 },
                 files: {
-                    '<%= paths.build.prod %><%= paths.assets %><%= paths.css %>main.min.css': ['<%= paths.build.prod %>**/*.html']
+                    '<%= paths.build.prod %><%= paths.assets %><%= paths.css %>main.css': ['<%= paths.build.prod %>**/*.html']
                 }
+            }
+        },
+
+        // Cssmin: minifies Uncss output
+        cssmin: {
+            prod: {
+                expand: true,
+                cwd: '<%= paths.build.prod %><%= paths.assets %><%= paths.css %>',
+                src: ['main.css'],
+                dest: '<%= paths.build.prod %><%= paths.assets %><%= paths.css %>',
+                ext: '.css'
             }
         },
 
