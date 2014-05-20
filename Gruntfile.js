@@ -162,6 +162,24 @@ module.exports = function(grunt) {
             }
         },
 
+        // Htmlmin: minifies static htmls
+        htmlmin: {
+            prod: {
+                options: {
+                    removeComments: true,
+                    removeCommentsFromCDATA: true,
+                    collapseWhitespace: true,
+                    removeAttributeQuotes: true,
+                    minifyJS: true
+                },
+                expand: true,
+                cwd: '<%= paths.build.prod %>',
+                src: ['**/*.html'],
+                dest: '<%= paths.build.prod %>',
+                ext: '.html'
+            }
+        },
+
         // Clean: remove files from folder
         clean: {
             dev: ['<%= paths.build.dev %>'],
