@@ -21,3 +21,8 @@ body{
     @include pad(0px halve($inuit-base-spacing-unit));
 }
 
+.post--footer{
+    padding-top: 0 !important;
+    text-align: center;
+    font-style: italic;
+}
