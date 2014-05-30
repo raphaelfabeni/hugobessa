@@ -24,7 +24,7 @@ home: true
         {{ post.excerpt }}
         {% unless post.link %}
             <p class="read-more">
-                <a href="{{ post.url }}">Continue lendo →</a>
+                <a href="{{ post.url }}" title="Continue lendo o post {{ post.title }}">Continue lendo →</a>
             </p>
         {% endunless %}
     </div>
