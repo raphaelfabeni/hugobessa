@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" role="banner">
     <div class="container">
 
         <h1 class="header__title">
@@ -7,7 +7,7 @@
 
     </div>
 </header>
-<nav class="site-nav">
+<nav class="site-nav" role="navigation">
     <ul class="nav nav--tabs">
         <li><a href="{{ site.baseurl }}/" class="{% if page.nav == null %}active{% endif %}">blog</a></li>
         <li><a href="{{ site.baseurl }}/sobre" class="{% if page.nav == 1 %}active{% endif %}">sobre</a></li>
