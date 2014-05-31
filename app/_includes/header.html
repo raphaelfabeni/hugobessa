@@ -14,7 +14,7 @@
     <meta name="robots" content="index, follow">
     <link rel="dns-prefetch" href="http://www.google-analytics.com">
 
-    {% capture page_image %}{% if page.featured-image %}{{ site.fullurl }}{{ page.featured-image }}{% else %}{{ site.fullurl | append: '/favicon@facebook.png' }}{% endif %}{% endcapture %}
+    {% capture page_image %}{% if page.featured-image %}{{ site.fullurl }}{{ page.featured-image }}{% else %}{{ site.fullurl | append: '/favicon_facebook.png' }}{% endif %}{% endcapture %}
 
     {% capture canonical %}{{ site.fullurl }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endcapture %}
 

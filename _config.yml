@@ -26,7 +26,7 @@ exclude: ['img', 'css', 'js', 'fonts',
 
 # Force inclusion of directories and/or files in the conversion.
 # .htaccess is a good example since dotfiles are excluded by default.
-include: ['.htaccess', 'favicon.png', 'favicon@facebook.png', 'apple-touch-icon-precomposed.png']
+include: ['.htaccess', 'favicon.png', 'favicon_facebook.png', 'apple-touch-icon-precomposed.png']
 
 # Default post path style
 # date  /:categories/:year/:month/:day/:title.html
