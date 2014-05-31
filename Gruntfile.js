@@ -213,7 +213,7 @@ module.exports = function(grunt) {
         // Rsync: copy files from local computer to VPS
         rsync: {
             options: {
-                args: ['--verbose'],
+                args: ['--verbose', '--chmod=Du=rwx,Dgo=rx,Fu=rw,Fgo=r'],
                 recursive: true,
                 compareMode: 'checksum'
             },
