@@ -34,6 +34,10 @@ module.exports = function(grunt) {
             jekyll: {
                 files: '<%= paths.app %>**/*.{html,md}',
                 tasks: ['build:dev']
+            },
+            js: {
+                files: ['<%= paths.app %><%= paths.assets %><%= paths.js %>**/*.js'],
+                tasks: ['browserify:dev']
             }
         },
 
@@ -192,18 +196,35 @@ module.exports = function(grunt) {
             dev: {
                 files: [{
                     expand: true,
-                    cwd: '<%= paths.app %><%= paths.assets %><%= paths.img %>',
-                    src: ['**'],
-                    dest: '<%= paths.build.dev %><%= paths.assets %><%= paths.img %>'
+                    cwd: '<%= paths.app %><%= paths.assets %>',
+                    src: ['<%= paths.img %>**/*'],
+                    dest: '<%= paths.build.dev %><%= paths.assets %>'
                 }]
             },
             prod: {
                 files: [{
                     expand: true,
-                    cwd: '<%= paths.app %><%= paths.assets %><%= paths.img %>',
-                    src: ['**'],
-                    dest: '<%= paths.build.prod %><%= paths.assets %><%= paths.img %>'
+                    cwd: '<%= paths.app %><%= paths.assets %>',
+                    src: ['<%= paths.img %>**/*'],
+                    dest: '<%= paths.build.prod %><%= paths.assets %>'
                 }]
+            }
+        },
+
+        browserify: {
+            dev: {
+                files: {
+                    '<%= paths.build.dev %><%= paths.assets %><%= paths.js %>app.js': [
+                        '<%= paths.app %><%= paths.assets %><%= paths.js %>**/*.js'
+                    ]
+                }
+            },
+            prod: {
+                files: {
+                    '<%= paths.build.prod %><%= paths.assets %><%= paths.js %>app.js': [
+                        '<%= paths.app %><%= paths.assets %><%= paths.js %>**/*.js'
+                    ]
+                }
             }
         },
 
@@ -232,6 +253,7 @@ module.exports = function(grunt) {
         'clean:dev',
         'jekyll:dev',
         'sass:dev',
+        'browserify:dev',
         'copy:dev'
     ]);
 
@@ -239,6 +261,7 @@ module.exports = function(grunt) {
         'clean:prod',
         'jekyll:prod',
         'sass:prod',
+        'browserify:prod',
         'copy:prod',
         'imagemin:prod',
         'uncss:prod',
