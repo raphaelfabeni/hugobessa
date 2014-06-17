@@ -18,8 +18,10 @@
                 {{ content }}
             </div>
 
+            <hr>
+
             <div class="post__comments">
-                <a href="http://twitter.com/share?text=@hugobessaa%20&url=%20" target="_blank">Comentar</a>
+                {% include disqus.html %}
             </div>
         </article>
         {% include post-footer.html %}

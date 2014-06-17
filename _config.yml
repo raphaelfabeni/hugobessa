@@ -19,6 +19,10 @@ author:
   googleplus: +HugoBessa
   facebook_id: 100000910238457
 
+# Disqus shortname for comments
+disqus: hugobessa
+
+
 # Exclude directories and/or files from the conversion.
 # Grunt moves image files and asset directories.
 exclude: ['img', 'css', 'js', 'fonts',
