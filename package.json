@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Yeoman / Grunt workflow for hugobessa",
   "dependencies": {
-    "fastr": "git://github.com/hugobessaa/fastr"
+    "fastr": "~0.0.3"
   },
   "devDependencies": {
     "matchdep": "~0.3.0",
