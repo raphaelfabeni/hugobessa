@@ -14,7 +14,7 @@ Mas manter loops complexos pode trazer uma boa dor de cabeça para você e seu t
 
 [**Lo-Dash**](http://lodash.com "Site da biblioteca de utilitários Lo-Dash") é uma biblioteca de utilitários que traz diversos métodos interessantes para você brincar com arrays, objetos e muito mais.
 
-Já faz algum tempo que uso o Lo-Dash (ou seu irmão mais velho [underscore](http://underscorejs.org)) nos meus projetos mais complexos. Ele me ajudou muito a escrever scripts mais legíveis e coesos.
+Já faz algum tempo que uso o Lo-Dash (ou seu irmão mais velho [underscore](http://underscorejs.org)) nos meus projetos mais complexos. Ele me ajudou muito a escrever scripts mais legíveis e coesos. Inspirado por um [post do Joel Hooks](http://joelhooks.com/blog/2014/02/06/stop-writing-for-loops-start-using-underscorejs/ "Post do Joel Hooks sobre abandonar completamente o uso do for") sobre abandonar completamente o uso do `for`, passei a utilizar o Lo-Dash ainda mais.
 
 Começando com um exemplo mais simples, com ele podemos criar filtros facilmente:
 
