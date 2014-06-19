@@ -21,7 +21,8 @@
     "grunt-contrib-htmlmin": "^0.3.0",
     "grunt-browserify": "^2.0.8",
     "fastr": "git://github.com/hugobessaa/fastr",
-    "grunt-reduce": "^0.2.1"
+    "grunt-reduce": "^0.2.1",
+    "grunt-inline-css": "^0.1.4"
   },
   "engines": {
     "node": ">=0.8.0"
