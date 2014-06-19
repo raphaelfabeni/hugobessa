@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Melhorando seus loops usando o Lo-Dash"
+description: "Loops complexos podem virar um grande problema. O Lo-Dash resolve este problema com métodos simples e úteis"
 date:   2014-6-19 11:59:00
 categories: dev
 ---
