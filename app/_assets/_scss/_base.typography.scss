@@ -60,13 +60,19 @@ pre{
 
     padding: $inuit-base-spacing-unit / 6;
 
-    font-size: 80%;
+    /* we do not want too much horizontal scrolling */
+    font-size: 68%;
     line-height: 1.5;
     -webkit-overflow-scrolling: touch; /* smooth iOS scrolling */
 
     /* overwrites inuit .p class */
     .p{
         padding: 0 !important;
+    }
+
+    /* code blocks on desk sizes have more columns and can afford bigger fonts */
+    @media all and (min-width: $break-palm){
+        font-size: 80%;
     }
 }
 
