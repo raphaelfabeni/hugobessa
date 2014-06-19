@@ -127,7 +127,19 @@ module.exports = function(grunt) {
             }
         },
 
-        // Imagemin: optimizes images
+        // Uncss: removes not used css cruft (mostly from inuit)
+        uncss: {
+            prod: {
+                options: {
+                    htmlroot: '<%= paths.build.prod %>',
+                    report: 'gzip'
+                },
+                files: {
+                    '<%= paths.build.prod %><%= paths.assets %><%= paths.css %>main.css': ['<%= paths.build.prod %>**/*.html']
+                }
+            }
+        },
+
         imagemin: {
             prod: {
                 options: {
@@ -143,46 +155,23 @@ module.exports = function(grunt) {
             }
         },
 
-        // Uncss: removes not used css cruft (mostly from inuit)
-        uncss: {
-            prod: {
-                options: {
-                    htmlroot: '<%= paths.build.prod %>',
-                    report: 'gzip'
-                },
-                files: {
-                    '<%= paths.build.prod %><%= paths.assets %><%= paths.css %>main.css': ['<%= paths.build.prod %>**/*.html']
-                }
-            }
-        },
+        // Reduce: hard optimization script, including html, js and css
+        reduce: {
+            root: '<%= paths.build.prod %>',
+            outRoot: '<%= paths.build.prod %>',
 
-        // Cssmin: minifies Uncss output
-        cssmin: {
-            prod: {
-                expand: true,
-                cwd: '<%= paths.build.prod %><%= paths.assets %><%= paths.css %>',
-                src: ['main.css'],
-                dest: '<%= paths.build.prod %><%= paths.assets %><%= paths.css %>',
-                ext: '.css'
-            }
-        },
+            include: [
+                '**/*.html'
+            ],
 
-        // Htmlmin: minifies static htmls
-        htmlmin: {
-            prod: {
-                options: {
-                    removeComments: true,
-                    removeCommentsFromCDATA: true,
-                    collapseWhitespace: true,
-                    removeAttributeQuotes: true,
-                    minifyJS: true
-                },
-                expand: true,
-                cwd: '<%= paths.build.prod %>',
-                src: ['**/*.html'],
-                dest: '<%= paths.build.prod %>',
-                ext: '.html'
-            }
+            autoprefix: [
+                '> 1%',
+                'last 2 versions',
+                'Firefox ESR',
+                'Opera 12.1'
+            ],
+
+            optimizeImages: false
         },
 
         // Clean: remove files from folder
@@ -263,10 +252,9 @@ module.exports = function(grunt) {
         'sass:prod',
         'browserify:prod',
         'copy:prod',
-        'imagemin:prod',
         'uncss:prod',
-        'cssmin:prod',
-        'htmlmin:prod'
+        'imagemin:prod',
+        'reduce'
     ]);
 
     grunt.registerTask('serve:dev', [
