@@ -174,18 +174,6 @@ module.exports = function(grunt) {
             optimizeImages: false
         },
 
-        // Inlinecss: makes css inline, as I do not have an expensive css file
-        inlinecss: {
-            prod: {
-                files: [{
-                    expand: true,
-                    cwd: '<%= paths.build.prod %>',
-                    src: '**/*.html',
-                    dest: '<%= paths.build.prod %>'
-                }]
-            }
-        },
-
         // Clean: remove files from folder
         clean: {
             dev: ['<%= paths.build.dev %>'],
@@ -266,8 +254,7 @@ module.exports = function(grunt) {
         'copy:prod',
         'uncss:prod',
         'imagemin:prod',
-        'reduce',
-        'inlinecss:prod'
+        'reduce'
     ]);
 
     grunt.registerTask('serve:dev', [
