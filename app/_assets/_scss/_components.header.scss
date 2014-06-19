@@ -17,8 +17,9 @@
 
     .header__title{
         @extend .m0;
+        font-family: HelveticaNeue, Arial, sans-serif;
         font-size: 4em;
-        font-weight: 400;
+        font-weight: 600;
         text-align: center;
         line-height: 1em;
 
@@ -30,7 +31,7 @@
         }
 
         @media all and (max-width: $max-width){
-            @include inuit-font-size($inuit-heading-size-1);
+            font-size: 3em;
         }
     }
 
