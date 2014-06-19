@@ -1,9 +1,5 @@
-(function(window, document, undefined) {
-
 var fastr = require('fastr');
 
-window.onload = function(){
+window.addEventListener('load', function(){
     fastr();
-}
-
-})(window, document);
+});
