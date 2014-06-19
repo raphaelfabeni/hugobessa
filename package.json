@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "description": "Yeoman / Grunt workflow for hugobessa",
   "dependencies": {
-    "grunt-browserify": "^2.0.8",
     "fastr": "git://github.com/hugobessaa/fastr"
   },
   "devDependencies": {
@@ -18,7 +17,7 @@
     "grunt-contrib-copy": "^0.5.0",
     "grunt-rsync": "^0.5.0",
     "grunt-uncss": "^0.3.3",
-
+    "grunt-browserify": "^2.0.8",
     "grunt-reduce": "^0.2.1"
   },
   "engines": {
