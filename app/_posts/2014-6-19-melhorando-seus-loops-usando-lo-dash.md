@@ -79,4 +79,4 @@ for (var i, len = characters.length; i < len; i++) {
 
 É claro que um `for` é mais rápido do que o `_.filter`. Mas em um projeto grande, com diversos desenvolvedores envolvidos, a legibilidade deve ser levada em conta antes do que a performance. Até porque seu impacto na performance em aplicações "normais" não é tão grande assim.
 
-O Lo-Dash conta com outras dezenas de métodos interessantes, módulo AMD, CommonJs e até pacotes para cada um de seus métodos. Não deixe de [visitar o site do Lo-Dash](http://lodash.com) para conhecer mais sobre esta incrível biblioteca.
+Se você vai usar apenas alguns métodos básicos e não precisa se preocupar com suporte para browsers antigos, você pode inclusive utilizar os [métodos que vieram no EcmaScript 5](http://kangax.github.io/compat-table/es5/).
