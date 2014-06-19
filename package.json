@@ -1,7 +1,11 @@
 {
   "name": "hugobessa",
   "version": "0.0.0",
-  "description": "Yeoman / Grunt workflow for hugobessa",
+  "description": "Website of Hugo Bessa",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hugobessaa/hugobessa.git"
+  },
   "dependencies": {
     "fastr": "~0.0.3"
   },
