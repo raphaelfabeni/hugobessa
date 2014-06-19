@@ -47,7 +47,8 @@ blockquote{
 }
 
 p{
-    > code{
+    > code,
+    > a code{
         @extend %code-box;
         font-size: 90%;
         padding: 1.5px quarter($inuit-base-spacing-unit);
