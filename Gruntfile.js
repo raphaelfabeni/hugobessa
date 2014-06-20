@@ -42,7 +42,7 @@ module.exports = function(grunt) {
         },
 
         // Browser-sync: sync navigation and file changes
-        browser_sync: {
+        browserSync: {
             options: {
                 reloadDelay: 1000,
 
@@ -259,13 +259,13 @@ module.exports = function(grunt) {
 
     grunt.registerTask('serve:dev', [
         'build:dev',
-        'browser_sync:dev',
+        'browserSync:dev',
         'watch'
     ]);
 
     grunt.registerTask('serve:prod', [
         'build:prod',
-        'browser_sync:prod',
+        'browserSync:prod',
     ]);
 
     grunt.registerTask('deploy', [
