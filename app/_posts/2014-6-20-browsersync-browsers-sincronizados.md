@@ -2,6 +2,7 @@
 layout: post
 title:  "BrowserSync: browsers sincronizados"
 description: "A web pode ser acessada de cada vez mais dispositivos. BrowserSync nos ajuda a realizar testes sincronizados em dezenas de browsers."
+featured-image: "/_assets/images/posts/browsersync-browsers-sincronizados/browser-sync-ghostmode.jpg"
 date:   2014-6-20 11:07:00
 categories: dev
 ---
