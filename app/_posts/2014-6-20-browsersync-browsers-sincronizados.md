@@ -30,7 +30,7 @@ O `ghostMode` é grupo de opções de sincronização do BrowserSync que está p
 
 Isto é extremamente útil quando você está desenvolvendo um site com diversas páginas. Um dos meus últimos projetos conta com mais de 40 páginas, e testar a interação e a consistência do layout só foi uma tarefa rápida pois eu tinha o BrowserSync para me ajudar. Antes eu teria que verificar em cada dispositivo/browser, um a um.
 
-Para quem está desenvolvendo sites responsivos, com ele agora você vai poder manter alguns dispositivos ao seu redor e já receber feedback imediato das suas modificações.
+Para quem está desenvolvendo sites responsivos, com ele agora você poderá manter alguns dispositivos ao seu redor e já receber feedback imediato das suas modificações.
 
 Na nova versão do BrowserSync, a 1.0, também é possível utilizar o [BrowserStack](http://browserstack.com) (serviço de virtualização de browsers online) para testar seu site local em dezenas de combinações diferentes de sistema operacional e versões de navegadores.
 
