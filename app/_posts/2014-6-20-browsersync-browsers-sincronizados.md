@@ -11,13 +11,13 @@ Cada vez mais dispositivos diferentes acessam a web. Celulares, tablets, noteboo
 
 Como construtores deste ambiente, é nossa responsabilidade ter certeza que nosso site funciona independentemente de onde nossos visitantes o estão acessando.
 
-O [BrowserSync](http://browsersync.io) é uma ferramenta Open Source capaz de otimizar todo o processo de teste cross-browser, já que ele possibilita a sincronização da navegação entre diversos browsers e dispositivos.
+O [BrowserSync](http://browsersync.io) é uma ferramenta Open Source capaz de otimizar todo o processo de teste cross-browser, já que ele possibilita a sincronização da navegação entre diversos navegadores e dispositivos.
 
 <!--more-->
 
-Ele mudou totalmente a forma como encaro testes em muitos browsers/dispositivos. Se sincronizar a navegação já não bastasse, o BrowserSync também atualiza automaticamente o CSS e imagens quando você as altera no projeto, assim como atualiza a página caso você modifique um `.js`, `.html`, `.php` e muitos outros tipos de arquivos.
+Ele mudou totalmente a forma como encaro testes em muitos navegadores/dispositivos. Se sincronizar a navegação já não bastasse, o BrowserSync também atualiza automaticamente o CSS e imagens quando você as altera no projeto, assim como atualiza a página caso você modifique um `.js`, `.html`, `.php` e muitos outros tipos de arquivos.
 
-<blockquote class="pullquote">O BrowserSync mudou totalmente a forma como encaro testes cross-browser</blockquote>
+<blockquote class="pullquote">O BrowserSync mudou totalmente a forma como encaro testes multi-plataforma</blockquote>
 
 O `ghostMode` é grupo de opções de sincronização do BrowserSync que está por trás de toda essa mágica. Com ele podemos sincronizar:
 
@@ -32,7 +32,7 @@ Isto é extremamente útil quando você está desenvolvendo um site com diversas
 
 Para quem está desenvolvendo sites responsivos, com ele agora você vai poder manter alguns dispositivos ao seu redor e já receber feedback imediato das suas modificações.
 
-Na nova versão do BrowserSync, a 1.0, também é possível utilizar o [BrowserStack](http://browserstack.com) (serviço de virtualização de browsers online) para testar seu site local em dezenas de combinações diferentes de sistema operacional e versões de browsers.
+Na nova versão do BrowserSync, a 1.0, também é possível utilizar o [BrowserStack](http://browserstack.com) (serviço de virtualização de browsers online) para testar seu site local em dezenas de combinações diferentes de sistema operacional e versões de navegadores.
 
 ![Exemplo do uso do BrowserSync com o BrowserStack]({{ site.baseurl }}/_assets/images/posts/browsersync-browsers-sincronizados/browser-sync-browserstack.gif)
 
