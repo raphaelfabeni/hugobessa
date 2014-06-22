@@ -11,14 +11,15 @@ $color-light-blue: #3778bf;
 
 $color-text: $color-black;
 $color-detail: $color-black;
+$color-highlight-bg: $color-lighter-gray;
 $color-background: $color-white;
 
 $color-link: $color-black;
-$color-link-text: $color-black;
-$color-link-bg: $color-lighter-gray;
+$color-link-text: $color-text;
+$color-link-bg: $color-highlight-bg;
 
-$color-button-text: $color-white;
-$color-button-bg: $color-black;
+$color-button-text: hightlight($color-link-text, 100);
+$color-button-bg: highlight($color-link-bg, 100);
 
 $inuit-base-text-color: $color-text;
 $inuit-base-background-color: $color-background;
