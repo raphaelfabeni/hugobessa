@@ -99,3 +99,8 @@ hr{
     border: 0;
     border-top: 3px solid darken($color-background, 8);
 }
+
+mark{
+    background-color: $color-highlight-bg;
+    padding: 2px 4px;
+}
