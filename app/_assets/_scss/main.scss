@@ -10,6 +10,7 @@
     #PROJECT-SETTINGS
 \*------------------------------------*/
 
+@import "tools.functions";
 @import "settings.defaults";
 @import "settings.grid";
 @import "settings.colors";
@@ -57,7 +58,7 @@
     #PROJECT-COMPONENTS
 \*------------------------------------*/
 
-@import "tools.functions";
+
 
 @import "base.typography";
 
