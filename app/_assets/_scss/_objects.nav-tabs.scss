@@ -4,15 +4,18 @@
 
 .nav--tabs{
     a{
-        color: $color-gray;
-        text-decoration: none;
-        border-bottom: 2px solid $color-gray;
-        
-        &.active, &:hover, &:focus{
-            color: $color-detail;
-            border-color: $color-detail;
+        background-color: transparent;
+
+        &.active{
+            background-color: $color-link-bg;
+        }
+
+        &:hover, &:focus, &:active{
+            color: highlight($color-link-text, 100);
+            background-color: highlight($color-link-bg, 100);
         }
     }
+
 
     li + li{
         margin-left: halve($inuit-base-spacing-unit);

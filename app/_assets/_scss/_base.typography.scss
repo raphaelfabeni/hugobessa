@@ -3,15 +3,31 @@
 \*------------------------------------*/
 
 a{
-    color: $color-link;
-
-    &:hover, &:focus{
-        color: lighten($color-link, 7);
-    }
+    color: $color-link-text;
+    background-color: $color-link-bg;
+    padding: 2px 4px;
 
     &:visited{
-        color: darken($color-link, 7);
+        background-color: highlight($color-link-bg, 7);
     }
+
+    &:hover, &:focus, &:active{
+        color: $color-white;
+        background-color: $color-black;
+    }
+
+}
+
+.simple-link,
+%simple-link{
+    background-color: transparent;
+    color: $color-link-text;
+}
+
+.block-link,
+%block-link{
+    @extend %simple-link;
+    display: block;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -37,6 +53,7 @@ blockquote{
         color: $inuit-base-text-color;
 
         text-align: center;
+        font-family: HelveticaNeue, Arial, sans-serif;
     }
 }
 

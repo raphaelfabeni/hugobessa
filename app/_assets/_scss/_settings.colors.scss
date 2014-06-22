@@ -2,10 +2,11 @@
     #COLORS
 \*------------------------------------*/
 
-$color-black: #333;
+$color-black: #000;
 $color-white: #fff;
 $color-gray:  #979797;
 $color-light-gray: #d8d8d8;
+$color-lighter-gray: #efefef;
 $color-light-blue: #3778bf;
 
 $color-text: $color-black;
@@ -13,8 +14,8 @@ $color-detail: $color-black;
 $color-background: $color-white;
 
 $color-link: $color-black;
-$color-link-text: $color-white;
-$color-link-bg: $color-black;
+$color-link-text: $color-black;
+$color-link-bg: $color-lighter-gray;
 
 $color-button-text: $color-white;
 $color-button-bg: $color-black;

@@ -43,6 +43,7 @@
 
         .post__title{
             @extend .me0;
+            font-family: HelveticaNeue, Arial, sans-serif;
             line-height: 1.1;
             font-weight: 400;
 
@@ -51,19 +52,12 @@
             }
 
             a{
-                display: block;
+                @extend %block-link;
                 text-decoration: none;
-                color: $color-detail;
 
                 &:hover, &:focus{
                     text-decoration: underline;
                 }
-            }
-        }
-
-        .post__title--external {
-            a {
-                color: $color-link;
             }
         }
 
@@ -97,6 +91,6 @@
 
         a {
             @extend .pe-;
-            display: block;
+            @extend %block-link;
         }
     }
