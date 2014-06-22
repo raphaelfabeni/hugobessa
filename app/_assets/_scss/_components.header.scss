@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .header{
-    @extend .pt\+;
+    @extend .pt;
 
     a{
         color: $color-black;
@@ -18,13 +18,20 @@
     .header__title{
         @extend .m0;
         font-family: HelveticaNeue, Arial, sans-serif;
-        font-size: 4em;
-        font-weight: 600;
         text-align: center;
-        line-height: 1em;
 
         a{
+            color: $color-button-text;
+            background-color: $color-button-bg;
             text-decoration: none;
+
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            font-size: 3em;
+            font-weight: 600;
+            line-height: 1em;
+
             &:hover, &:focus{
                 text-decoration: underline;
             }
