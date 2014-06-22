@@ -4,4 +4,9 @@
 
 .about{
     text-align: center;
+
+    strong{
+        @extend mark;
+        font-weight: 400;
+    }
 }
