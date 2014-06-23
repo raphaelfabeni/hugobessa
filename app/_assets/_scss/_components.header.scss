@@ -19,6 +19,7 @@
         @extend .m0;
         font-family: HelveticaNeue, Arial, sans-serif;
         text-align: center;
+        font-size: 6em;
 
         a{
             color: $color-button-text;
@@ -26,9 +27,8 @@
             text-decoration: none;
 
             display: inline-block;
-            width: 1em;
-            height: 1em;
-            font-size: 3em;
+            width: 1.1em;
+            height: 1.1em;
             font-weight: 600;
             line-height: 1em;
 
@@ -38,7 +38,7 @@
         }
 
         @media all and (max-width: $max-width){
-            font-size: 3em;
+            font-size: 4em;
         }
     }
 
