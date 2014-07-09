@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+
+.button,
+%button {
+
+    &,
+    &:visited {
+        @extend .p-;
+
+        font-family: HelveticaNeue, Arial, sans-serif;
+        text-decoration: none;
+
+        color: $color-button-text;
+        background-color: $color-button-bg;
+    }
+
+    &:hover, &:focus, &:active {
+        background-color: highlight($color-button-bg, 20);
+    }
+}
