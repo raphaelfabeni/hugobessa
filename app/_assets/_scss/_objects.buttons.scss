@@ -14,11 +14,29 @@
 
         color: $color-button-text;
         background-color: $color-button-bg;
+        border: 3px solid $color-button-bg;
 
         border-radius: 3px;
     }
 
     &:hover, &:focus{
         background-color: highlight($color-button-bg, 20);
+        border-color: highlight($color-button-bg, 20);
+    }
+}
+
+.button--secondary,
+%button--secondary {
+
+    &,
+    &:visited {
+        background-color: transparent;
+        color: $color-button-bg;
+    }
+
+    &:hover, &:focus {
+        color: $color-button-text;
+        background-color: highlight($color-button-bg, 20);
+        border-color: highlight($color-button-bg, 20);
     }
 }
