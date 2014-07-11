@@ -4,6 +4,7 @@
 
 .header{
     @extend .pt;
+    border-top: 4px solid $color-detail;
 
     a{
         color: $color-black;
