@@ -1,0 +1,38 @@
+/*------------------------------------*\
+    #NEWSLETTER
+\*------------------------------------*/
+
+.newsletter {
+    @extend .pe;
+    @extend .ps-;
+
+    text-align: center;
+    background-color: $color-lighter-gray;
+}
+
+    .newsletter__form {
+        display: inline-block;
+    }
+
+        .newsletter__title {
+            @extend .beta;
+            @extend .me0;
+            line-height: 1;
+        }
+
+        .newsletter__subtitle {
+            @extend .epsilon;
+        }
+
+    .newsletter__group {
+        @extend .m-;
+        display: inline-block;
+    }
+
+    .newsletter__label {
+        // display: block;
+    }
+
+    .newsletter__input {
+        @extend %input;
+    }
