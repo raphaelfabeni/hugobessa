@@ -20,7 +20,7 @@ home: true
         {% endif %}
 
         <small class="post__info">
-            <time datetime="{{ post.date | date: "%Y-%d-%m" }}">{{ post.date | date: "%d/%m/%Y" }}</time>
+            <time datetime="{{ post.date | date: "%Y-%d-%m" }}">{{ post.date | date: "%d/%m/%Y" }}</time> • <span class="post__reading-time">{{ post.content | reading_time }}</span>
         </small>
     </header>
 
