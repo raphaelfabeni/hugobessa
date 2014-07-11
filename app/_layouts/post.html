@@ -1,34 +1,23 @@
-{% include header.html %}
+---
+layout: default
+---
 
-    <main class="main-content container" role="main">
-        <article class="post">
-            <header class="post__header">
-                {% if page.link %}
-                    <h1 class="post__title post__title--external"><a href="{{ page.link }}">{{ page.title }} →</a></h1>
-                {% else %}
-                    <h1 class="post__title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
-                {% endif %}
+<article class="post">
 
-                <small class="post__info">
-                    <time datetime="{{ page.date | date: "%Y-%d-%m" }}">{{ page.date | date: "%d/%m/%Y" }}</time> • <span class="post__reading-time">{{ page.content | reading_time }}</span>
-                </small>
-            </header>
+    {% include post-header.html %}
 
-            <div class="post__content">
-                {{ content }}
-            </div>
+    <div class="post__content">
+        {{ content }}
+    </div>
 
-            <div class="post__share">
-                <p>Compartilhar no<br/><a href="https://twitter.com/intent/tweet?url={{ canonical }}&amp;text={{ page.title | escape | truncate:100 | replace:' ','%20' }}&amp;via={{ site.author.twitter }}" target="_blank">Twitter</a> ou <a href="https://www.facebook.com/sharer.php?&amp;u={{ canonical }}" target="_blank">Facebook</a></p>
-            </div>
-            <hr>
+    {% include post-share.html %}
 
-            <div class="post__comments">
-                {% include disqus.html %}
-            </div>
-        </article>
+    <hr>
 
-        {% include post-footer.html %}
-    </main>
+    {% include post-comments.html %}
 
-{% include footer.html %}
+</article>
+
+<hr>
+
+{% include post-footer.html %}

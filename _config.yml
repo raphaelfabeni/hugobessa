@@ -10,18 +10,6 @@ url: http://192.168.0.112:3002
 title: Hugo Bessa
 description: front-end mad scientist and collaboration enthusiast
 
-# Author information
-author:
-  name: Hugo Bessa
-  email: hugobessaa@gmail.com
-  github: hugobessaa
-  twitter: hugobessaa
-  googleplus: +HugoBessa
-  facebook_id: 100000910238457
-
-# Disqus shortname for comments
-disqus: hugobessa
-
 
 # Exclude directories and/or files from the conversion.
 # Grunt moves image files and asset directories.

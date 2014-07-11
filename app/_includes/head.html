@@ -1,0 +1,53 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{{ page.title }}{% unless page.home %}{{ ' - ' | append: site.title }}{% endunless %}</title>
+    <meta name="description" content="{{ page.description }}">
+    <meta name="author" content="Hugo Bessa">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{ site.fullurl }}/favicon.png" />
+
+    <!-- Google Meta Tags -->
+    <link rel="author" href="https://plus.google.com/+HugoBessa/">
+    <meta name="robots" content="index, follow">
+
+    <!-- DNS prefetch -->
+    <link rel="dns-prefetch" href="http://www.google-analytics.com">
+
+    {% capture page_image %}{% if page.featured-image %}{{ site.fullurl }}{{ page.featured-image }}{% else %}{{ site.fullurl | append: '/favicon_facebook.png' }}{% endif %}{% endcapture %}
+
+    {% capture canonical %}{{ site.fullurl }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endcapture %}
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ canonical }}" />
+    <meta property="og:image" content="{{ page_image }}" />
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:site_name" content="Hugo Bessa">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="fb:profile_id" content="100000910238457">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="{% if page.header-image %}summary_large_image{% else %}summary{% endif %}">
+    <meta name="twitter:site" content="hugobessaa">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ content | strip_html | strip_newlines | escape | truncate:140 }}{% endif %}">
+    <meta name="twitter:creator" content="hugobessaa">
+    <meta name="twitter:image" content="{{ page_image }}">
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/_assets/css/main.css">
+
+    <!-- Google Analytics -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-46652979-1');ga('send','pageview');
+    </script>
+
+</head>

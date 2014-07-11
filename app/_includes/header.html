@@ -1,45 +1,16 @@
-<!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ page.title }}{% unless page.home %}{{ ' - ' | append: site.title }}{% endunless %}</title>
-    <meta name="description" content="{{ page.description }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Hugo Bessa">
-    <link rel="icon" href="{{ site.fullurl }}/favicon.png" />
+<header class="header" role="banner">
+    <div class="container">
 
-    <!-- Google Meta Tags -->
-    <link rel="author" href="https://plus.google.com/+HugoBessa/">
-    <meta name="robots" content="index, follow">
-    <link rel="dns-prefetch" href="http://www.google-analytics.com">
+        <h1 class="header__title">
+            <a href="{{ site.baseurl }}/" title="{{ site.title }}">H</a>
+        </h1>
 
-    {% capture page_image %}{% if page.featured-image %}{{ site.fullurl }}{{ page.featured-image }}{% else %}{{ site.fullurl | append: '/favicon_facebook.png' }}{% endif %}{% endcapture %}
+    </div>
+</header>
 
-    {% capture canonical %}{{ site.fullurl }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endcapture %}
-
-    <link rel="canonical" href="{{ canonical }}" />
-
-    <!-- Facebook Meta Tags -->
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="{{ canonical }}" />
-    <meta property="og:image" content="{{ page_image }}" />
-    <meta property="og:description" content="{{ page.description }}" />
-    <meta property="og:site_name" content="{{ site.author.name }}">
-    <meta property="og:locale" content="pt_BR">
-    <meta property="fb:profile_id" content="{{ site.author.facebook_id }}">
-
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="{% if page.header-image %}summary_large_image{% else %}summary{% endif %}">
-    <meta name="twitter:site" content="{{ site.author.twitter }}">
-    <meta name="twitter:title" content="{{ page.title }}">
-    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ content | strip_html | strip_newlines | escape | truncate:140 }}{% endif %}">
-    <meta name="twitter:creator" content="{{ site.author.twitter }}">
-    <meta name="twitter:image" content="{{ page_image }}">
-
-    <link rel="stylesheet" href="{{ site.baseurl }}/_assets/css/main.css">
-    {% include googleanalytics.html %}
-  </head>
-  <body>
-    {% include content-header.html %}
+<nav class="site-nav" role="navigation">
+    <ul class="nav nav--tabs">
+        <li><a href="{{ site.baseurl }}/" class="{% if page.nav == null %}active{% endif %}">blog</a></li>
+        <li><a href="{{ site.baseurl }}/sobre" class="{% if page.nav == 1 %}active{% endif %}">sobre</a></li>
+    </ul>
+</nav>

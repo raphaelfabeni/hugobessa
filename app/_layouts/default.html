@@ -1,7 +1,17 @@
-{% include header.html %}
-    
-    <main class="main-content container" role="main">    
-        {{ content }}
-    </main>
-    
-{% include footer.html %}
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+
+    {% include head.html %}
+
+    <body>
+        {% include header.html %}
+
+        <main class="main-content container" role="main">
+            {{ content }}
+        </main>
+
+        {% include footer.html %}
+
+    </body>
+
+</html>
