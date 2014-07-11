@@ -6,6 +6,7 @@ a{
     color: $color-link-text;
     background-color: $color-link-bg;
     padding: 2px 4px;
+    border-radius: 3px;
 
     &:visited{
         background-color: highlight($color-link-bg, 7);
