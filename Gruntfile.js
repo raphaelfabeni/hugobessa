@@ -200,6 +200,7 @@ module.exports = function(grunt) {
             }
         },
 
+        // Browserify: made possible the use of node_modules in the browser
         browserify: {
             dev: {
                 files: {
