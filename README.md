@@ -1,5 +1,8 @@
 # Hugo Bessa
-> Jekyll website of Hugo Bessa
+> Website of Hugo Bessa
+
+![Screenshot of hugobessa.com.br](https://raw.githubusercontent.com/hugobessaa/hugobessa/master/screenshot.png)
+
 
 This is the source code of my website. Here I play with the stuff I'm learning, be it a development thing or just design. Here I have the freedom to test, improve and write.
 
