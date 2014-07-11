@@ -34,9 +34,9 @@ future: true
 # _config.build.yml sets this to false on `grunt build`
 show_drafts: true
 
-# Split posts over multiple subdirectories called “page2”, “page3”, … “pageN”
-paginate: 15
-paginate_path: 'page:num'
+# Split posts over multiple subdirectories called “page/2”, “page/3”, … “page/N”
+paginate: 10
+paginate_path: 'page/:num'
 
 excerpt_separator: <!--more-->
 

@@ -13,7 +13,7 @@ home: true
 
 <hr>
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
     <article class="post">
         <header class="post__header">
             {% if post.link %}
@@ -39,6 +39,28 @@ home: true
 
     </article>
 {% endfor %}
+
+{% if paginator.next_page or paginator.previous_page %}
+    <hr>
+
+    <ul class="nav align--center">
+        {% if paginator.previous_page %}
+            <li class="m-">
+                {% if paginator.previous_page == 1 %}
+                    <a href="{{ site.baseulr}}/" class="button button--secondary">Anteriores</a>
+                {% else %}
+                    <a href="{{ site.baseulr}}/page/{{ paginator.previous_page }}" class="button button--secondary">Anteriores</a>
+                {% endif %}
+            </li>
+        {% endif %}
+
+        {% if paginator.next_page %}
+            <li class="m-">
+                <a href="{{ site.baseulr}}/page/{{ paginator.next_page }}" class="button">Próximos</a>
+            </li>
+        {% endif %}
+    </ul>
+{% endif %}
 
 <hr>
 
