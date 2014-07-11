@@ -16,7 +16,7 @@
         background-color: $color-button-bg;
     }
 
-    &:hover, &:focus, &:active {
+    &:hover, &:focus{
         background-color: highlight($color-button-bg, 20);
     }
 }

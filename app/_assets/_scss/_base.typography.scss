@@ -11,7 +11,7 @@ a{
         background-color: highlight($color-link-bg, 7);
     }
 
-    &:hover, &:focus, &:active{
+    &:hover, &:focus{
         color: $color-white;
         background-color: $color-black;
     }
