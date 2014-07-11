@@ -25,19 +25,27 @@
         }
 
     .newsletter__group {
-        @extend .m-;
+        @extend .p-;
         display: inline-block;
-    }
+        text-align: left;
 
-    .newsletter__label {
-        // display: block;
+        @media (max-width: $break-desk) {
+            width: 270px;
+            max-width: 100%;
+            padding: 0 !important;
+
+            .newsletter__input {
+                width: 100%;
+            }
+        }
     }
 
     .newsletter__input {
         @extend %input;
-        max-width: 100%;
     }
 
     .newsletter__submit {
         @extend .mt-;
+        width: 270px;
+        max-width: 100%;
     }
