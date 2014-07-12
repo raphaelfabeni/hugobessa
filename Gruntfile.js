@@ -235,6 +235,18 @@ module.exports = function(grunt) {
                     host: '<%= secret.username %>@<%= secret.host %>'
                 }
             }
+        },
+
+        // Pageres: take screenshots of an url
+        pageres: {
+            prod: {
+                options: {
+                    url: 'hugobessa.com.br',
+                    sizes: ['1024x768'],
+                    crop: true,
+                    dest: './'
+                }
+            }
         }
     });
 
@@ -271,7 +283,8 @@ module.exports = function(grunt) {
 
     grunt.registerTask('deploy', [
         'build:prod',
-        'rsync'
+        'rsync',
+        'pageres'
     ]);
 
     // default task
