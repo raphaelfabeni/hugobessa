@@ -2,7 +2,7 @@
 layout: post
 title:  "Capturando screenshots com o Pageres"
 description: "Usando o Pageres, conseguimos capturar screenshots de nossos projetos em diversas resoluções, de forma automatizada"
-featured-image: "/hugo-bessa.com.br-1024x768.png"
+featured-image: "/_assets/images/posts/browsersync-browsers-sincronizados/screenshot.png"
 date:   2014-7-12 10:12:00
 categories: dev
 ---
