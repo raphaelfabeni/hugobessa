@@ -2,7 +2,7 @@
 layout: post
 title: "Automação com Grunt"
 description: "Aprenda a automatizar tarefas com o incrível Grunt"
-featured-image: "/_assets/images/posts/capturando-screenshots-com-o-pageres/screenshot.png"
+featured-image: "/_assets/images/posts/automacao-com-grunt/palestra-automacao-com-grunt.png"
 date:   2014-8-10 14:23:00
 categories: dev
 ---
