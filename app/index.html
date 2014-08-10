@@ -23,7 +23,7 @@ home: true
             {% endif %}
 
             <small class="post__info">
-                <time datetime="{{ post.date | date: "%Y-%d-%m" }}">{{ post.date | date: "%d/%m/%Y" }}</time> • <span class="post__reading-time">{{ post.content | reading_time }}</span>
+                <time datetime="{{ post.date | date: "%Y-%d-%m" }}">{{ post.date | date: "%d/%m/%Y" }}</time> • <span class="post__reading-time">{% if post.reading_time %}{{ post.reading_time}}{% else %}{{ post.content | reading_time }}{% endif %}</span>
             </small>
         </header>
 

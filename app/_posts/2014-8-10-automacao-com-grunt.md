@@ -5,6 +5,7 @@ description: "Aprenda a automatizar tarefas com o incrível Grunt"
 featured-image: "/_assets/images/posts/automacao-com-grunt/palestra-automacao-com-grunt.png"
 date:   2014-8-10 14:23:00
 categories: dev
+reading_time: "10 min"
 ---
 
 No começo do ano eu dei uma palestra sobre **automação de tarefas com Grunt**, uma ferramenta completa e simples de utilizar. Além de economizarmos tempo deixando as tarefas chatas e repetitivas para o computador, garantimos uma entrega de qualidade.
