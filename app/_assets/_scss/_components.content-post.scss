@@ -16,9 +16,12 @@
         text-align: center;
         width: 100%;
         $photo-width: 45em;
-        @media all and (min-width: $photo-width + ($photo-width - $max-width)){
+        $container-padding: $inuit-base-spacing-unit / $inuit-base-font-size / 2 * 1em;
+        $container-size: $max-width - ($container-padding * 2);
+
+        @media all and (min-width: $photo-width + ($photo-width - ($container-size * 0.9))){
             width: $photo-width;
-            margin-left: (($photo-width - $max-width) / -2) - .5em;
+            margin-left: ($photo-width - $container-size) / -2;
         }
 
         /* legend */
