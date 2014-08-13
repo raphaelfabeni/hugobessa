@@ -155,25 +155,6 @@ module.exports = function(grunt) {
             }
         },
 
-        // Reduce: hard optimization script, including html, js and css
-        reduce: {
-            root: '<%= paths.build.prod %>',
-            outRoot: '<%= paths.build.prod %>',
-
-            include: [
-                '**/*.html'
-            ],
-
-            autoprefix: [
-                '> 1%',
-                'last 2 versions',
-                'Firefox ESR',
-                'Opera 12.1'
-            ],
-
-            optimizeImages: false
-        },
-
         // Clean: remove files from folder
         clean: {
             dev: ['<%= paths.build.dev %>'],
@@ -237,7 +218,53 @@ module.exports = function(grunt) {
             }
         },
 
-        // Pageres: take screenshots of an url
+        // Htmlbuild: builds htmls. Using to inline styles
+        htmlbuild: {
+            prod: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= paths.build.prod %>',
+                    src: ['**/*.html'],
+                    dest: '<%= paths.build.prod %>'
+                }],
+                options: {
+                    styles: {
+                        main: '<%= paths.build.prod %>/<%= paths.assets %>/<%= paths.css %>/**/*.css'
+                    }
+                }
+            }
+        },
+
+        // Htmlmin: Minifies HTML and its contents (inline css and js)
+        htmlmin: {
+            prod: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= paths.build.prod %>',
+                    src: ['**/*.html'],
+                    dest: '<%= paths.build.prod %>'
+                }],
+                options: {
+                    removeComments: true,
+                    collapseWhitespace: true,
+                    minifyJS: true,
+                    minifyCSS: true
+                }
+            }
+        },
+
+        // Uglify: makes javascript ugly. Machines like this way
+        uglify: {
+            prod: {
+                files: {
+                    '<%= paths.build.prod %><%= paths.assets %><%= paths.js %>app.js': [
+                        '<%= paths.build.prod %><%= paths.assets %><%= paths.js %>app.js'
+                    ]
+                }
+            }
+        },
+
+        // Pageres: take screenshots of my website
         pageres: {
             prod: {
                 options: {
@@ -267,7 +294,9 @@ module.exports = function(grunt) {
         'copy:prod',
         'uncss:prod',
         'imagemin:prod',
-        'reduce'
+        'htmlbuild:prod',
+        'htmlmin:prod',
+        'uglify:prod'
     ]);
 
     grunt.registerTask('serve:dev', [
