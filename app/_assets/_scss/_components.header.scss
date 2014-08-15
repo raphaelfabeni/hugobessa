@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .header{
-    @extend .pe-;
+    @extend .pe;
     background-color: $color-black;
     color: $color-white;
 
@@ -14,7 +14,8 @@
 }
 
     .header__title{
-        @extend .me;
+        @extend .mt0;
+        @extend .mb;
         @include span-columns(12);
         @include omega;
         font-family: HelveticaNeue, Arial, sans-serif;
@@ -36,14 +37,20 @@
         }
     }
 
-    .about{
+    .header__about{
         @extend .mt;
         @include span-columns(12);
+        text-align: center;
+
+        p{
+            @extend .mb0;
+        }
     }
 
 @media all and (min-width: $max-width){
     .header {
         padding-top: double($inuit-base-spacing-unit) !important;
+        padding-bottom: double($inuit-base-spacing-unit) !important;
     }
 
         .header__title{
