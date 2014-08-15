@@ -1,3 +1,4 @@
 # robotstxt.org/
 
 User-agent: *
+Sitemap: http://hugobessa.com.br/sitemap.xml
