@@ -1,4 +1,4 @@
-<header class="header" role="banner">
+<header class="header {% unless page.categories %}mb+{% endunless %}" role="banner">
     <div class="container">
 
         <h1 class="header__title">
@@ -12,11 +12,12 @@
             </ul>
         </nav>
 
-        <section class="header__about">
-            <p>
-                Desenvolvedor front-end e entusiasta de colaboração. Trabalho criando experiências digitais que focam na essência de cada projeto.
-            </p>
-        </section>
-
+        {% unless page.categories %}
+            <section class="header__about">
+                <p>
+                    Desenvolvedor front-end e entusiasta de colaboração. Trabalho criando experiências digitais que focam na essência de cada projeto.
+                </p>
+            </section>
+        {% endunless %}
     </div>
 </header>

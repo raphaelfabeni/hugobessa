@@ -5,55 +5,57 @@ description: Desenvolvedor front-end focado em experiências digitais que atinge
 home: true
 ---
 
-{% for post in paginator.posts %}
-    <article class="post">
-        <header class="post__header">
-            {% if post.link %}
-                <h1 class="post__title post__title--external"><a href="{{ post.link }}">{{ post.title }} →</a></h1>
-            {% else %}
-                <h1 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+<div class="container">
+    {% for post in paginator.posts %}
+        <article class="post">
+            <header class="post__header">
+                {% if post.link %}
+                    <h1 class="post__title post__title--external"><a href="{{ post.link }}">{{ post.title }} →</a></h1>
+                {% else %}
+                    <h1 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+                {% endif %}
+
+                <small class="post__info">
+                    <time datetime="{{ post.date | date: "%Y-%d-%m" }}">{{ post.date | date: "%d/%m/%Y" }}</time> • <span class="post__reading-time">{% if post.reading_time %}{{ post.reading_time}}{% else %}{{ post.content | reading_time }}{% endif %}</span>
+                </small>
+            </header>
+
+            <div class="post__content">
+                {{ post.excerpt }}
+
+                {% unless post.link %}
+                    <p class="read-more">
+                        <a href="{{ post.url }}" title="Continue lendo o post {{ post.title }}">Continue lendo →</a>
+                    </p>
+                {% endunless %}
+            </div>
+
+        </article>
+    {% endfor %}
+
+    {% if paginator.next_page or paginator.previous_page %}
+        <hr>
+
+        <ul class="nav align--center">
+            {% if paginator.previous_page %}
+                <li class="m-">
+                    {% if paginator.previous_page == 1 %}
+                        <a href="{{ site.baseulr}}/" class="button button--secondary">Anteriores</a>
+                    {% else %}
+                        <a href="{{ site.baseulr}}/page/{{ paginator.previous_page }}" class="button button--secondary">Anteriores</a>
+                    {% endif %}
+                </li>
             {% endif %}
 
-            <small class="post__info">
-                <time datetime="{{ post.date | date: "%Y-%d-%m" }}">{{ post.date | date: "%d/%m/%Y" }}</time> • <span class="post__reading-time">{% if post.reading_time %}{{ post.reading_time}}{% else %}{{ post.content | reading_time }}{% endif %}</span>
-            </small>
-        </header>
+            {% if paginator.next_page %}
+                <li class="m-">
+                    <a href="{{ site.baseulr}}/page/{{ paginator.next_page }}" class="button">Próximos</a>
+                </li>
+            {% endif %}
+        </ul>
+    {% endif %}
 
-        <div class="post__content">
-            {{ post.excerpt }}
-
-            {% unless post.link %}
-                <p class="read-more">
-                    <a href="{{ post.url }}" title="Continue lendo o post {{ post.title }}">Continue lendo →</a>
-                </p>
-            {% endunless %}
-        </div>
-
-    </article>
-{% endfor %}
-
-{% if paginator.next_page or paginator.previous_page %}
     <hr>
 
-    <ul class="nav align--center">
-        {% if paginator.previous_page %}
-            <li class="m-">
-                {% if paginator.previous_page == 1 %}
-                    <a href="{{ site.baseulr}}/" class="button button--secondary">Anteriores</a>
-                {% else %}
-                    <a href="{{ site.baseulr}}/page/{{ paginator.previous_page }}" class="button button--secondary">Anteriores</a>
-                {% endif %}
-            </li>
-        {% endif %}
-
-        {% if paginator.next_page %}
-            <li class="m-">
-                <a href="{{ site.baseulr}}/page/{{ paginator.next_page }}" class="button">Próximos</a>
-            </li>
-        {% endif %}
-    </ul>
-{% endif %}
-
-<hr>
-
-{% include author-info.html %}
+    {% include author-info.html %}
+</div>

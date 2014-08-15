@@ -4,7 +4,7 @@
 
 .header{
     @extend .pe;
-    background-color: $color-black;
+    background-color: lighten($color-black, 10);
     color: $color-white;
 
     a{
@@ -48,21 +48,17 @@
     }
 
 @media all and (min-width: $max-width){
-    .header {
-        padding-top: double($inuit-base-spacing-unit) !important;
-        padding-bottom: double($inuit-base-spacing-unit) !important;
+
+    .header__title{
+        @include span-columns(4);
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        text-align: left;
     }
 
-        .header__title{
-            @include span-columns(4);
-            margin-top: 0 !important;
-            margin-bottom: 0 !important;
-            text-align: left;
-        }
-
-        .header__nav{
-            @include span-columns(8);
-            @include omega;
-            text-align: right;
-        }
+    .header__nav{
+        @include span-columns(8);
+        @include omega;
+        text-align: right;
+    }
 }

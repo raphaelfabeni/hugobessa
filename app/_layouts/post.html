@@ -6,18 +6,20 @@ layout: default
 
     {% include post-header.html %}
 
-    <div class="post__content">
+    <div class="post__content container">
         {{ content }}
     </div>
 
 </article>
 
-{% include post-share.html %}
+<div class="container">
+    {% include post-share.html %}
 
-<hr>
+    <hr>
 
-{% include author-info.html %}
+    {% include author-info.html %}
 
-<hr>
+    <hr>
 
-{% include post-comments.html %}
+    {% include post-comments.html %}
+</div>

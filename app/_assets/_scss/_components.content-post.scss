@@ -8,7 +8,6 @@ $container-size: $max-width - ($container-padding * 2);
 $break-wide-element: $wide-width + ($wide-width - $container-size);
 
 .post{
-    margin-top: $inuit-base-spacing-unit * 1.5;
 
     + .post{
         position: relative;
@@ -45,20 +44,36 @@ $break-wide-element: $wide-width + ($wide-width - $container-size);
 }
 
     .post__header{
+        @extend .pe;
         text-align: center;
+        background-color: $color-white;
+        color: $color-black;
+    }
+
+    .post__header--single{
+        background-color: $color-black;
+        color: $color-white;
+
+        .post__title{
+            @include inuit-font-size(50px);
+
+            a{
+                color: $color-white;
+            }
+        }
     }
 
         .post__title{
             @extend .me0;
+            @include inuit-font-size(55px);
             font-family: HelveticaNeue, Arial, sans-serif;
             line-height: 1.1;
-            font-weight: 400;
+            font-weight: 600;
 
-            @media all and (min-width: $max-width * 1.6 ){
-                @include inuit-font-size($inuit-heading-size-1 * 1.5);
-            }
+            transition: font-size .5s;
 
             a{
+                color: $color-black;
                 @extend %block-link;
                 text-decoration: none;
 
@@ -69,8 +84,8 @@ $break-wide-element: $wide-width + ($wide-width - $container-size);
         }
 
         .post__info{
-            @extend .mt;
-            color: lighten($inuit-base-text-color, 40);
+            display: block;
+            color: darken($color-white, 25);
         }
 
     .post__content{
@@ -83,6 +98,7 @@ $break-wide-element: $wide-width + ($wide-width - $container-size);
     }
 
     .post__comments{
+        @extend .mb;
         text-align: center;
     }
 
@@ -101,3 +117,22 @@ $break-wide-element: $wide-width + ($wide-width - $container-size);
             @extend %block-link;
         }
     }
+
+@media all and (min-width: $max-width){
+    .post__header--single{
+        padding-top: double($inuit-base-spacing-unit) !important;
+        padding-bottom: double($inuit-base-spacing-unit) !important;
+
+        .post__title{
+            @include inuit-font-size(80px);
+        }
+    }
+}
+
+@media all and (min-width: $max-width * 1.7){
+    .post__header--single{
+        .post__title{
+            @include inuit-font-size(100px);
+        }
+    }
+}
