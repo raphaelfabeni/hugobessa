@@ -4,11 +4,9 @@
 
 .header{
     @extend .pe;
-    background-color: lighten($color-black, 10);
-    color: $color-white;
 
     a{
-        color: $color-white;
+        color: $color-black;
         background-color: transparent;
     }
 }
