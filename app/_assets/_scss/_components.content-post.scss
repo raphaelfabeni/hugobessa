@@ -83,10 +83,6 @@ $break-wide-element: $wide-width + ($wide-width - $container-size);
             color: darken($color-white, 25);
         }
 
-    .post__content{
-        @extend .mt;
-    }
-
     .post__share{
         text-align: center;
         color: lighten($inuit-base-text-color, 40);
