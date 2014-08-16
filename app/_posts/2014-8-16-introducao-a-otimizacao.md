@@ -17,12 +17,4 @@ Primeiro, precisamos entender o que é otimizar. Otimizar é simplesmente a aç�
 
 Existem diversas formas de fazer isso. Podemos comprimir arquivos de código, otimizar imagens pesadas, agrupar imagens em sprites, embutir os estilos de uma página direto no HTML, assim como prever ações dos usuários e tornar o site mais simples e objetivo.
 
-Para abordar com qualidade algumas formas para otimizar um site, dividirei cada um dos principais tópicos em artigos mais aprofundados:
-
-- Compressão de arquivos
-- Otimização de imagens
-- Performance da rede
-- Prevendo o usuário
-- Diagnosticando sites
-
-Boa leitura ;-)
+{% include optimization-post-footer.md %}
