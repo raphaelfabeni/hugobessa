@@ -58,10 +58,6 @@ $break-wide-element: $wide-width + ($wide-width - $container-size);
         }
     }
 
-    .post__content{
-        text-align: justify;
-    }
-
         .post__title{
             @extend .me0;
             @include inuit-font-size(50px);
