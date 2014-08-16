@@ -1,9 +1,9 @@
-<header class="post__header">
+<header class="post__header post__header--single">
 
     <h1 class="post__title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
 
     <small class="post__info">
-        <time datetime="{{ page.date | date: "%Y-%d-%m" }}">{{ page.date | date: "%d/%m/%Y" }}</time> • <span class="post__reading-time">{{ page.content | reading_time }}</span>
+        <time datetime="{{ page.date | date: "%Y-%d-%m" }}">{{ page.date | date: "%d/%m/%Y" }}</time> • <span class="post__reading-time">{% if page.reading_time %}{{ page.reading_time }}{% else %}{{ page.content | reading_time }}{% endif %}</span>
     </small>
 
 </header>

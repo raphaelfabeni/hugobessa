@@ -13,12 +13,18 @@
     <link rel="author" href="https://plus.google.com/+HugoBessa/">
     <meta name="robots" content="index, follow">
 
+    <!-- Twitter owner meta tag -->
+    <meta property="twitter:account_id" content="4503599628913268" />
+
     <!-- DNS prefetch -->
     <link rel="dns-prefetch" href="http://www.google-analytics.com">
 
     {% capture page_image %}{% if page.featured-image %}{{ site.fullurl }}{{ page.featured-image }}{% else %}{{ site.fullurl | append: '/favicon_facebook.png' }}{% endif %}{% endcapture %}
 
     {% capture canonical %}{{ site.fullurl }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endcapture %}
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ canonical }}" />
 
     <!-- Facebook Meta Tags -->
     <meta property="og:title" content="{{ page.title }}" />
@@ -38,7 +44,9 @@
     <meta name="twitter:creator" content="hugobessaa">
     <meta name="twitter:image" content="{{ page_image }}">
 
+    <!-- build:style inline main -->
     <link rel="stylesheet" href="{{ site.baseurl }}/_assets/css/main.css">
+    <!-- /build -->
 
     <!-- Google Analytics -->
     <script>

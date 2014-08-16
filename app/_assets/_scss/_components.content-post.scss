@@ -2,8 +2,12 @@
     #POST
 \*------------------------------------*/
 
+$wide-width: 45em;
+$container-padding: $inuit-base-spacing-unit / $inuit-base-font-size / 2 * 1em;
+$container-size: $max-width - ($container-padding * 2);
+$break-wide-element: $wide-width + ($wide-width - $container-size);
+
 .post{
-    margin-top: $inuit-base-spacing-unit * 1.5;
 
     + .post{
         position: relative;
@@ -15,10 +19,11 @@
     img{
         text-align: center;
         width: 100%;
-        $photo-width: 45em;
-        @media all and (min-width: $photo-width + ($photo-width - $max-width)){
-            width: $photo-width;
-            margin-left: (($photo-width - $max-width) / -2) - .5em;
+
+
+        @media all and (min-width: $break-wide-element){
+            width: $wide-width;
+            margin-left: ($wide-width - $container-size) / -2;
         }
 
         /* legend */
@@ -39,20 +44,31 @@
 }
 
     .post__header{
+        @extend .pe;
         text-align: center;
+        background-color: $color-white;
+        color: $color-black;
+    }
+
+    .post__header--single{
+
+        .post__title{
+            @extend .mt;
+            @include inuit-font-size(50px);
+        }
     }
 
         .post__title{
             @extend .me0;
+            @include inuit-font-size(50px);
             font-family: HelveticaNeue, Arial, sans-serif;
             line-height: 1.1;
             font-weight: 400;
 
-            @media all and (min-width: $max-width * 1.6 ){
-                @include inuit-font-size($inuit-heading-size-1 * 1.5);
-            }
+            transition: font-size .5s;
 
             a{
+                color: $color-black;
                 @extend %block-link;
                 text-decoration: none;
 
@@ -63,13 +79,9 @@
         }
 
         .post__info{
-            @extend .mt;
-            color: lighten($inuit-base-text-color, 40);
+            display: block;
+            color: darken($color-white, 25);
         }
-
-    .post__content{
-        @extend .mt;
-    }
 
     .post__share{
         text-align: center;
@@ -77,6 +89,7 @@
     }
 
     .post__comments{
+        @extend .mb;
         text-align: center;
     }
 
@@ -95,3 +108,22 @@
             @extend %block-link;
         }
     }
+
+@media all and (min-width: $max-width){
+    .post__header--single{
+        padding-top: double($inuit-base-spacing-unit) !important;
+        padding-bottom: double($inuit-base-spacing-unit) !important;
+
+        .post__title{
+            @include inuit-font-size(80px);
+        }
+    }
+}
+
+@media all and (min-width: $max-width * 1.7){
+    .post__header--single{
+        .post__title{
+            @include inuit-font-size(100px);
+        }
+    }
+}

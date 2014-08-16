@@ -1,16 +1,23 @@
-<header class="header" role="banner">
+<header class="header {% unless page.categories %}mb{% endunless %}" role="banner">
     <div class="container">
 
         <h1 class="header__title">
-            <a href="{{ site.baseurl }}/" title="{{ site.title }}">H</a>
+            <a href="{{ site.baseurl }}/" title="{{ site.title }}">hugobessa.</a>
         </h1>
 
+        <nav class="header__nav" role="navigation">
+            <ul class="nav nav--tabs">
+                <li><a href="{{ site.baseurl }}/" class="{% if page.nav == null %}active{% endif %}">blog</a></li>
+                <li><a href="{{ site.baseurl }}/sobre" class="{% if page.nav == 1 %}active{% endif %}">sobre</a></li>
+            </ul>
+        </nav>
+
+        {% unless page.categories %}
+            <section class="header__about">
+                <p>
+                    Desenvolvedor front-end e entusiasta de colaboração. Trabalho criando experiências digitais que focam na essência de cada projeto.
+                </p>
+            </section>
+        {% endunless %}
     </div>
 </header>
-
-<nav class="site-nav" role="navigation">
-    <ul class="nav nav--tabs">
-        <li><a href="{{ site.baseurl }}/" class="{% if page.nav == null %}active{% endif %}">blog</a></li>
-        <li><a href="{{ site.baseurl }}/sobre" class="{% if page.nav == 1 %}active{% endif %}">sobre</a></li>
-    </ul>
-</nav>

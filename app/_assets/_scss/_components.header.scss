@@ -3,46 +3,60 @@
 \*------------------------------------*/
 
 .header{
-    @extend .pt;
-    border-top: 4px solid $color-detail;
+    @extend .pe;
 
     a{
         color: $color-black;
-        text-decoration: none;
-    }
-
-    @media all and (max-width: $max-width){
-        padding-top: halve($inuit-base-spacing-unit) !important;
+        background-color: transparent;
     }
 }
 
     .header__title{
-        @extend .m0;
+        @extend .mt0;
+        @extend .mb;
+        @include span-columns(12);
+        @include omega;
         font-family: HelveticaNeue, Arial, sans-serif;
         text-align: center;
-        font-size: 6em;
 
         a{
-            color: $color-button-text;
-            background-color: $color-button-bg;
+            background-color: transparent;
             text-decoration: none;
-
-            display: inline-block;
-            width: 1.1em;
-            height: 1.1em;
-            font-weight: 600;
-            line-height: 1em;
-
-            &:hover, &:focus{
-                text-decoration: underline;
-            }
-        }
-
-        @media all and (max-width: $max-width){
-            font-size: 4em;
         }
     }
 
-.site-nav{
-    text-align: center;
+    .header__nav{
+        @include span-columns(12);
+        @include omega;
+        text-align: center;
+
+        .nav {
+            @extend .m0;
+        }
+    }
+
+    .header__about{
+        @extend .mt;
+        @include span-columns(12);
+        text-align: center;
+
+        p{
+            @extend .mb0;
+        }
+    }
+
+@media all and (min-width: $max-width){
+
+    .header__title{
+        @include span-columns(4);
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        text-align: left;
+    }
+
+    .header__nav{
+        @include span-columns(8);
+        @include omega;
+        text-align: right;
+    }
 }
