@@ -11,7 +11,7 @@ $break-wide-element: $wide-width + ($wide-width - $container-size);
 
     + .post{
         position: relative;
-        padding-top: $inuit-base-spacing-unit * 3;
+        padding-top: $inuit-base-spacing-unit;
         margin-top: $inuit-base-spacing-unit;
     }
 
