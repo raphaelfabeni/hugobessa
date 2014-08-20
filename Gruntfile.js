@@ -277,6 +277,24 @@ module.exports = function(grunt) {
         }
     });
 
+    grunt.registerTask('ping', function() {
+        var http = require('http');
+        var GOOGLE_PING_URL = 'http://www.google.com/webmasters/sitemaps/ping'
+        var BING_PING_URL = 'http://www.bing.com/webmaster/ping.aspx'
+        var sitemap = 'http://www.hugobessa.com.br/sitemap.xml';
+        var done = this.async();
+
+        http.get(GOOGLE_PING_URL + '?sitemap='+sitemap, function(res) {
+            console.log('Pinged Google. Status: ' + res.statusCode);
+
+            http.get(BING_PING_URL + '?siteMap='+sitemap, function(res) {
+                console.log('Pinged Bing. Status: ' + res.statusCode);
+
+                done();
+            });
+        });
+    });
+
     // complex tasks
     grunt.registerTask('build:dev', [
         'clean:dev',
@@ -313,7 +331,8 @@ module.exports = function(grunt) {
     grunt.registerTask('deploy', [
         'build:prod',
         'rsync',
-        'pageres'
+        'pageres',
+        'ping'
     ]);
 
     // default task
