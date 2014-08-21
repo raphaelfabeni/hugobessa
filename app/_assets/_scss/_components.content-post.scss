@@ -111,7 +111,6 @@ $break-wide-element: $wide-width + ($wide-width - $container-size);
 
 @media all and (min-width: $max-width){
     .post__header--single{
-        padding-top: double($inuit-base-spacing-unit) !important;
         padding-bottom: double($inuit-base-spacing-unit) !important;
 
         .post__title{
