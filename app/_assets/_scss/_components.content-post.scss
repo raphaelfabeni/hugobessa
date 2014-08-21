@@ -2,10 +2,10 @@
     #POST
 \*------------------------------------*/
 
-$wide-width: 45em;
+$wide-width: 48em;
 $container-padding: $inuit-base-spacing-unit / $inuit-base-font-size / 2 * 1em;
 $container-size: $max-width - ($container-padding * 2);
-$break-wide-element: $wide-width + ($wide-width - $container-size);
+$break-wide-element: $wide-width + ($wide-width - $container-size) + 5em;
 
 .post{
 
