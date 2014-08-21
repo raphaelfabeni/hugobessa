@@ -32,6 +32,14 @@
 
         .nav {
             @extend .m0;
+
+            li {
+                @extend .mr;
+
+                &:last-child {
+                    @extend .mr0;
+                }
+            }
         }
     }
 
