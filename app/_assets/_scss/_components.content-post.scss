@@ -103,6 +103,7 @@ $break-wide-element: $wide-width + ($wide-width - $container-size) + 5em;
 
 
     .post__header--single{
+        @extend .ps\+;
 
         .post__title{
             @extend .mt;
