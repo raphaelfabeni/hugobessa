@@ -2,7 +2,6 @@
 layout: post
 title:  "Otimização de imagens"
 description: "Imagens são uma das partes mais pesadas de um site. Otimize seu site usando ferramentas para diminuir o peso de suas imagens"
-featured-image: ""
 date:   2014-8-23 12:02:00
 categories: dev
 ---

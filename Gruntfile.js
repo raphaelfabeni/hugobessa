@@ -50,7 +50,8 @@ module.exports = function(grunt) {
                     scroll: true,
                     links: true,
                     forms: true,
-                    clicks: true
+                    clicks: true,
+                    location: true
                 }
             },
             dev: {
