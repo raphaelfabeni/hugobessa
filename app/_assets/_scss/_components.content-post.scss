@@ -50,14 +50,6 @@ $break-wide-element: $wide-width + ($wide-width - $container-size) + 5em;
         color: $color-black;
     }
 
-    .post__header--single{
-
-        .post__title{
-            @extend .mt;
-            @include inuit-font-size(50px);
-        }
-    }
-
         .post__title{
             @extend .me0;
             @include inuit-font-size(50px);
@@ -109,13 +101,48 @@ $break-wide-element: $wide-width + ($wide-width - $container-size) + 5em;
         }
     }
 
+
+    .post__header--single{
+
+        .post__title{
+            @extend .mt;
+            @include inuit-font-size(50px);
+        }
+    }
+
+    .post__header--image {
+        background-color: lighten($color-black, 15);
+        background-size: cover;
+        background-position: center;
+
+        padding-top: $inuit-base-spacing-unit * 2 !important;
+        padding-bottom: $inuit-base-spacing-unit * 2 !important;
+
+        text-shadow: rgba($color-black, 1) 0px 0px 0.1em;
+
+        .post__title {
+            margin-top: 0 !important;
+
+            a {
+                color: $color-white;
+            }
+        }
+
+        .post__info {
+            color: $color-white;
+        }
+    }
+
 @media all and (min-width: $max-width){
     .post__header--single{
-        padding-bottom: double($inuit-base-spacing-unit) !important;
-
         .post__title{
             @include inuit-font-size(80px);
         }
+    }
+
+    .post__header--image{
+        padding-top: $inuit-base-spacing-unit * 6 !important;
+        padding-bottom: $inuit-base-spacing-unit * 6 !important;
     }
 }
 
