@@ -103,7 +103,6 @@ $break-wide-element: $wide-width + ($wide-width - $container-size) + 5em;
 
 
     .post__header--single{
-        @extend .ps\+;
 
         .post__title{
             @extend .mt;
@@ -136,6 +135,8 @@ $break-wide-element: $wide-width + ($wide-width - $container-size) + 5em;
 
 @media all and (min-width: $max-width){
     .post__header--single{
+        padding-left: $inuit-base-spacing-unit * 2 !important;
+        padding-right: $inuit-base-spacing-unit * 2 !important;
         .post__title{
             @include inuit-font-size(80px);
         }
