@@ -120,7 +120,7 @@ $break-wide-element: $wide-width + ($wide-width - $container-size) + 5em;
         padding-top: $inuit-base-spacing-unit * 2 !important;
         padding-bottom: $inuit-base-spacing-unit * 2 !important;
 
-        text-shadow: rgba($color-black, 1) 0px 0px 0.1em;
+        text-shadow: rgba($color-black, 0.9) 0px 0px 2em;
 
         .post__title {
             margin-top: 0 !important;
