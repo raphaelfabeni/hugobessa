@@ -29,7 +29,7 @@ Apesar de não ser um formato de imagem, as chamadas **Icon Fonts** estão sendo
 
 No final, a escolha de qual formato correto para utilizar depende muito do conteúdo da imagem e de como ela será aplicada no seu site. Se estiver em dúvida, faça alguns testes rápidos para saber qual dos formatos se encaixa melhor dentro das suas necessidades.
 
-## Comprimindo de imagens
+## Comprimindo imagens
 
 Depois de escolher o formato da sua imagem, outro passo importante é **comprimir cada byte possível** delas. Siga algumas dicas simples e específicas para cada um dos formatos a seguir.
 
@@ -51,7 +51,7 @@ Apesar de já serem leves pela sua natureza vetorial, imagens em SVG podem ser o
 
 Assim como um PNG, a diminuição na quantidade de cores no GIF pode ajudar bastante a jogar o peso do arquivo para baixo. Diminuir a quantidade de frames por segundo da animação, o tamanho do gif em si e também a sua duração influencia drasticamente no peso final do seu arquivo.
 
-## Quanto menos imagens melhor
+## Quanto menos imagens, melhor
 
 Muitas vezes colocamos imagens demais em nossos sites, mesmo que nem sempre elas sejam realmente necessárias para o usuário. Tome cuidado com todo o peso agregado ao site quando você escolhe utilizar uma imagem de fundo em vez de apenas uma cor sólida.
 
