@@ -74,7 +74,7 @@ Realizar todo esse trabalho "na mão" pode ser bastante custoso e muitas vezes c
 - [Unveil](http://luis-almeida.github.io/unveil/), um plugin jQuery para *lazy-load*.
 - [Compass Sprinting](http://compass-style.org/help/tutorials/spriting/), funções do Compass para gerar sprites de imagens de forma automatizada.
 - [Icomoon](https://icomoon.io), Icon Fonts predefinidas e também personalizáveis.
-- [Webfonts](https://github.com/sapegin/grunt-webfont), plugin para o Grunt para converter uma série de SVGs em uma Icon Font.
+- [grunt-webfonts](https://github.com/sapegin/grunt-webfont), plugin para o Grunt para converter uma série de SVGs em uma Icon Font.
 
 ## Dicas de leitura
 
