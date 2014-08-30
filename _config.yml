@@ -3,7 +3,7 @@
 # Use _config.build.yml to override these settings on `grunt build`.
 
 name: hugobessa
-url: http://192.168.0.112:3002
+url: http://192.168.1.16:3000
 
 
 # Theme options
