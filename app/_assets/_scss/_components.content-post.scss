@@ -72,8 +72,12 @@ $break-wide-element: $wide-width + ($wide-width - $container-size) + 5em;
         /* better spacing for headings */
         h2, h3, h4, h5, h6{
             @extend .mt\+;
-            @extend .mb-;
+            @extend .mb0;
             font-weight: 600;
+        }
+
+        h2{
+            border-bottom: 1px solid $color-highlight-bg;
         }
     }
 
