@@ -69,14 +69,17 @@ $break-wide-element: $wide-width + ($wide-width - $container-size) + 5em;
 
     .post__content{
 
-        /* better spacing for headings */
+        /**
+         * [1]: better spacing for headings
+         */
         h2, h3, h4, h5, h6{
-            @extend .mt\+;
-            @extend .mb0;
+            @extend .mb0; // [1]
             font-weight: 600;
+            line-height: 1.4;
         }
 
         h2{
+            @extend .mt\+; // [1]
             border-bottom: 1px solid $color-highlight-bg;
         }
     }
