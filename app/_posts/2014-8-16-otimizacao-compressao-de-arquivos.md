@@ -16,8 +16,6 @@ Bons nomes de variáveis, comentários, espaços em branco para separar contexto
 
 <blockquote class="pullquote">Tire todos os caracteres desnecessários de dentro dos seus arquivos em produção</blockquote>
 
-***
-
 ## Minificar
 
 Uma das melhores formas de retirar este sobrepeso é minificando scripts, stylesheets e documentos HTML. Isso significa tirar todos os caracteres desnecessários de dentro dos seus arquivos. Existem diversas formas de minificar arquivos, tanto em sites estáticos quanto em dinâmicos.
@@ -33,8 +31,6 @@ Esses são os básicos para você começar a diminuir o tamanho das suas página
 Já em **sites dinâmicos**, temos outras ferramentas que podem ajudar. Além de também ser possível usar o UglifyJS e o cssmin, outros utilitários podem ajudar muito na performance.
 
 Se você está utilizando o **WordPress**, ative as funções de minificação do plugin [W3 Total Cache](https://wordpress.org/plugins/w3-total-cache/). Em alguns dos meus projetos ele tem funcionado perfeitamente. Já no **Rails**, o [Asset Pipeline](http://guides.rubyonrails.org/asset_pipeline.html) faz todo o trabalho por você.
-
-***
 
 ## Compressão com gzip
 
