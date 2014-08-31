@@ -11,19 +11,19 @@ Imagens são uma das partes mais pesadas de um site, principalmente na era das t
 
 <!--more-->
 
-Existem diversas formas de diminuir o impacto que sua imagens causam no peso do seu site. Diminuir a qualidade de um `.jpg`, saber quando usar cada um dos formatos disponíveis e rodar algoritmos de compressão são só algumas dessas formas. Neste post falarei sobre algumas ações simples que podem fazer toda a diferença no seu site, além de mostrar ferramentas que podem facilitar e muito o seu dia-a-dia.
+Existem diversas formas de diminuir o impacto que sua imagens causam no peso do seu site. Diminuir a qualidade de um arquivo `.jpg`, saber quando usar cada um dos formatos disponíveis e rodar algoritmos de compressão são só algumas dessas formas. Neste artigo falarei sobre algumas ações simples que podem fazer toda a diferença no seu site, além de mostrar ferramentas que podem facilitar e muito o seu dia-a-dia.
 
 ## Escolhendo o formato correto
 
-Cada um dos formatos de imagens existe para atender algumas necessidades ou casos de uso. Escolher o correto é crucial.
+Cada um dos formatos de imagens existe para atender algumas necessidades ou casos de uso. Escolher o formato correto é crucial.
 
 Um dos formatos mais utilizados na web é o **JPEG**. Devido a sua alta flexibilidade de compressão e compatibilidade com a web, ele ganhou espaço em quase todas as páginas na internet. Uma das suas únicas desvantagens é a falta de suporte a canais alpha (transparência).
 
 O **PNG** também é outro formato bem comum. Indicado para uso em imagens com poucas cores, a compressão sem perdas, compatibilidade com todos os navegadores e suporte total a transparências são suas grandes vantagens. Em imagens fotográficas e com muitas cores seu peso aumenta consideravelmente, então deve ser evitado para este tipo de conteúdo.
 
-Representando as imagens vetoriais na internet, o **SVG** está ganhando muitos corações de designers e desenvolvedores web. Dentre seus pontos fortes estão: renderização exímia em telas de alta-resolução, editáveis e animáveis via código (tanto CSS quanto JavaScript), baixo peso e suporte a compressão gzip. Compatível com todos navegadores modernos, seu uso trará problemas apenas em projetos que precisam funcionar no IE 8 ou anteriores. Por ser vetorial, SVGs não podem ser utilizados para conteúdo fotográfico.
+Representando as imagens vetoriais na internet, o **SVG** vem ganhando muitos admiradores. Dentre seus pontos fortes estão: renderização exímia em telas de alta-resolução, editáveis e animáveis via código (tanto CSS quanto JavaScript), baixo peso e suporte a compressão gzip. Compatível com todos navegadores modernos, seu uso trará problemas apenas em projetos que precisam funcionar no IE 8 ou versões anteriores. Por ser vetorial, SVGs não podem ser utilizados para conteúdo fotográfico.
 
-Presente em sites praticamente desde o início da internet, o **GIF** também é uma opção a se considerar. O único com bom suporte a animações, seu uso pode se restringir a quando você precisa dessa funcionalidade. Em outras ocasiões, os outros formatos performam melhor.
+Presente em sites praticamente desde o início da internet, o **GIF** também é uma opção a se considerar. O único com bom suporte a animações, seu uso pode se restringir a quando você precisa dessa funcionalidade. Em outras ocasiões, os outros formatos possuem melhor performance.
 
 Apesar de não ser um formato de imagem, as chamadas **Icon Fonts** estão sendo bastante utilizadas para mostrar principalmente ícones em interfaces na web. Esta técnica consiste em construir uma fonte personalizada a partir de imagens vetoriais. Uma das grandes vantagens é sua alta compatibilidade (IE 7+), seguida pela escalabilidade e possibilidade de mudar a cor. Por ser uma fonte, você pode escolher apenas uma cor.
 
@@ -35,7 +35,7 @@ Depois de escolher o formato da sua imagem, outro passo importante é **comprimi
 
 ### JPEG
 
-Procure utilizar JPEGs progressivos. Apenas com isto já é possível diminuir o tamanho total do arquivo final e também melhorar bastante a percepção do usuário sobre o carregamento da sua página, já que ele verá um bloco de imagem carregando gradativamente em vez de de cima para baixo.
+Procure utilizar JPEGs progressivos. Apenas com isto já é possível diminuir o tamanho total do arquivo final e também melhorar bastante a percepção do usuário sobre o carregamento da sua página, já que ele verá um bloco de imagem carregando gradativamente em vez de cima para baixo.
 
 Apesar disso, imagens com baixo nível de detalhes (poucas cores e contraste) são melhor otimizadas ao utilizar um algoritmo de compressão sequencial (não-progressivo). Abaixe sempre a qualidade de um JPEG até atingir um nível onde o quantidade de detalhes desejada e o peso da imagem se alinham.
 
@@ -53,9 +53,9 @@ Assim como um PNG, a diminuição na quantidade de cores no GIF pode ajudar bast
 
 ## Quanto menos imagens, melhor
 
-Muitas vezes colocamos imagens demais em nossos sites, mesmo que nem sempre elas sejam realmente necessárias para o usuário. Tome cuidado com todo o peso agregado ao site quando você escolhe utilizar uma imagem de fundo em vez de apenas uma cor sólida.
+Muitas vezes colocamos imagens demais em nossos sites, mesmo que nem sempre elas sejam realmente necessárias para o usuário. Tome cuidado com todo o peso agregado ao site quando você escolhe utilizar uma imagem de fundo em vez de uma cor sólida.
 
-Uma boa forma de melhorar o tempo de carregamento da sua página é fazer o *lazy-load* das imagens que não são essenciais. Isso significa carregá-las apenas depois de todo o resto do site estar pronto para o seu visitante, ou então apenas quando ela entrar na tela do usuário.
+Uma boa forma de melhorar o tempo de carregamento da sua página é fazer o *lazy-load* das imagens que não são essenciais. Isso significa carregá-las apenas depois que todo o resto do site estiver pronto para o seu visitante, ou então apenas quando ela entrar na tela do usuário.
 
 Use também todas as novas funcionalidades do CSS3 para evitar imagens em elementos de interface. `border-radius`, `linear-gradient`, `:after`, `:before` e muitas outras propriedades podem te ajudar bastante a atingir um ótimo resultado usando apenas código. Se for preciso, explique para o designer do seu time a importância de evitar imagens e tente convencê-lo a criar um layout otimizado.
 
