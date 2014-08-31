@@ -89,6 +89,24 @@ $break-wide-element: $wide-width + ($wide-width - $container-size) + 5em;
         color: lighten($inuit-base-text-color, 40);
     }
 
+        .post__share__twitter{
+            color: $color-twitter-blue;
+            background-color: lighten($color-twitter-blue, 32);
+
+            &:hover, &:focus{
+                background-color: lighten($color-twitter-blue, 29);
+            }
+        }
+
+        .post__share__facebook{
+            color: $color-facebook-blue;
+            background-color: lighten($color-facebook-blue, 50);
+
+            &:hover, &:focus{
+                background-color: lighten($color-facebook-blue, 45);
+            }
+        }
+
     .post__comments{
         @extend .mb;
         text-align: center;
