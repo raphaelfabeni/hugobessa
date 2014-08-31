@@ -4,16 +4,14 @@
 
 a{
     color: $color-link-text;
-    background-color: $color-link-bg;
     padding: 2px 4px;
 
     &:visited{
-        background-color: highlight($color-link-bg, 7);
+        background-color: $color-link-bg;
     }
 
     &:hover, &:focus{
-        color: $color-white;
-        background-color: $color-black;
+        background-color: $color-link-bg;
     }
 
 }
