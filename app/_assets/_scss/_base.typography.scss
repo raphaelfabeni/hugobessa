@@ -102,3 +102,23 @@ mark{
     background-color: $color-highlight-bg;
     padding: 2px 4px;
 }
+
+table{
+    @extend %table;
+    @extend %table--cells;
+    text-align: center;
+
+    display: block;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch; /* smooth iOS scrolling */
+
+    th,
+    td{
+        padding: quarter($inuit-base-spacing-unit) halve($inuit-base-spacing-unit);
+    }
+
+    tr:nth-child(even){
+        background-color: $color-lighter-gray;
+    }
+
+}

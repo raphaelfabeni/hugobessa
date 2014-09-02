@@ -27,6 +27,16 @@ Presente em sites praticamente desde o início da internet, o **GIF** também é
 
 Apesar de não ser um formato de imagem, as chamadas **Icon Fonts** estão sendo bastante utilizadas para mostrar principalmente ícones em interfaces na web. Esta técnica consiste em construir uma fonte personalizada a partir de imagens vetoriais. Uma das grandes vantagens é sua alta compatibilidade (IE 7+), seguida pela escalabilidade e possibilidade de mudar a cor. Por ser uma fonte, você pode escolher apenas uma cor.
 
+Eu preparei uma tabela que resume os pontos fortes e fracos de cada formato:
+
+| Formato | Pontos fortes | Pontos fracos |
+|---------|---------------|---------------|
+| JPG | Flexibilidade, compatibilidade, pode ser muito otimizada. | Não suporta transparência. |
+| PNG | Compatibilidade, ideal para imagens com poucas cores, boa compressão, suporte a transparência. | Ruim para imagens fotográficas. |
+| SVG | Vetorial, ótima renderização em telas de alta-resolução, leve. | Compatível apenas com browsers antigos, não suporta imagens fotográficas. |
+| GIF | Compatibilidade, suporte a animações. | Péssima compressão, suporte limitado a transparência. |
+| Icon Fonts | Compatibilidade, vetorial, ótima renderização em telas de alta-resolução, leve, personalização por CSS. | Não suporta imagens fotográficas, monocromático. |
+
 No final, a escolha de qual formato correto para utilizar depende muito do conteúdo da imagem e de como ela será aplicada no seu site. Se estiver em dúvida, faça alguns testes rápidos para saber qual dos formatos se encaixa melhor dentro das suas necessidades.
 
 ## Comprimindo imagens

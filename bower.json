@@ -13,6 +13,12 @@
     "inuit-clearfix": "~0.1.0",
     "inuit-shared": "~0.1.1",
     "inuit-spacing": "~0.1.2",
-    "inuit-media": "~0.2.3"
+    "inuit-media": "~0.2.3",
+    "inuit-tables": "~0.2.1"
+  },
+  "resolutions": {
+    "inuit-defaults": "~0.1.1",
+    "inuit-functions": "~0.1.1",
+    "inuit-normalize": "~0.1.0"
   }
 }
