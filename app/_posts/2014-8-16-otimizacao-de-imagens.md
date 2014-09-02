@@ -33,7 +33,7 @@ Eu preparei uma tabela que resume os pontos fortes e fracos de cada formato:
 |---------|---------------|---------------|
 | JPG | Flexibilidade, compatibilidade, pode ser muito otimizada. | Não suporta transparência. |
 | PNG | Compatibilidade, ideal para imagens com poucas cores, boa compressão, suporte a transparência. | Ruim para imagens fotográficas. |
-| SVG | Vetorial, ótima renderização em telas de alta-resolução, leve. | Compatível apenas com browsers antigos, não suporta imagens fotográficas. |
+| SVG | Vetorial, ótima renderização em telas de alta-resolução, leve. | Compatível apenas com browsers modernos (IE 9+), não suporta imagens fotográficas. |
 | GIF | Compatibilidade, suporte a animações. | Péssima compressão, suporte limitado a transparência. |
 | Icon Fonts | Compatibilidade, vetorial, ótima renderização em telas de alta-resolução, leve, personalização por CSS. | Não suporta imagens fotográficas, monocromático. |
 
