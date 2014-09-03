@@ -2,7 +2,7 @@ Existem diversas formas para otimizar um site. Nesta [série sobre otimização 
 
 - [Introdução a otimização de sites]({{ site.baseurl }}/posts/introducao-a-otimizacao)
 - [Compressão de arquivos]({{ site.baseurl }}/posts/otimizacao-compressao-de-arquivos)
-- [Otimização de imagens]({{ site.baseurl }}/posts/otimizacao-de-images)
+- [Otimização de imagens]({{ site.baseurl }}/posts/otimizacao-de-imagens)
 - Performance da rede
 - Prevendo ações
 - Diagnosticando performance
