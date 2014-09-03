@@ -91,6 +91,6 @@ Realizar todo esse trabalho "na mão" pode ser bastante custoso e muitas vezes c
 
 Muitas das dicas que dei aqui eu tirei de alguns posts da Smashing Magazine sobre [otimização de PNGs](http://www.smashingmagazine.com/2009/07/15/clever-png-optimization-techniques/) e [de JPEGs](http://www.smashingmagazine.com/2009/07/01/clever-jpeg-optimization-techniques/ "Otimização de JPEGs") e de um tutorial do Tutsplus sobre [otimização de GIFs animados](http://design.tutsplus.com/tutorials/10-ways-to-optimize-an-animated-gif-file--psd-34649). Eu recomendo bastante que você leia estes posts (em inglês) para ir ainda mais fundo na otimização de cada um desses formatos de imagem.
 
-<hr>
+***
 
 {% include optimization-post-footer.md %}
