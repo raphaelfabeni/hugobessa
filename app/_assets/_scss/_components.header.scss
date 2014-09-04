@@ -53,6 +53,10 @@
         }
     }
 
+.header--highlighted{
+    background-color: darken($inuit-base-background-color, 4);
+}
+
 @media all and (min-width: $max-width){
 
     .header__title{
