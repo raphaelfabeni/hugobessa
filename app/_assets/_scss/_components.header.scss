@@ -60,14 +60,14 @@
 @media all and (min-width: $max-width){
 
     .header__title{
-        @include span-columns(4);
+        @include span-columns(6);
         margin-top: 0 !important;
         margin-bottom: 0 !important;
         text-align: left;
     }
 
     .header__nav{
-        @include span-columns(8);
+        @include span-columns(6);
         @include omega;
         text-align: right;
     }
