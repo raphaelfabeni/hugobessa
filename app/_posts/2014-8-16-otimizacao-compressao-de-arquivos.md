@@ -20,6 +20,9 @@ Bons nomes de variáveis, comentários, espaços em branco para separar contexto
 
 Uma das melhores formas de retirar este sobrepeso é minificando scripts, stylesheets e documentos HTML. Isso significa tirar todos os caracteres desnecessários de dentro dos seus arquivos. Existem diversas formas de minificar arquivos, tanto em sites estáticos quanto em dinâmicos.
 
+![Exemplo de css minificado]({{ site.baseurl }}/_assets/images/posts/otimizacao-compressao-de-arquivos/minified-css.png)
+<small>Exemplo de css minificado</small>
+
 Em **sites estáticos**, o mais recomendado é utilizar um *task runner* para automatizar todo o workflow de otimização. Aqui no site eu uso o [Grunt](http://gruntjs.com), mas também tenho testado o [Gulp](http://gulpjs.com). Eu recomendo alguns pacotes:
 
 - **UglifyJS** para diminuir o tamanho de scripts ([grunt](https://github.com/gruntjs/grunt-contrib-uglify) e [gulp](https://github.com/terinjokes/gulp-uglify))
