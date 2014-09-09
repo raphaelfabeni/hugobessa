@@ -38,7 +38,7 @@ $break-wide-element: $wide-width + ($wide-width - $container-size) + 5em;
     .post__header{
         @extend .pe;
         text-align: center;
-        background-color: darken($inuit-base-background-color, 4);
+        background-color: $color-white;
         color: $color-black;
     }
 
@@ -132,6 +132,7 @@ $break-wide-element: $wide-width + ($wide-width - $container-size) + 5em;
 
 
     .post__header--single{
+        background-color: darken($inuit-base-background-color, 4);
 
         .post__title{
             @extend .mt;
