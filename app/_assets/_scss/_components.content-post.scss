@@ -50,9 +50,10 @@ $break-wide-element: $wide-width + ($wide-width - $container-size) + 5em;
             font-weight: 400;
 
             transition: font-size .5s;
+            color: $color-black;
 
             a{
-                color: $color-black;
+                color: inherit;
                 @extend %block-link;
                 text-decoration: none;
 
@@ -147,17 +148,15 @@ $break-wide-element: $wide-width + ($wide-width - $container-size) + 5em;
         padding-bottom: $inuit-base-spacing-unit * 2 !important;
 
         text-shadow: rgba(#000, 0.7) 0px 0px 2em;
+        color: $color-white;
 
         .post__title {
             margin-top: 0 !important;
-
-            a {
-                color: $color-white;
-            }
+            color: inherit;
         }
 
         .post__info {
-            color: $color-white;
+            color: inherit;
         }
     }
 
