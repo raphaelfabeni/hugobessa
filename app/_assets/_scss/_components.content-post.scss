@@ -2,11 +2,6 @@
     #POST
 \*------------------------------------*/
 
-$wide-width: 48em;
-$container-padding: $inuit-base-spacing-unit / $inuit-base-font-size / 2 * 1em;
-$container-size: $max-width - ($container-padding * 2);
-$break-wide-element: $wide-width + ($wide-width - $container-size) + 5em;
-
 .post{
 
     + .post{
@@ -17,14 +12,8 @@ $break-wide-element: $wide-width + ($wide-width - $container-size) + 5em;
 
     /* post specific styles */
     img{
+        @extend %wide-element;
         text-align: center;
-        width: 100%;
-
-
-        @media all and (min-width: $break-wide-element){
-            width: $wide-width;
-            margin-left: ($wide-width - $container-size) / -2;
-        }
 
         /* legend */
         & + small{
