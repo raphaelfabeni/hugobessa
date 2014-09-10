@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "iPhone 6 e o design para o futuro"
-description: "iPhone 6 e o design para o futuro"
+description: "O iPhone 6 chegou com resoluções de tela nova. Mas nossos sites responsivos estão preparados?"
 featured-image: "/_assets/images/posts/iphone-6-e-o-design-para-o-futuro/hero.jpg"
 date:   2014-9-10 00:43:00
 categories: dev
