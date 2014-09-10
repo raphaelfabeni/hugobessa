@@ -7,7 +7,7 @@ date:   2014-9-10 00:43:00
 categories: dev
 ---
 
-O mais novo iPhone chegou. Uma grande quantidade de funcionalidades novas e coisas interessantes. Mas uma (ou duas) me chamou a atenção: a resolução das telas. A Apple disse adeus aos famosíssimos 320 pixels de largura do iPhone e recebeu uma tela de alta-resolução com 3 vezes a densidade normal. Mas nossos sites estão preparados para isso?
+O mais novo iPhone chegou. Uma grande quantidade de funcionalidades novas e coisas interessantes. Mas uma (ou duas) me chamou a atenção: a resolução das telas. A Apple disse adeus aos famosíssimos 320 pixels de largura do iPhone, que recebeu uma tela de alta-resolução com 3 vezes a densidade normal. Mas nossos sites estão preparados para isso?
 
 <!--more-->
 
