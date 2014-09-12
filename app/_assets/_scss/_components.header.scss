@@ -6,7 +6,7 @@
     @extend .pe;
 
     a{
-        color: $color-black;
+        color: inherit;
         background-color: transparent;
     }
 }
@@ -58,6 +58,15 @@
 }
 
 @media all and (min-width: $max-width){
+
+    .header--floating {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.25);
+        color: $color-white;
+    }
 
     .header__title{
         @include span-columns(6);
