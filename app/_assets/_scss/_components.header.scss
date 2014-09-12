@@ -16,8 +16,8 @@
         @extend .mb;
         @include span-columns(12);
         @include omega;
-        font-family: HelveticaNeue, Arial, sans-serif;
         text-align: center;
+        font-family: HelveticaNeue, Arial, sans-serif;
 
         a{
             background-color: transparent;
@@ -29,6 +29,7 @@
         @include span-columns(12);
         @include omega;
         text-align: center;
+        font-family: HelveticaNeue, Arial, sans-serif;
 
         .nav {
             @extend .m0;
