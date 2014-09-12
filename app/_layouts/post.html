@@ -8,6 +8,10 @@ layout: default
 
     <div class="post__content container">
         {{ content }}
+
+        <p class="post__date">
+            Publicado em <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%d/%m/%Y" }}</time>
+        </p>
     </div>
 
 </article>

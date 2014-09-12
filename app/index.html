@@ -16,7 +16,7 @@ home: true
                 {% endif %}
 
                 <small class="post__info">
-                    <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%d/%m/%Y" }}</time> • <span class="post__reading-time">Leia em {% if post.reading_time %}{{ post.reading_time}}{% else %}{{ post.content | reading_time }}{% endif %}</span>
+                    <span class="post__reading-time">Leia em {% if post.reading_time %}{{ post.reading_time}}{% else %}{{ post.content | reading_time }}{% endif %}</span>
                 </small>
             </header>
 

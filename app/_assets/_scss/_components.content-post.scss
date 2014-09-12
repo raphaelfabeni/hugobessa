@@ -74,6 +74,11 @@
         }
     }
 
+    .post__date {
+        text-align: center;
+        color: lighten($inuit-base-text-color, 40);
+    }
+
     .post__share{
         text-align: center;
         color: lighten($inuit-base-text-color, 40);
