@@ -134,4 +134,4 @@ Neste artigo eu abordei apenas o básico sobre escopo para que você possa compr
 
 ***
 
-Este é um dos meu primeiros artigos mais densos sobre JavaScript. Se você ainda estiver com dúvidas, [comente neste post](#comments) ou então envie um tweet para [@hugobessaa](https://twitter.com/hugobessaa).
+Este é um dos meus primeiros artigos mais densos sobre JavaScript. Se você ainda estiver com dúvidas, [comente neste post](#comments) ou então envie um tweet para [@hugobessaa](https://twitter.com/hugobessaa).
