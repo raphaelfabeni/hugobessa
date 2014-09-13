@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Entendendo variable hoisting no JavaScript"
-description: ""
+description: "Dominar o conceito de escopo e entender variable hoisting é essencial"
 #featured-image: "/_assets/images/posts/iphone-6-e-o-design-para-o-futuro/hero.jpg"
 date:   2014-9-12 22:12:00
 categories: dev
