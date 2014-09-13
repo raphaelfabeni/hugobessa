@@ -20,6 +20,8 @@ function init(){
 init();
 ```
 
+<!--more-->
+
 Existe uma grande chance de que você achou que a saída seria `10`. Por causa da forma como o JavaScript trata declarações e escopos, a saída deste script é `undefined` (!). Isso mesmo, pode conferir no Console do seu navegador. Para entender como e porque isso acontece, é muito importante primeiro compreender o escopo no JavaScript.
 
 ## Um pouco sobre escopo no JavaScript
