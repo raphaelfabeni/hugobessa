@@ -108,13 +108,13 @@ init();
 
 #### *Runtime*
 
-1. Entramos no modo de execução e tentamos atribuir o valor `10` para uma variável chamada `number`(a declaração da função é pulada pois já a compilamos).
-1. A referência a `number` mais perto está no escopo global. Esta referência recebe o valor atribuído.
-1. Começamos a execução da função `init`, chamada na última linha do código.
-1. Dentro de `init` realizamos o `console.log()` de uma variável chamada `number`. Sua referência mais próxima está no escopo de `init` e seu valor é `undefined`, pois nenhum valor foi atribuído até o momento.
-1. Tentamos atribuir o valor `5` numa variável `number`. A referência mais perto está no escopo de `init`. O valor é atribuído a esta referência.
+1. Entramos no modo de execução. Pulando as declarações, começamos com `number = 10`.
+1. A variável `number` do escopo global é a que recebe o valor de `10`
+1. Em seguida, a linha `init()` executa a função `init`.
+1. Dentro de `init` rodamos o `console.log(number)`. `number` se refere à `number` do escopo de `init`. Por enquanto o valor deste `number` é `undefined`.
+1. Na última linha da função `init`, executamos `number = 5`. A variável `number` de dentro do escopo de `init` agora tem o valor de `5`.
 
-Esse comportamento parece anormal, já que esperamos que a declaração e atribuição da variável aconteçam no mesmo momento e na linha em que ela se encontra. Porém, por causa da forma como o JavaScript é compilado e interpretado, estas duas ações acontecem em momentos diferentes.
+Esse comportamento de "içar" variáveis parece anormal, já que esperamos que a declaração e atribuição da variável aconteçam no mesmo momento e na linha em que ela se encontra. Porém, por causa da forma como o JavaScript é compilado e interpretado, estas duas ações acontecem em momentos diferentes.
 
 Ter a fase de compilação do JavaScript é essencial para que o script seja validado corretamente pelo navegador ou outra plataforma que executará seu código. Além disso, quem executa o JavaScript pode preparar de antemão cache para escopos, variáveis e funções.
 
