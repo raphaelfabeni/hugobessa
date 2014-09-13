@@ -7,9 +7,9 @@ date:   2014-9-12 22:12:00
 categories: dev
 ---
 
-Variable hoisting é o procedimento do JavaScript de mover declarações para o topo do escopo atual. Isso pode acabar resultando em comportamentos estranhos no seu programa.
+*Variable hoisting* é o procedimento do JavaScript que move declarações para o topo de seus escopos atuais. Por não ser explícito, desconhecer como isso funciona pode trazer boas dores de cabeça.
 
-Qual você acha que será a saída do seguinte script?
+Qual você acha que será a saída no Console do seguinte script?
 
 ```javascript
 var number = 10;
