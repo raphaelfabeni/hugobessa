@@ -59,12 +59,14 @@ blockquote{
     background-color: darken($inuit-base-background-color, 4);
 }
 
-p{
+p, li, blockquote{
     > code,
     > a code{
         @extend %code-box;
         font-size: 90%;
         padding: 1.5px quarter($inuit-base-spacing-unit);
+        border: 1px solid darken($inuit-base-background-color, 20);
+        border-radius: 3px;
     }
 }
 
