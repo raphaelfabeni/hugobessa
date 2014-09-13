@@ -3,7 +3,7 @@ layout: post
 title: "Entendendo escopo e hoisting no JavaScript"
 description: "Dominar o conceito de escopo e entender variable hoisting é essencial"
 featured-image: "/_assets/images/posts/entendendo-variable-hoisting-no-javascript/hero.png"
-date:   2014-9-12 22:12:00
+date:   2014-9-13 13:34:00
 categories: dev
 ---
 
