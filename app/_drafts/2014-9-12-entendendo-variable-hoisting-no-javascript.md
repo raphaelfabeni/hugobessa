@@ -65,7 +65,7 @@ Sendo assim, mesmo que sua declaração esteja no meio do código, ela será “
 Um pouco de código para entendermos melhor:
 
 1. A linha `var name = 'hugo';` é interpretada durante o *Compile Time*.
-1. A variável `name` é criada no escopo em que está inserida. A linha se torna virtualmente `name = 'hugo';`.
+1. A variável `name` é criada no escopo em que está inserida.
 1. Supondo que não temos mais linhas no código, terminamos o *Compile Time*.
 1. Em seguida voltamos à esta linha, que é executada durante o *Runtime*.
 1. Uma referência a `name` é procurada dentro do escopo atual.
@@ -86,7 +86,6 @@ init();
 Isso aconteceu porque este script foi interpretado da seguinte forma:
 
 #### *Compile Time*
-
 1. Começamos o *Compile Time* declarando a variável `number` da primeira linha no escopo global.
 1. Logo depois declaramos a função `init` e iniciamos a sua compilação.
 1. Dentro do escopo de `init` encontramos a declaração de `number` e adicionamos uma referência a ela dentro deste escopo.
@@ -107,7 +106,6 @@ init();
 ```
 
 #### *Runtime*
-
 1. Entramos no modo de execução. Pulando as declarações, começamos com `number = 10`.
 1. A variável `number` do escopo global é a que recebe o valor de `10`
 1. Em seguida, a linha `init()` executa a função `init`.
@@ -120,12 +118,27 @@ Ter a fase de compilação do JavaScript é essencial para que o script seja val
 
 Entender pelo menos o básico de escopo e *variable hoisting* é essencial para escrevermos JavaScript de qualidade.
 
+## Evitando problemas
+Para evitar que você tenha problemas por causa do *hoisting*, a melhor dica que posso te dar é: declare as variáveis no início do escopo, mesmo sem a inicialização.
+
+```javascript
+function countUsers() {
+	var count, users;
+	users = app.users;
+	count = users.length;
+
+	return count;
+}
+```
+
+Para te ajudar a encontrar lugares onde o *hoisting* pode trazer problemas, é interessante usar um *linter* ou *hinter* no seu código. Essas ferramentas analisam o que você escreveu e te dão dicas para melhorar. Um dos mais conhecidos é o [JSHint](http://www.jshint.com).
+
 ## Outras formas de criar escopos
 Além de funções, existem também outras formas de se criar um novo escopo no JavaScript:
 
 - Usando a função `eval()`. Mas evite, pois [Eval is Evil](http://stackoverflow.com/questions/86513/why-is-using-the-javascript-eval-function-a-bad-idea).
 - Dentro de `catch` em um `try`. [Saiba mais sobre `try…catch`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/try...catch).
-- Dentro de um `with`. [Saiba mais sobre `with`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/with).
+- Dentro de um `with`. [Saiba mais sobre `with`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/with). Evite este cara também.
 
 Escopos não são criados dentro de todos os blocos, logo, variáveis declaradas dentro de `if`, `for`, `switch` ou outro bloco são criadas dentro do escopo em que estes blocos estão.
 
