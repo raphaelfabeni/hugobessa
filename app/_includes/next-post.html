@@ -1,0 +1,12 @@
+{% if page.previous %}
+    <article class="post post--next">
+        <h1 class="align--center beta mb0">Continue lendo:</h1>
+        <header class="post__header">
+            <h2 class="post__title"><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></h2>
+
+            <small class="post__info">
+                <span class="post__reading-time">Leia em {% if page.previous.reading_time %}{{ page.previous.reading_time}}{% else %}{{ page.previous.content | reading_time }}{% endif %}</span>
+            </small>
+        </header>
+    </article>
+{% endif %}
