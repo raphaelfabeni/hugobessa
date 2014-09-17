@@ -35,4 +35,4 @@ $states: (
 }
 ```
 
-[Acesse o experimento no CodePen](http://codepen.io/hugobessaa/debug/pcrgh) ;-).
+Como o Vitor Britto vem dizendo: [Experimente Experimentar](http://www.vitorbritto.com.br/blog/experimente-experimentar/). [Acesse o Gradient Weather no CodePen](http://codepen.io/hugobessaa/debug/pcrgh) ;-).
