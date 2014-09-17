@@ -7,7 +7,7 @@ date:   2014-9-17 10:59:00
 categories: dev
 ---
 
-Acabei de fazer um simples experimento usando a API de geolocalização do HTML5, a API do OpenWeatherMap.org e `linear-gradients` do CSS3. Juntando essas três ferramentas, mostro a condição climática atual de uma forma simples e visual. [Acesse o experimento Gradient Weather no CodePen](http://codepen.io/hugobessaa/debug/pcrgh).
+Eu fiz um simples experimento usando a API de geolocalização do HTML5, a API do OpenWeatherMap.org e `linear-gradients` do CSS3. Juntando essas três ferramentas, mostro a condição climática atual de uma forma simples e visual. [Acesse o experimento Gradient Weather no CodePen](http://codepen.io/hugobessaa/debug/pcrgh).
 
 <!--more-->
 
