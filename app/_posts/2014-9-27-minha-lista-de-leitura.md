@@ -3,7 +3,7 @@ layout: post
 title: "Minha lista de leitura"
 description: "Livros que li este ano sobre estratégia digital, JavaScript e empresas, além de alguns que ainda quero ler"
 featured-image: "/_assets/images/posts/minha-lista-de-leitura/hero.jpg"
-date:   2014-9-24 2:42:00
+date:   2014-9-27 12:42:00
 categories: dev
 ---
 
