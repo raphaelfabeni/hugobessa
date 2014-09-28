@@ -7,4 +7,5 @@
     border: 1px solid lighten($color-text, 60);
     height: $inuit-base-spacing-unit;
     border-radius: 3px;
+    padding-left: quarter($inuit-base-spacing-unit);
 }

@@ -37,12 +37,14 @@
 
             .newsletter__input {
                 width: 100%;
+                margin-left: 0;
             }
         }
     }
 
     .newsletter__input {
         @extend %input;
+        margin-left: quarter($inuit-base-spacing-unit);
     }
 
     .newsletter__submit {
