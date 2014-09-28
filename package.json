@@ -7,7 +7,8 @@
     "url": "git@github.com:hugobessaa/hugobessa.git"
   },
   "dependencies": {
-    "fastr": "~0.0.3"
+    "fastr": "~0.0.3",
+    "lodash.foreach": "^2.4.1"
   },
   "devDependencies": {
     "matchdep": "^0.3.0",

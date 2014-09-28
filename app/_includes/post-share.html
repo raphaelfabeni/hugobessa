@@ -1,5 +1,9 @@
 {% capture canonical %}{{ site.fullurl }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endcapture %}
 
 <div class="post__share">
-    <p>Compartilhar no<br/><a class="post__share__twitter" href="https://twitter.com/intent/tweet?url={{ canonical }}&amp;text={{ page.title | escape | truncate:100 | replace:' ','%20' }}&amp;via=hugobessaa" target="_blank">Twitter</a> ou <a class="post__share__facebook" href="https://www.facebook.com/sharer.php?&amp;u={{ canonical }}" target="_blank">Facebook</a></p>
+    <p>Compartilhar no<br/>
+
+        <a class="post__share__twitter js-post-share" href="https://twitter.com/intent/tweet?url={{ canonical }}&amp;text={{ page.title | escape | truncate:100 | replace:' ','%20' }}&amp;via=hugobessaa" target="_blank" data-network="Twitter">Twitter</a>
+        ou
+        <a class="post__share__facebook js-post-share" href="https://www.facebook.com/sharer.php?&amp;u={{ canonical }}" target="_blank" data-network="Facebook">Facebook</a></p>
 </div>
