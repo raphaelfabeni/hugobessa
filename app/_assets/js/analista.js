@@ -44,6 +44,11 @@ var analista = {
                 this.removeEventListener('click', onTwitterHandleClick);
             });
         });
+
+        // handle for disqus comment
+        window.onDisqusComment = function() {
+            ga('send', 'event', 'Post', 'Comentário');
+        }
     }
 }
 
