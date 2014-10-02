@@ -44,7 +44,7 @@ Intrigante, não? Além disso ele tenta mostrar como muitas regras impostas por 
 
 Por ser bem estruturado e dividido, Rework foi um dos livros que eu mais gostei de ler. Sem dúvida mudou minha percepção sobre muitas das coisas que vivencio no trabalho e me mostrou um ótimo caminho a ser seguido.
 
-[**Rework** está a venda por cerca de R$18 em sua versão ebook](http://www.amazon.com.br/gp/product/B002MUAJ2A/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B002MUAJ2A&linkCode=as2&tag=hugbes-20). Ele também conta com uma [versão traduzida]("Versão traduzida de Rework à venda" http://www.amazon.com.br/gp/product/B00A3CSMZK/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00A3CSMZK&linkCode=as2&tag=hugbes-20).
+[**Rework** está a venda por cerca de R$18 em sua versão ebook](http://www.amazon.com.br/gp/product/B002MUAJ2A/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B002MUAJ2A&linkCode=as2&tag=hugbes-20). Ele também conta com uma [versão traduzida](http://www.amazon.com.br/gp/product/B00A3CSMZK/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00A3CSMZK&linkCode=as2&tag=hugbes-20 "Versão traduzida de Rework à venda").
 
 ## Aqueles que ainda quero ler
 
