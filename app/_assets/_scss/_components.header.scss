@@ -4,6 +4,7 @@
 
 .header{
     @extend .pe;
+    text-align: center;
 
     a{
         color: inherit;
@@ -12,12 +13,9 @@
 }
 
     .header__title{
-        @extend .mt0;
-        @extend .mb;
-        @include span-columns(12);
-        @include omega;
-        text-align: center;
+        @extend .me0;
         font-family: HelveticaNeue, Arial, sans-serif;
+        font-weight: 600;
 
         a{
             background-color: transparent;
@@ -25,32 +23,23 @@
         }
     }
 
-    .header__nav{
-        @include span-columns(12);
-        @include omega;
-        text-align: center;
-        font-family: HelveticaNeue, Arial, sans-serif;
-
-        .nav {
-            @extend .m0;
-
-            li {
-                @extend .mr;
-
-                &:last-child {
-                    @extend .mr0;
-                }
-            }
-        }
+    .header__byline{
+        @extend .m0;
     }
 
-    .header__about{
-        @extend .mt;
-        @include span-columns(12);
-        text-align: center;
+    .header__button {
+        @extend .mt-;
+        display: inline-block;
 
-        p{
-            @extend .mb0;
+        color: darken($inuit-base-background-color, 30) !important;
+        border-color: darken($inuit-base-background-color, 30) !important;
+
+        padding-top: quarter($inuit-base-spacing-unit) !important;
+        padding-bottom: quarter($inuit-base-spacing-unit) !important;
+
+        &:hover, &:focus, &:active {
+            background-color: darken($inuit-base-background-color, 30);
+            color: $inuit-base-background-color !important;
         }
     }
 
@@ -58,27 +47,11 @@
     background-color: darken($inuit-base-background-color, 4);
 }
 
-@media all and (min-width: $max-width){
-
-    .header--floating {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.25);
-        color: $color-white;
-    }
-
-    .header__title{
-        @include span-columns(6);
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-        text-align: left;
-    }
-
-    .header__nav{
-        @include span-columns(6);
-        @include omega;
-        text-align: right;
-    }
+.header--floating {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: $color-white;
 }
