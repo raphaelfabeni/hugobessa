@@ -126,6 +126,8 @@
 
     .post__header--single{
         background-color: darken($inuit-base-background-color, 4);
+        padding-left: $inuit-base-spacing-unit !important;
+        padding-right: $inuit-base-spacing-unit !important;
 
         .post__title{
             @extend .mt;
@@ -155,13 +157,9 @@
     }
 
 @media all and (min-width: $max-width){
-    .post__header--single{
-        padding-left: $inuit-base-spacing-unit * 2 !important;
-        padding-right: $inuit-base-spacing-unit * 2 !important;
 
-        .post__title{
-            @include inuit-font-size(80px);
-        }
+    .post__title{
+        @include inuit-font-size(80px);
     }
 
     .post__header--image{
