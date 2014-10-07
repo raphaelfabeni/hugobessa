@@ -12,6 +12,10 @@
     }
 }
 
+    .header__avatar {
+        border-radius: 50%;
+    }
+
     .header__title{
         @extend .me0;
         font-family: HelveticaNeue, Arial, sans-serif;
