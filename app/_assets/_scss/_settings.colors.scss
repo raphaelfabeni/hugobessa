@@ -7,7 +7,7 @@ $color-white: #fff;
 $color-gray:  #979797;
 $color-light-gray: #d8d8d8;
 $color-lighter-gray: #efefef;
-$color-light-blue: #3778bf;
+$color-blue: #0074D9;
 
 $color-twitter-blue: #55acee;
 $color-facebook-blue: #3b5998;
@@ -17,12 +17,12 @@ $color-detail: $color-black;
 $color-highlight-bg: $color-lighter-gray;
 $color-background: $color-white;
 
-$color-link: $color-light-blue;
-$color-link-text: $color-light-blue;
-$color-link-bg: lighten($color-light-blue, 48);
+$color-link: $color-blue;
+$color-link-text: $color-blue;
+$color-link-bg: lighten($color-blue, 48);
 
 $color-button-text: $color-white;
-$color-button-bg: $color-light-blue;
+$color-button-bg: $color-blue;
 
 $inuit-base-text-color: $color-text;
 $inuit-base-background-color: $color-background;

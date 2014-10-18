@@ -24,37 +24,30 @@
     }
 }
 
-    .post__header{
-        @extend .pe;
+    .post__header {
         text-align: center;
-        background-color: $color-white;
-        color: $color-black;
+        padding: $inuit-base-spacing-unit;
+        padding-top: 0;
     }
 
-        .post__title{
-            @extend .me0;
-            @include inuit-font-size(50px);
-            font-family: HelveticaNeue, Arial, sans-serif;
-            line-height: 1.1;
-            font-weight: 400;
+    .post__header--single {
+        background-color: $color-blue;
+        color: $color-white;
 
-            transition: font-size .5s;
-            color: $color-black;
-
-            a{
-                color: inherit;
-                @extend %block-link;
-                text-decoration: none;
-
-                &:hover, &:focus{
-                    text-decoration: underline;
-                }
-            }
+        .post__title {
+            margin-top: 0;
         }
+    }
 
-        .post__info{
-            display: block;
-            color: darken($color-white, 25);
+        .post__title {
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.1em;
+
+            a {
+                color: inherit;
+                text-decoration: inherit;
+            }
         }
 
     .post__content{
@@ -70,7 +63,7 @@
 
         h2{
             @extend .mt\+; // [1]
-            border-bottom: 1px solid $color-highlight-bg;
+            font-size: 35px;
         }
     }
 
@@ -124,54 +117,19 @@
     }
 
 
-    .post__header--single{
-        background-color: darken($inuit-base-background-color, 4);
-        padding-left: $inuit-base-spacing-unit !important;
-        padding-right: $inuit-base-spacing-unit !important;
 
-        .post__title{
-            @extend .mt;
-            @include inuit-font-size(50px);
-        }
-    }
-
-    .post__header--image {
-        background-color: lighten($color-black, 15);
-        background-size: cover;
-        background-position: center;
-
-        padding-top: $inuit-base-spacing-unit * 5 !important;
-        padding-bottom: $inuit-base-spacing-unit * 3 !important;
-
-        text-shadow: rgba(#000, 0.7) 0px 0px 2em;
-        color: $color-white;
-
+@media all and (min-width: $break-palm){
+    .post__header--single {
         .post__title {
-            margin-top: 0 !important;
-            color: inherit;
+            font-size: 60px;
         }
-
-        .post__info {
-            color: inherit;
-        }
-    }
-
-@media all and (min-width: $max-width){
-
-    .post__title{
-        @include inuit-font-size(80px);
-    }
-
-    .post__header--image{
-        padding-top: $inuit-base-spacing-unit * 7 !important;
-        padding-bottom: $inuit-base-spacing-unit * 6 !important;
     }
 }
 
-@media all and (min-width: $max-width * 1.7){
-    .post__header--single{
-        .post__title{
-            @include inuit-font-size(100px);
+@media all and (min-width: $break-desk){
+    .post__header--single {
+        .post__title {
+            font-size: 80px;
         }
     }
 }

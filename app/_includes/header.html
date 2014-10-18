@@ -1,17 +1,15 @@
 <header class="header {% if page.home %}header--home{% endif %} {% if page.home or page.featured-image == nil %}header--highlighted{% endif %} {% if page.featured-image %}header--floating{% endif %}" role="banner">
-    <div class="container">
-        {% if page.home %}
-            <img class="header__avatar" src="{{ site.baseurl }}/_assets/images/hugo-bessa-avatar.jpg" alt="Hugo Bessa" width="100" height="100">
-        {% endif %}
 
+    <a href="{{ site.baseurl }}/"><img class="header__avatar" src="{{ site.baseurl }}/_assets/images/hugo-bessa-avatar.jpg" alt="Hugo Bessa" width="100" height="100"></a>
+
+
+    {% if page.home %}
         <h1 class="header__title">
-            <a href="{{ site.baseurl }}/" title="{{ site.title }}">Hugo Bessa</a>
+            <a href="{{ site.baseurl }}/">Hugo Bessa</a>
         </h1>
 
-        {% if page.home %}
-            <h2 class="header__byline">Desenvolvedor front-end</h2>
-
-            <a class="header__button button button--secondary" href="{{ site.baseurl }}/sobre">Sobre mim</a>
-        {% endif %}
-    </div>
+        <h2 class="header__byline">
+            Desenvolvedor front-end entusiasmado em conectar pessoas e ideias
+        </h2>
+    {% endif %}
 </header>

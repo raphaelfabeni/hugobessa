@@ -5,6 +5,11 @@
 .header{
     @extend .pe;
     text-align: center;
+    background-color: $color-blue;
+    color: $color-white;
+
+    padding-left: $inuit-base-spacing-unit;
+    padding-right: $inuit-base-spacing-unit;
 
     a{
         color: inherit;
@@ -16,46 +21,32 @@
         border-radius: 50%;
     }
 
-    .header__title{
-        @extend .me0;
-        font-family: HelveticaNeue, Arial, sans-serif;
-        font-weight: 600;
+    .header__title,
+    .header__byline {
+        line-height: 1.1em;
+    }
 
-        a{
-            background-color: transparent;
+    .header__title {
+        margin-top: halve($inuit-base-spacing-unit);
+        margin-bottom: $inuit-base-spacing-unit;
+        font-weight: 600;
+        font-size: 40px;
+
+        a {
             text-decoration: none;
         }
     }
 
-    .header__byline{
-        @extend .m0;
+    .header__byline {
+        font-weight: 400;
+        margin-top: 0;
+        font-size: 28px;
     }
 
-    .header__button {
-        @extend .mt-;
-        display: inline-block;
 
-        color: darken($inuit-base-background-color, 30) !important;
-        border-color: darken($inuit-base-background-color, 30) !important;
-
-        padding-top: quarter($inuit-base-spacing-unit) !important;
-        padding-bottom: quarter($inuit-base-spacing-unit) !important;
-
-        &:hover, &:focus, &:active {
-            background-color: darken($inuit-base-background-color, 30);
-            color: $inuit-base-background-color !important;
-        }
+@media all and (min-width: $break-desk){
+    .header__title,
+    .header__byline {
+        font-size: 60px;
     }
-
-.header--highlighted{
-    background-color: darken($inuit-base-background-color, 4);
-}
-
-.header--floating {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.25);
-    color: $color-white;
 }
