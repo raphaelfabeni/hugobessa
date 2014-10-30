@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Otimização de imagens"
+byline: "Imagens não precisam ser tão pesadas assim"
 description: "Imagens são uma das partes mais pesadas de um site. Otimize seu site usando ferramentas para diminuir o peso de suas imagens"
 featured-image: "/_assets/images/posts/otimizacao-de-imagens/hero.jpg"
 date:   2014-8-30 03:11:00

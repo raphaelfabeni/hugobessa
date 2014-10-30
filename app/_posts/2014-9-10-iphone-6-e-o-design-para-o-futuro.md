@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "iPhone 6 e o design para o futuro"
+byline: "Devemos pensar em soluções criadas hoje que funcionam em dispositivos do amanhã."
 description: "O iPhone 6 chegou com resoluções de tela nova. Nossos sites responsivos estão preparados?"
 featured-image: "/_assets/images/posts/iphone-6-e-o-design-para-o-futuro/hero.jpg"
 date:   2014-9-10 00:43:00

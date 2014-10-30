@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Compressão de arquivos"
+byline: "Sempre dá pra espremer mais um byte"
 description: "Uma das melhores técnicas para otimizar seu site é comprimir seus arquivos e utilizar gzip"
 featured-image: "/_assets/images/posts/otimizacao-compressao-de-arquivos/hero.png"
 date:   2014-8-16 13:44:00
