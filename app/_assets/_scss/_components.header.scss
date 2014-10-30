@@ -2,16 +2,10 @@
     #HEADER
 \*------------------------------------*/
 
-.header{
-    @extend .pe;
+.header {
     text-align: center;
-    background-color: $color-blue;
-    color: $color-white;
 
-    padding-left: $inuit-base-spacing-unit;
-    padding-right: $inuit-base-spacing-unit;
-
-    a{
+    a {
         color: inherit;
         background-color: transparent;
     }
@@ -45,8 +39,10 @@
 
 
 @media all and (min-width: $break-desk){
-    .header__title,
-    .header__byline {
+    .header__title {
         font-size: 60px;
+    }
+    .header__byline {
+        font-size: 40px;
     }
 }

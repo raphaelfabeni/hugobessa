@@ -1,28 +1,58 @@
 /*------------------------------------*\
-    #CONTENT
+    #COMPONENTS.CONTENT
 \*------------------------------------*/
 
-@import "components.content-post";
+.content {
 
-body{
-    font-family: "Georgia", serif;
-    background-color: $inuit-base-background-color;
-    color: $inuit-base-text-color;
-    font-size: $inuit-base-font-size;
-    line-height: $inuit-base-line-height;
-}
+    /**
+     * [1]: better spacing for headings
+     */
+    h2, h3, h4, h5, h6 {
+        @extend %element;
 
-*{
-    outline-color: $color-detail;
-}
+        margin-bottom: 0; // [1]
+        font-weight: 600;
+        line-height: 1.4;
+    }
 
-.container{
-    @include outer-container;
-    @include pad(0px halve($inuit-base-spacing-unit));
-}
+    h2 {
+        margin-top: double($inuit-base-spacing-unit); // [1]
+        font-size: 35px;
+    }
 
-.post--footer{
-    padding-top: 0 !important;
-    text-align: center;
-    font-style: italic;
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    /* post specific styles */
+    img {
+        width: 100%;
+        height: auto;
+        text-align: center;
+
+        /* legend */
+        & + small {
+            @extend %delta;
+
+            display: block;
+            text-align: center;
+        }
+    }
+
+    p, ul, ol, blockquote, .highlight, hr, table {
+        @extend %element;
+    }
+
+    table {
+        @extend %element--wide;
+    }
+
+    ul, ol {
+        padding-left: $spacing-unit--huge;
+    }
+
 }

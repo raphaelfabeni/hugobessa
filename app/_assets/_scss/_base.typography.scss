@@ -2,66 +2,70 @@
     #TYPOGRAPHY
 \*------------------------------------*/
 
-a{
-    color: $color-link-text;
-    padding: 2px 2px;
+/**
+ * Links
+ */
 
-    &:visited{
-        background-color: $color-link-bg;
-    }
-
-    &:hover, &:focus{
-        background-color: $color-link-bg;
-    }
-
+a {
+    color: $color-attention;
 }
 
-.simple-link,
-%simple-link{
-    background-color: transparent;
-    color: $color-link-text;
+
+
+
+
+/**
+ * List elements
+ */
+
+ul, ol {
+    margin-left: $spacing-unit--small;
 }
 
-.block-link,
-%block-link{
-    @extend %simple-link;
-    display: block;
-}
 
-h1, h2, h3, h4, h5, h6{
-    font-family: HelveticaNeue, Arial, sans-serif;
-    font-weight: 400;
-}
 
-ul, ol{
-    margin-left: halve($inuit-base-spacing-unit);
-}
 
-blockquote{
-    @extend .ms0;
-    padding-left: halve($inuit-base-spacing-unit);
-    border-left: 2px solid lighten($inuit-base-text-color, 30);
+
+/**
+ * Quotes
+ */
+
+blockquote {
     font-style: italic;
-    color: lighten($inuit-base-text-color, 40);
+    border-left: 2px solid $color-attention;
+    background-color: rgba($color-attention, .1);
 
-    &.pullquote{
-        @extend %alpha;
-        @extend .me;
-        padding: 0;
-        border: none;
-        color: $inuit-base-text-color;
-
-        text-align: center;
-    }
+    padding-top: $spacing-unit--small;
+    padding-bottom: $spacing-unit--small;
 }
 
-%code-box{
+%pullquote,
+.pullquote {
+    @extend %alpha;
+
+    border-left: 0;
+    background-color: transparent;
+
+    text-align: center;
+
+    padding-top: $spacing-unit--large;
+    padding-bottom: $spacing-unit--large;
+}
+
+
+
+
+/**
+ * Code
+ */
+
+%code-box {
     background-color: darken($inuit-base-background-color, 4);
 }
 
-p, li, blockquote{
+p, li, blockquote {
     > code,
-    > a code{
+    > a code {
         @extend %code-box;
         font-size: 90%;
         padding: 1.5px quarter($inuit-base-spacing-unit);
@@ -70,7 +74,7 @@ p, li, blockquote{
     }
 }
 
-pre{
+pre {
     @extend %code-box;
 
     padding: $inuit-base-spacing-unit / 2;
@@ -81,29 +85,53 @@ pre{
     -webkit-overflow-scrolling: touch; /* smooth iOS scrolling */
 
     /* overwrites inuit .p class */
-    .p{
+    .p {
         padding: 0 !important;
     }
 
     /* code blocks on desk sizes have more columns and can afford bigger fonts */
-    @media all and (min-width: $break-palm){
+    @media all and (min-width: $break-palm) {
         font-size: 80%;
     }
 }
 
-hr{
-    margin: ($inuit-base-spacing-unit * 1.5) auto;
-    width: 30%;
+
+
+
+
+
+/**
+ * Division element
+ */
+
+hr {
+    margin: $spacing-unit auto;
     border: 0;
-    border-top: 3px solid darken($color-background, 8);
+    border-top: 2px solid highlight($color-background, 10);
 }
 
+
+
+
+
+/**
+ * Mark element
+ */
+
 mark{
-    background-color: $color-highlight-bg;
+    background-color: highlight($color-background, 10);
     padding: 2px 4px;
 }
 
-table{
+
+
+
+
+/**
+ * Tables
+ */
+
+table {
     @extend %table;
     @extend %table--cells;
     text-align: center;
@@ -113,12 +141,12 @@ table{
     -webkit-overflow-scrolling: touch; /* smooth iOS scrolling */
 
     th,
-    td{
-        padding: quarter($inuit-base-spacing-unit) halve($inuit-base-spacing-unit);
+    td {
+        padding: $spacing-unit--tiny $spacing-unit--small;
     }
 
-    tr:nth-child(even){
-        background-color: $color-lighter-gray;
+    tr:nth-child(even) {
+        background-color: highlight($color-background, 10);
     }
 
 }

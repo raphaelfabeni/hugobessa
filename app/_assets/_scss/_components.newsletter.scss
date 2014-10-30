@@ -3,11 +3,7 @@
 \*------------------------------------*/
 
 .newsletter {
-    @extend .pe;
-    @extend .ps-;
-
     text-align: center;
-    background-color: $color-lighter-gray;
 }
 
     .newsletter__form {
@@ -16,39 +12,43 @@
     }
 
         .newsletter__title {
-            @extend .beta;
-            @extend .me0;
+            @extend .kilo;
+            margin-top: 0;
+            margin-bottom: 0;
+
             line-height: 1;
         }
 
         .newsletter__subtitle {
-            @extend .epsilon;
+            @extend .delta;
         }
 
     .newsletter__group {
-        @extend .p-;
+        padding: $spacing-unit--small;
         display: inline-block;
         text-align: left;
+    }
 
-        @media (max-width: $break-desk) {
+        .newsletter__input {
+            margin-left: $spacing-unit--small;
+        }
+
+        .newsletter__submit {
+            margin-top: $spacing-unit--small;
             width: 270px;
             max-width: 100%;
-            padding: 0 !important;
-
-            .newsletter__input {
-                width: 100%;
-                margin-left: 0;
-            }
         }
-    }
 
-    .newsletter__input {
-        @extend %input;
-        margin-left: quarter($inuit-base-spacing-unit);
-    }
 
-    .newsletter__submit {
-        @extend .mt-;
+@media (max-width: $break-desk) {
+    .newsletter__group {
         width: 270px;
         max-width: 100%;
+        padding: 0;
     }
+
+        .newsletter__input {
+            width: 100%;
+            margin-left: 0;
+        }
+}

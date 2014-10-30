@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    #BASE.PAGE
+\*------------------------------------*/
+
+body {
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    background-color: $inuit-base-background-color;
+    color: $inuit-base-text-color;
+    font-size: $inuit-base-font-size;
+    line-height: $inuit-base-line-height;
+}
+
+* {
+    outline-color: $color-attention;
+}

@@ -1,0 +1,11 @@
+/*------------------------------------*\
+    #TOOLS.ALIASES
+\*------------------------------------*/
+
+$spacing-unit: $inuit-base-spacing-unit;
+
+$spacing-unit--small:  halve($inuit-base-spacing-unit);
+$spacing-unit--tiny:  quarter($inuit-base-spacing-unit);
+
+$spacing-unit--large:  double($inuit-base-spacing-unit);
+$spacing-unit--huge:  quadruple($inuit-base-spacing-unit);

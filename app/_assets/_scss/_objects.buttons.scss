@@ -2,39 +2,39 @@
     #BUTTONS
 \*------------------------------------*/
 
+/**
+ * A simple button
+ */
+
 .button,
 %button {
+    text-decoration: none;
 
-    &,
-    &:visited {
-        @extend .p-;
+    color: highlight($color-attention, 100);
+    background-color: $color-attention;
+    border: 2px solid $color-attention;
+    padding: $spacing-unit--small $spacing-unit;
 
-        font-family: HelveticaNeue, Arial, sans-serif;
-        text-decoration: none;
-
-        color: $color-button-text;
-        background-color: $color-button-bg;
-        border: 3px solid $color-button-bg;
-    }
-
-    &:hover, &:focus{
-        background-color: highlight($color-button-bg, 20);
-        border-color: highlight($color-button-bg, 20);
+    @include attention {
+        background-color: highlight($color-attention, 20);
+        border-color: highlight($color-attention, 20);
     }
 }
 
+
+
+
+
+/**
+ * Button used for secondary actions, such as "cancel" or "ignore"
+ */
+
 .button--secondary,
 %button--secondary {
+    background-color: transparent;
+    color: $color-attention;
 
-    &,
-    &:visited {
-        background-color: transparent;
-        color: $color-button-bg;
-    }
-
-    &:hover, &:focus {
-        color: $color-button-text;
-        background-color: highlight($color-button-bg, 20);
-        border-color: highlight($color-button-bg, 20);
+    @include attention {
+        color: highlight($color-attention, 100);
     }
 }

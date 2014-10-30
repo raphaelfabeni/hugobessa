@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    #TOOLS.MIXINS
+\*------------------------------------*/
+
+@mixin attention($include-self: false) {
+    @if ($include-self == true) {
+        &,
+        &:hover, &:focus, &:active {
+            @content;
+        }
+    }
+    @else {
+        &:hover, &:focus, &:active {
+            @content;
+        }
+    }
+}

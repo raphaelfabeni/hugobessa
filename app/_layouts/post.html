@@ -6,28 +6,27 @@ layout: default
 
     {% include post-header.html %}
 
-    <div class="post__content container">
+    <div class="billboard content">
         {{ content }}
-
-        <p class="post__date">
-            Publicado em <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%d/%m/%Y" }}</time>
-        </p>
     </div>
 
 </article>
 
 <div class="container">
-    {% include post-share.html %}
 
-    <hr>
+    <div class="[ billboard billboard--large billboard--subtle ]">
+        <div class="element">
+            {% include author-info.html %}
+        </div>
+    </div>
 
-    {% include newsletter.html %}
+    <div class="[ billboard billboard--large billboard--attention ]">
+        {% include newsletter.html %}
+    </div>
 
-    <hr>
-
-    {% include author-info.html %}
-
-    <hr>
-
-    {% include post-comments.html %}
+    <div class="[ billboard billboard--large billboard--subtle ]">
+        <div class="element">
+            {% include post-comments.html %}
+        </div>
+    </div>
 </div>

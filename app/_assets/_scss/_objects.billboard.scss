@@ -1,0 +1,91 @@
+/*------------------------------------*\
+    #OBJECTS.BILLBOARD
+\*------------------------------------*/
+
+/**
+ * A simple box object to hold text and blocks. Provides a vertical division
+ * to help communicate messages better.
+ */
+
+%billboard,
+.billboard {
+    padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit;
+}
+
+
+
+
+
+/**
+ * A subtle different box to divide content and sections
+ */
+
+%billboard--subtle,
+.billboard--subtle {
+    background-color: highlight($color-background, 3);
+}
+
+
+
+
+
+/**
+ * An attention-calling box to claim the eyes of the user
+ */
+
+%billboard--attention,
+.billboard--attention {
+    background-color: $color-attention;
+    color: highlight($color-attention, 100);
+
+    a {
+        color: highlight($color-attention, 100);
+    }
+
+    %button,
+    .button {
+        background-color: highlight($color-attention, 20);
+    }
+}
+
+
+
+
+
+/**
+ * Vertical spacing increase
+ */
+
+%billboard--large,
+.billboard--large {
+    padding-top: $spacing-unit--large;
+    padding-bottom: $spacing-unit--large;
+}
+
+
+
+
+
+/**
+ * Really large billboard for really big ideas
+ */
+
+%billboard--huge,
+.billboard--huge {
+    padding-top: $spacing-unit--huge;
+    padding-bottom: $spacing-unit--huge;
+}
+
+
+
+
+
+/**
+ * Centered billboard
+ */
+
+%billboard--center,
+.billboard--center {
+    text-align: center;
+}

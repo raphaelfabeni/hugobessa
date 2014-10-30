@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Minha lista de leitura"
+byline: "A lista de leitura de um desenvolvedor front-end"
 description: "Livros que li este ano sobre estratégia digital, JavaScript e empresas, além de alguns que ainda quero ler"
 featured-image: "/_assets/images/posts/minha-lista-de-leitura/hero.jpg"
 date:   2014-9-27 12:42:00
@@ -15,7 +16,9 @@ Apesar de livros existirem há centenas de anos, eles ainda são uma incrível f
 
 ## Os últimos livros que li
 
-![Últimos livros que li: Digital Adaptation, Human JavaScript e Rework]({{ site.baseurl }}/_assets/images/posts/minha-lista-de-leitura/read.jpg)
+<p class="element element--wide">
+    <img src="{{ site.baseurl }}/_assets/images/posts/minha-lista-de-leitura/read.jpg" alt="Últimos livros que li: Digital Adaptation, Human JavaScript e Rework">
+</p>
 
 ### Digital Adaptation - Paul Boag
 Não importa se você é desenvolvedor, gerente, *planner*, designer ou até mesmo alguma profissão bem longe da área de tecnologia: você precisa ler **Digital Adaptation**.
@@ -48,7 +51,9 @@ Por ser bem estruturado e dividido, Rework foi um dos livros que eu mais gostei 
 
 ## Aqueles que ainda quero ler
 
-![Livros que ainda quero ler: High Performance Browser Networking e You Don't Know JS]({{ site.baseurl }}/_assets/images/posts/minha-lista-de-leitura/to-read.jpg)
+<p class="element element--wide">
+    <img src="{{ site.baseurl }}/_assets/images/posts/minha-lista-de-leitura/to-read.jpg" alt="Livros que ainda quero ler: High Performance Browser Networking e You Don't Know JS">
+</p>
 
 ### You Don't Know JS - Kyle Simpson
 Você pode achar que sabe mesmo JavaScript. Eu também achava. Cara, até o Kyle Simpson achava. Porém, na verdade, você não sabe. Ainda!

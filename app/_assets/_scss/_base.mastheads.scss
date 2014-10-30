@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    #BASE.MASTHEADS
+\*------------------------------------*/
+
+$giga-size:         96px !default;
+$mega-size:         72px !default;
+$kilo-size:         48px !default;
+
+
+/**
+ * A really big masthead to be used in massive headings
+ */
+
+.giga,
+%giga {
+    @include inuit-font-size($giga-size);
+}
+
+
+
+
+
+/**
+ * Big masthead
+ */
+
+.mega,
+%mega {
+    @include inuit-font-size($mega-size);
+}
+
+
+
+
+/**
+ * Big enough masthead to be called so
+ */
+
+.kilo,
+%kilo {
+    @include inuit-font-size($kilo-size);
+}

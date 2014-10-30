@@ -5,58 +5,43 @@ description: Desenvolvedor front-end focado em experiências digitais que atinge
 home: true
 ---
 
-<div class="container">
-    {% for post in paginator.posts %}
-        <article class="post">
-            <header class="post__header">
-                {% if post.link %}
-                    <h2 class="post__title post__title--external"><a href="{{ post.link }}">{{ post.title }} →</a></h2>
+{% for post in paginator.posts %}
+    <article class="element post">
+        <header class="billboard">
+
+            <h2 class="kilo post__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            {% if post.byline %}
+                <h3 class="alpha post__byline">{{ post.byline }}</h3>
+            {% endif %}
+            <small class="post__info">
+                <span>Leia em {% if post.reading_time %}{{ post.reading_time}}{% else %}{{ post.content | reading_time }}{% endif %}</span>
+            </small>
+
+        </header>
+    </article>
+{% endfor %}
+
+{% if paginator.next_page or paginator.previous_page %}
+
+    <ul class="nav align--center">
+        {% if paginator.previous_page %}
+            <li class="m-">
+                {% if paginator.previous_page == 1 %}
+                    <a href="{{ site.baseulr}}/" class="button button--secondary">Anteriores</a>
                 {% else %}
-                    <h2 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                    <a href="{{ site.baseulr}}/page/{{ paginator.previous_page }}" class="button button--secondary">Anteriores</a>
                 {% endif %}
+            </li>
+        {% endif %}
 
-                <small class="post__info">
-                    <span class="post__reading-time">Leia em {% if post.reading_time %}{{ post.reading_time}}{% else %}{{ post.content | reading_time }}{% endif %}</span>
-                </small>
-            </header>
+        {% if paginator.next_page %}
+            <li class="m-">
+                <a href="{{ site.baseulr}}/page/{{ paginator.next_page }}" class="button">Próximos</a>
+            </li>
+        {% endif %}
+    </ul>
+{% endif %}
 
-            <div class="post__content">
-                {{ post.excerpt }}
+<hr>
 
-                {% unless post.link %}
-                    <p class="read-more">
-                        <a href="{{ post.url }}" title="Continue lendo o post {{ post.title }}">Continue lendo →</a>
-                    </p>
-                {% endunless %}
-            </div>
-
-        </article>
-
-        <hr>
-    {% endfor %}
-
-    {% if paginator.next_page or paginator.previous_page %}
-
-        <ul class="nav align--center">
-            {% if paginator.previous_page %}
-                <li class="m-">
-                    {% if paginator.previous_page == 1 %}
-                        <a href="{{ site.baseulr}}/" class="button button--secondary">Anteriores</a>
-                    {% else %}
-                        <a href="{{ site.baseulr}}/page/{{ paginator.previous_page }}" class="button button--secondary">Anteriores</a>
-                    {% endif %}
-                </li>
-            {% endif %}
-
-            {% if paginator.next_page %}
-                <li class="m-">
-                    <a href="{{ site.baseulr}}/page/{{ paginator.next_page }}" class="button">Próximos</a>
-                </li>
-            {% endif %}
-        </ul>
-    {% endif %}
-
-    <hr>
-
-    {% include author-info.html %}
-</div>
+{% include author-info.html %}

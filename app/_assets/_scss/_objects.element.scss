@@ -1,0 +1,48 @@
+/*------------------------------------*\
+    #OBJECTS.ELEMENT
+\*------------------------------------*/
+
+/**
+ * Defines an element of the page. It has a max width and default
+ * paddings to keep everything beautiful.
+ *
+ * 1. Horizontally center element
+ */
+
+.element,
+%element {
+    width: 100%;
+    max-width: $content-width;
+
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+
+    margin-left: auto; /* [1] */
+    margin-right: auto; /* [1] */
+}
+
+
+
+
+
+/**
+ * Little wider element
+ */
+.element--wide,
+%element--wide {
+    max-width: $content-width + 15rem !important;
+}
+
+
+
+
+/**
+ * Fill the entire parent (mostly the entire screen)
+ */
+
+.element--fill,
+%element--fill {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
