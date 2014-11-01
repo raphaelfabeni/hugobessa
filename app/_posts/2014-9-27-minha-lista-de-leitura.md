@@ -12,7 +12,7 @@ Apesar de livros existirem há centenas de anos, eles ainda são uma incrível f
 
 <!--more-->
 
-<small>Os links para comprar os livros são links afiliados com a Amazon.com. Isso me ajuda a continuar escrevendo artigos com todo o cuidado e atenção e a criar algo de qualidade, já que ganho uma pequena porcentagem sobre cada compra.</small>
+Os links para comprar os livros são links afiliados com a Amazon.com. Isso me ajuda a continuar escrevendo artigos com todo o cuidado e atenção e a criar algo de qualidade, já que ganho uma pequena porcentagem sobre cada compra.
 
 ## Os últimos livros que li
 
