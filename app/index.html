@@ -6,8 +6,8 @@ home: true
 ---
 
 {% for post in paginator.posts %}
-    <article class="element post">
-        <header class="billboard">
+    <article class="element post post--listing">
+        <header class="[ billboard billboard--large ]">
 
             <h2 class="kilo post__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
             {% if post.byline %}

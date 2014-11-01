@@ -32,8 +32,7 @@ ul, ol {
 
 blockquote {
     font-style: italic;
-    border-left: 2px solid $color-attention;
-    background-color: rgba($color-attention, .1);
+    border-left: 4px solid $color-attention;
 
     padding-top: $spacing-unit--small;
     padding-bottom: $spacing-unit--small;
@@ -44,7 +43,6 @@ blockquote {
     @extend %alpha;
 
     border-left: 0;
-    background-color: transparent;
 
     text-align: center;
 

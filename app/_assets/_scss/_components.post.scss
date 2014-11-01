@@ -28,6 +28,10 @@
         color: highlight($color-background, 30);
     }
 
+.post--listing {
+    text-align: center;
+}
+
 @media all and (min-width: $content-width * 0.7) {
     .post__title--single {
         font-size: 50px;
