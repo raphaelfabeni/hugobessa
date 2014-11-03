@@ -2,14 +2,16 @@
     #AUTHOR-INFO
 \*------------------------------------*/
 
-@media all and (max-width: $max-width){
-    .author-info {
-        text-align: center;
+.author-info {
+    text-align: center;
 
-        .media__img {
-            float: none;
-            display: inline-block;
-            margin-right: 0;
-        }
+    .media__img {
+        float: none;
+        display: inline-block;
+        margin-right: 0;
     }
 }
+
+    .author-info__avatar {
+        border-radius: 50%;
+    }

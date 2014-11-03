@@ -168,7 +168,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= paths.app %><%= paths.assets %>',
-                    src: ['<%= paths.img %>**/*'],
+                    src: ['<%= paths.img %>**/*', '<%= paths.fonts %>**/*'],
                     dest: '<%= paths.build.dev %><%= paths.assets %>'
                 }]
             },
@@ -176,7 +176,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= paths.app %><%= paths.assets %>',
-                    src: ['<%= paths.img %>**/*'],
+                    src: ['<%= paths.img %>**/*', '<%= paths.fonts %>**/*'],
                     dest: '<%= paths.build.prod %><%= paths.assets %>'
                 }]
             }
@@ -219,19 +219,12 @@ module.exports = function(grunt) {
             }
         },
 
-        // Htmlbuild: builds htmls. Using to inline styles
-        htmlbuild: {
+        cssmin: {
             prod: {
-                files: [{
-                    expand: true,
-                    cwd: '<%= paths.build.prod %>',
-                    src: ['**/*.html'],
-                    dest: '<%= paths.build.prod %>'
-                }],
-                options: {
-                    styles: {
-                        main: '<%= paths.build.prod %>/<%= paths.assets %>/<%= paths.css %>/**/*.css'
-                    }
+                files: {
+                    '<%= paths.build.prod %><%= paths.assets %><%= paths.css %>main.css': [
+                        '<%= paths.build.prod %><%= paths.assets %><%= paths.css %>main.css'
+                    ]
                 }
             }
         },
@@ -313,7 +306,7 @@ module.exports = function(grunt) {
         'copy:prod',
         'uncss:prod',
         'imagemin:prod',
-        'htmlbuild:prod',
+        'cssmin:prod',
         'htmlmin:prod',
         'uglify:prod'
     ]);

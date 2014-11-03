@@ -45,7 +45,6 @@
 
     p, ul, ol, blockquote, .highlight, hr, table {
         @extend %element;
-        font-family: "Georgia", "Times New Roman", sans-serif;
         line-height: 1.7em
     }
 
@@ -55,6 +54,11 @@
 
     ul, ol {
         padding-left: $spacing-unit--huge;
+    }
+
+    hr {
+        margin-left: 0;
+        margin-right: 0;
     }
 
 }
