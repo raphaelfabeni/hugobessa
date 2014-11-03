@@ -43,7 +43,7 @@
         }
     }
 
-    p, ul, ol, blockquote, .highlight, hr, table {
+    p, ul, ol, blockquote, .highlight, table {
         @extend %element;
         line-height: 1.7em
     }
@@ -54,11 +54,6 @@
 
     ul, ol {
         padding-left: $spacing-unit--huge;
-    }
-
-    hr {
-        margin-left: 0;
-        margin-right: 0;
     }
 
 }
