@@ -95,7 +95,10 @@ module.exports = function(grunt) {
                 src: '**/*.scss',
                 ext: '.css',
                 expand: true,
-                dest: '<%= paths.build.dev %><%= paths.assets %><%= paths.css %>'
+                dest: '<%= paths.build.dev %><%= paths.assets %><%= paths.css %>',
+                options: {
+                    sourceMap: true
+                }
             },
             prod: {
                 cwd: '<%= paths.app %><%= paths.assets %><%= paths.sass %>',
