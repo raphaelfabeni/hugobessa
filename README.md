@@ -2,7 +2,7 @@
 > Website of Hugo Bessa
 
 ====
-[![Screenshot of hugobessa.com.br](https://raw.githubusercontent.com/hugobessaa/hugobessa/master/hugobessa.com.br-1024x768.png)](http://hugobessa.com.br/)
+[![Screenshot of hugobessa.com.br](https://raw.githubusercontent.com/hugobessaa/hugobessa/master/hugobessa.com.br-1024x768-cropped.png)](http://hugobessa.com.br/)
 ====
 
 This is the source code of my website. Here I play with the stuff I'm learning, be it a development thing or just design. Here I have the freedom to test, improve and write.
