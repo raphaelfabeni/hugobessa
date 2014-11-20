@@ -142,11 +142,13 @@ Porém, existe sim muito valor nos componentes, principalmente se você não que
 
 Até assistir a [palestra do Harry Roberts no Dafed](https://www.youtube.com/watch?v=1OKZOV-iLj4), eu não sabia o que essa camada realmente significava. "Trumps" significa "ganhar de", ou seja, nesta camadas temos seletores que trazem estilos que devem ganhar de todos os outros.
 
-Bons exemplos são: `.m` para margens, `.p` para paddings e `.error` para estilos de erro. Segundo o ITCSS, aqui é perfeitamente aceitável que você use `!important`, já que estas classes devem ser utilizadas ativamente, não em reação a um problema de especificidade.
+Um ótimo exemplo é uma classe como `.hidden`. Você a usaria quando quisesse fazer algo desaparecer. Segundo o ITCSS, aqui é perfeitamente aceitável que você use `!important`, já que estas classes devem ser utilizadas ativamente, não em reação a um problema de especificidade.
+
+É bem importante que você não use essas classes para ditar muito sobre a estrutura da sua página. Por isso, muito cuidado na hora de usar trumps como `.margin` ou `.padding`. É sempre melhor tentar abstrair sua interface, dentro de objetos e componentes.
 
 ```scss
-.m {
-    margin: $spacing-unit !important;
+.hidden {
+    display: none !important;
 }
 ```
 
