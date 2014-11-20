@@ -7,7 +7,7 @@ date:   2014-11-20 03:09:00
 categories: dev
 ---
 
-Escrever CSS é muito fácil, mas escrever CSS escalável, reutilizável, manutenível e de fácil compreensão não é assim tão fácil assim. Não é à toa que este assunto gera uma quantidade colossal de artigos, palestras, discussões e projetos Open Source.
+Escrever CSS é muito fácil, mas escrever CSS escalável, reutilizável, manutenível e de fácil compreensão não é assim tão fácil. Não é à toa que este assunto gera uma quantidade colossal de artigos, palestras, discussões e projetos Open Source.
 
 O **ITCSS** é mais uma tentativa de achar uma arquitetura CSS que finalmente resolva nossos problemas. Após ter colocado 4 projetos em produção usando uma metodologia perto da recomendada pelo ITCSS, eu digo: ele faz muito bem para o seu projeto.
 
