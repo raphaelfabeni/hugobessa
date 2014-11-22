@@ -1,7 +1,10 @@
+{% capture canonical %}{{ site.fullurl }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endcapture %}
+
 <div class="post__comments" id="comments">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         var disqus_shortname = 'hugobessa';
+        var disqus_url = {{ canonical }}
 
         (function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
