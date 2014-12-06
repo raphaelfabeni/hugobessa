@@ -7,7 +7,7 @@ date:   2014-11-21 02:44:00
 categories: dev
 ---
 
-Essa foi a primeira newsletter enviada para quem se increveu para receber minhas dicas de leitura.
+Essa foi a primeira newsletter enviada para quem se inscreveu para receber minhas dicas de leitura.
 
 <!--more-->
 
