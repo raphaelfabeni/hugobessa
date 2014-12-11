@@ -20,9 +20,15 @@ layout: default
         </div>
     </div>
 
-    <div class="[ billboard billboard--large billboard--subtle ]">
-        {% include newsletter.html %}
+    <div class="[ billboard billboard--large billboard--attention billboard--center ]">
+        {% include read-next.html %}
     </div>
+
+    {% if page.previous %}
+        <div class="[ billboard billboard--large billboard--subtle ]">
+            {% include newsletter.html %}
+        </div>
+    {% endif %}
 
     <div class="[ billboard billboard--large billboard--subtle ]">
         <div class="element">
