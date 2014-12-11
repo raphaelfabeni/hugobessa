@@ -7,6 +7,7 @@ var analista = {
         var shareButtons = document.querySelectorAll('.js-post-share');
         var newsletterForm = document.querySelector('.js-newsletter-form');
         var twitterHandles = document.querySelectorAll('.js-twitter-handle');
+        var readNextLinks = document.querySelectorAll('.js-read-next-link');
 
         // Share Buttons tracking
         _forEach(shareButtons, function eachShareButton(shareButton) {
@@ -42,6 +43,17 @@ var analista = {
 
                 // removes listener
                 this.removeEventListener('click', onTwitterHandleClick);
+            });
+        });
+
+        // Read next tracking
+        _forEach(readNextLinks, function eachReadNextLink(readNextLink) {
+            readNextLink.addEventListener('click', function onReadNextLinkClick(evt) {
+                // sends Google Analytics Event
+                ga('send', 'event', 'Geral', 'Clique Continue lendo');
+
+                // removes listener
+                this.removeEventListener('click', onReadNextLinkClick);
             });
         });
 
