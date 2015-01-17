@@ -238,6 +238,6 @@ Ao iterarmos pelos dados, criaremos 3 componentes `Photo` que são inseridos no 
 
 Isto deve ser o suficiente para começar a construir interfaces de usuário com React. A [documentação do React](http://facebook.github.io/react/docs/getting-started.html) cobre tudo em detalhes. Eu recomendo bastante lê-la.
 
-Além disso, este guia não entra em detalhes sobre o *setup* do seu ambiente local. A documentação entra, mas você também pode dar uma olhada no [boilerplate](https://github.com/jarsbe/react-webpack-boilerplate) do autor original para uma solução simples.
+Além disso, este guia não entra em detalhes sobre o *setup* do seu ambiente local. A documentação entra, mas você também pode dar uma olhada no meu [boilerplate](https://github.com/jarsbe/react-webpack-boilerplate) para uma solução simples.
 
-Se eu cometi um erro ou algo não está funcionando para você, fale [comigo](http://twitter.com/hugobessaa) ou com [Jack Callister](http://twitter.com/jarsbe) (o autor original) no Twitter.
+Se eu cometi um erro ou algo não está funcionando para você, fale comigo no [Twitter](http://twitter.com/jarsbe).
