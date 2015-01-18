@@ -48,7 +48,12 @@
 
     p, ul, ol, blockquote, .highlight, table, hr {
         @extend %element;
-        line-height: 1.7em
+        line-height: 1.7em;
+    }
+
+    hr {
+        display: block;
+        max-width: 150px;
     }
 
     table {
