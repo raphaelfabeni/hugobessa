@@ -31,11 +31,15 @@
         }
     }
 
-    .header__byline {
-        font-weight: 400;
-        margin-top: 0;
-        font-size: 28px;
-    }
+        .header__title--in {
+
+            // create "button-like" style
+            display: inline-block;
+            width: 66px;
+
+            color: $color-background;
+            background-color: $color-attention;
+        }
 
 
 @media all and (min-width: $break-desk){
