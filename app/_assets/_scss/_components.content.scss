@@ -46,7 +46,7 @@
         }
     }
 
-    p, ul, ol, blockquote, .highlight, table {
+    p, ul, ol, blockquote, .highlight, table, hr {
         @extend %element;
         line-height: 1.7em
     }
