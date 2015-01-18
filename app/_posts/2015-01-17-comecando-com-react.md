@@ -9,7 +9,7 @@ categories: dev
 
 Traduzido de [The React Quick Start Guide](http://www.jackcallister.com/2015/01/05/the-react-quick-start-guide.html), escrito por [Jack Callister](http://www.jackcallister.com/).
 
-*Este artigo apresentará uma rápida visão geral de como construir interfaces de usuário em React JS. Aqui tem o suficiente para você começar e nada mais. Desenvolva junto com este *[starter kit](https://github.com/jarsbe/react-starter-kit)* (instruções no repositório) ou apenas continue lendo.*
+*Este artigo apresentará uma rápida visão geral de como construir interfaces de usuário em React JS. Aqui tem o suficiente para você começar e nada mais. Desenvolva junto com este [starter kit](https://github.com/jarsbe/react-starter-kit) (instruções no repositório) ou apenas continue lendo.*
 
 <!--more-->
 
