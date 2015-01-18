@@ -3,5 +3,12 @@
         <h1 class="header__title {% unless page.home %}header__title--in{% endunless %}">
             <a class="link--clean" href="{{ site.baseurl }}/">H{% if page.home %}ugo Bessa{% endif %}</a>
         </h1>
+        {% if page.home %}
+            <ul class="[ nav nav--ui ] me0">
+                <li><a href="{{ site.baseurl }}/sobre">Sobre</a></li>
+                <li><a href="https://github.com/hugobessaa">Github</a></li>
+                <li><a href="https://twitter.com/hugobessaa">Twitter</a></li>
+            </ul>
+        {% endif %}
     </div>
 </header>

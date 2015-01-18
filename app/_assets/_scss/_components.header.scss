@@ -20,19 +20,18 @@
         margin-bottom: $inuit-base-spacing-unit;
         font-weight: 600;
         font-size: 40px;
-        line-height: 1.1em;
+        line-height: 1em;
 
-        a {
-            text-decoration: none;
-        }
+        padding: 0 quarter($inuit-base-spacing-unit);
+
+        display: inline-block;
+        color: $color-background;
+        background-color: $color-attention;
     }
 
         .header__title--in {
-
-            // create "button-like" style
-            display: inline-block;
             width: 1.1em;
-
+            padding: 0;
             color: $color-background;
             background-color: $color-attention;
         }

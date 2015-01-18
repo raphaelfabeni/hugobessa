@@ -15,13 +15,3 @@
     .author-info__avatar {
         border-radius: 50%;
     }
-
-    .author-info__networks {
-        @extend %nav;
-
-        li + li {
-            &:before {
-                content: "\ \2022\ ";
-            }
-        }
-    }

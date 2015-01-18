@@ -33,3 +33,12 @@
         }
     }
 }
+
+.nav--ui,
+%nav--ui {
+  > li + li {
+      &:before {
+          content: "\ \2022\ ";
+      }
+  }
+}
