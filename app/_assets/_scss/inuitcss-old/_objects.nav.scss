@@ -37,8 +37,8 @@
 .nav--ui,
 %nav--ui {
   > li + li {
-      &:before {
-          content: "\ \2022\ ";
-      }
+    &:before {
+        content: "\00a0\2022\00a0";
+    }
   }
 }
