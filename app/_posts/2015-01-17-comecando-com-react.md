@@ -9,7 +9,7 @@ categories: dev
 
 Traduzido de [The React Quick Start Guide](http://www.jackcallister.com/2015/01/05/the-react-quick-start-guide.html), escrito por [Jack Callister](http://www.jackcallister.com/).
 
->*Este artigo apresentará uma rápida visão geral de como contriuir interfaces de usuário no React JS. Aqui tem o suficiente para você começar e nada mais. Desenvolva junto com este [starter kit](https://github.com/jarsbe/react-starter-kit) (instruções no repositório) ou apenas continue lendo.*
+>*Este artigo apresentará uma rápida visão geral de como construir interfaces de usuário em React JS. Aqui tem o suficiente para você começar e nada mais. Desenvolva junto com este *[starter kit](https://github.com/jarsbe/react-starter-kit)* (instruções no repositório) ou apenas continue lendo.*
 
 ---
 
@@ -19,19 +19,19 @@ O React tem uma API bem pequena. Isso o torna divertido de usar, fácil de apren
 
 **Elementos React** são objetos JavaScript que representam elementos HTML. Eles não existem no browser. Eles representam elementos do browser como `h1`, `div` ou `section`.
 
-**Componentes** são elementos React criados por um desenvolvedor. Eles normalmente são partes maiores de uma interface que contém tanto estrutura e funcionalidade. Pense em conceitos como `NavBar`, `LikeButton` ou `ImageUploader`.
+**Componentes** são elementos React criados por um desenvolvedor. Eles normalmente são partes maiores de uma interface que contêm estrutura e funcionalidade. Pense em conceitos como `NavBar`, `LikeButton` ou `ImageUploader`.
 
 **JSX** é uma técnica para criar elementos e componentes React. Por exemplo, `<h1>Hello</h1>` é um elemento React escrito em JSX. O mesmo elemento React pode ser escrito em JavaScript usando `React.DOM.h1(null, 'Hello');`. O JSX facilita a escrita e a leitura e é transformado em JavaScript antes de ser executado no browser.
 
 **O Virtual DOM** é uma árvore JavaScript de elementos e componentes React. O React renderiza o virtual DOM no browser para tornar a interface de usuário visível. O React observa o virtual DOM procurando por alterações, automaticamente mutando o DOM do browser para corresponder com o virtual DOM.
 
-Entendendo um pouco destes conceitos já podemos avançar e utilizar o React. Nós vamos construir uma série de interfaces de usuário, cada uma adicionando uma camada de funcionalidade sob a anterior. Nós construiremos uma listagem de fotos similar ao Instagram — aplicações de exemplos não ficam muito melhor do que isso!
+Entendendo um pouco destes conceitos já podemos avançar e utilizar o React. Nós vamos construir uma série de interfaces de usuário, cada uma adicionando uma camada de funcionalidade sob a anterior. Nós construiremos uma listagem de fotos similar ao Instagram — aplicações de exemplos não ficam muito melhores do que isso!
 
 ---
 
 ## Renderização
 
-A primeira coisa que faremos é renderizar um elementos virtual (um elemento ou componente React). Lembre, já que um elemento virtual existe apenas na memória do JavaScript, nós precisamos falar explícitamente para o React rederizá-lo no DOM do browser.
+A primeira coisa que faremos é renderizar um elemento virtual (um elemento ou componente React). Lembre-se, já que um elemento virtual existe apenas na memória do JavaScript, nós precisamos falar explícitamente para o React rederizá-lo no DOM do browser.
 
 ``` js
 React.render(<img src='http://tinyurl.com/lkevsb9' />, document.body);
@@ -66,7 +66,7 @@ Este componente não faz mais do que o elemento React de imagem anterior, mas el
 
 ## Props
 
-As props podem ser consideradas como as opções de um componente. Elas são passadas como argumentos para um componente e se paracem com atributos HTML.
+As props podem ser consideradas como as opções de um componente. Elas são passadas como argumentos para um componente e se parecem com atributos HTML.
 
 ``` js
 var Photo = React.createClass({
@@ -134,9 +134,9 @@ React.render(<Photo src='http://tinyurl.com/lkevsb9' caption='New York!'/>, docu
 
 Ter estado em um componente introduz um pouco mais de complexidade.
 
-O componente the uma nova função `getInitialState`. O React chama esta função quando o componente é inicializado. O objeto retornado é definido como o estado inicial do componente (como o nome da função indica).
+O componente tem uma nova função `getInitialState`. O React chama esta função quando o componente é inicializado. O objeto retornado é definido como o estado inicial do componente (como o nome da função indica).
 
-O componente tem outra função nova `toggleLiked`. Esta função chamada `setState` no componente, o que alterna o valor de `liked`.
+O componente tem outra função nova, a `toggleLiked`. Esta função chama `setState` no componente, alternando o valor de `liked`.
 
 Dentro da função de renderização do componente, a variável `buttonClass` é atribuída com `active` ou nada — depende do estado de `liked`.
 
@@ -144,7 +144,7 @@ Dentro da função de renderização do componente, a variável `buttonClass` é
 
 Aqui está o que acontece quando o componente é renderizado no DOM do browser.
 
-- Quando o botão do componente é clicado, `toggleLiked` é chamada.
+- Quando o botão do componente é clicado, `toggleLiked` é chamado.
 - O estado `liked` é alterado.
 - O React re-renderiza o componente no virtual DOM.
 - O novo virtual DOM é comparado com o virtual DOM anterior.
@@ -236,7 +236,7 @@ Ao iterarmos pelos dados, criaremos 3 componentes `Photo` que são inseridos no 
 
 ## Conclusão
 
-Isto deve ser o suficiente para começar a construir interfaces de usuário com React. A [documentação do React](http://facebook.github.io/react/docs/getting-started.html) cobre tudo em detalhes. Eu recomendo bastante lê-la.
+Isto deve ser o suficiente para começar a construir interfaces de usuário com React. A [documentação do React](http://facebook.github.io/react/docs/getting-started.html) cobre tudo isso em detalhes. Eu recomendo bastante lê-la.
 
 Além disso, este guia não entra em detalhes sobre o *setup* do seu ambiente local. A documentação entra, mas você também pode dar uma olhada no meu [boilerplate](https://github.com/jarsbe/react-webpack-boilerplate) para uma solução simples.
 
