@@ -2,12 +2,10 @@
 
     <section>
         <div class="[ element element--wide ]">
-            <h3>Continue lendo</h3>
-
-            <h2>
+            <h3>
+                Mais no blog:
                 <a class="js-read-next-link" href="{{ page.previous.url }}">{{ page.previous.title }}</a>
-            </h2>
-            <div>({% if page.previous.reading_time %}{{ page.previous.reading_time}}{% else %}{{ page.previous.content | reading_time }}{% endif %})</div>
+            </h3>
         </div>
     </section>
 
