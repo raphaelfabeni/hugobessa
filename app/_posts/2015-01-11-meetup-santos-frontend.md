@@ -17,7 +17,7 @@ A comunidade de desenvolvimento front-end santista acabou de ganhar um novo meet
 
 Nosso primeiro encontro será no dia 29 de janeiro. A ideia é juntarmos front-enders daqui para se conhecerem e conversarem sobre processos, ferramentas, bibliotecas, frameworks e o que mais aparecer durante o encontro.
 
-A [Mkt Virtual](http://www.mktvirtual.com.br/) é nossa primeira empresa a patrocinar o santos.frontend(). Muito obrigado, Mkt Virtual, por acreditar na nossa ideia.
+A [Mkt Virtual](http://www.mktvirtual.com.br/) é primeira empresa a patrocinar o santos.frontend(). Agradecemos por acreditar na nossa ideia.
 
 O [primeiro encontro](http://www.meetup.com/Santos-Front-end/events/219826386/) acontece das 19h às 22h do dia 29 de janeiro (quinta-feira), é gratuito e será lá no [TIP](http://www.pensetip.com.br/). Ah, vai ter um ótimo coffee-break também :). [Entre lá no nosso meetup](http://www.meetup.com/Santos-Front-end/events/219826386/) para participar!
 
