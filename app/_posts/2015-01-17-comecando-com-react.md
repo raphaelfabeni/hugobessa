@@ -45,7 +45,7 @@ A função `render` aceita dois argumentos; Um elemento virtual e um nó em um D
 
 ## Componentes
 
-Componentes são o coração e a alma do React. Eles são elemenetos React personalizados. Eles são geralmente extendidos com estrutura e funcionalidade únicas.
+Componentes são o coração e a alma do React. Eles são elementos React personalizados. Eles são geralmente extendidos com estrutura e funcionalidade únicas.
 
 ``` js
 var Photo = React.createClass({
