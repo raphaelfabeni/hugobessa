@@ -7,7 +7,7 @@ date:   2015-01-17 01:44:00
 categories: meetup
 ---
 
-A comunidade de desenvolvimento front-end santista acabou de ganhar um novo meetup. Na verdade, seu primeiro. O meetup **santos.frontend()** é uma iniciativa sem fins lucrativos que pretende juntar desenvolvedores da região em encontros frequentes.
+A comunidade de desenvolvimento front-end santista acabou de ganhar um novo meetup. Na verdade, seu primeiro. O meetup **santos.frontend()** é uma iniciativa sem fins lucrativos que pretende reunir desenvolvedores da região em encontros frequentes.
 
 <!--more-->
 
@@ -15,7 +15,7 @@ A comunidade de desenvolvimento front-end santista acabou de ganhar um novo meet
     <img src="{{ site.baseurl }}/_assets/images/posts/santos-frontend/santos-frontend.jpg" alt="Santos Front-end">
 </p>
 
-Nosso primeiro encontro será no dia 29 de janeiro. A ideia é juntarmos front-enders daqui para se conhecerem e conversarem sobre processos, ferramentas, bibliotecas, frameworks e o que mais aparecer durante o encontro.
+Nosso primeiro encontro será no dia 29 de janeiro. A ideia é reunirmos front-enders daqui para se conhecerem e conversarem sobre processos, ferramentas, bibliotecas, frameworks e o que mais aparecer durante o encontro.
 
 A [Mkt Virtual](http://www.mktvirtual.com.br/) é primeira empresa a patrocinar o santos.frontend(). Agradecemos por acreditar na nossa ideia.
 
