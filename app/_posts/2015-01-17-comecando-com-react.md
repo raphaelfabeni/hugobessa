@@ -23,7 +23,7 @@ O React tem uma API bem pequena. Isso o torna divertido de usar, fácil de apren
 
 **Componentes** são elementos React criados por um desenvolvedor. Eles normalmente são partes maiores de uma interface que contêm estrutura e funcionalidade. Pense em conceitos como `NavBar`, `LikeButton` ou `ImageUploader`.
 
-**JSX** é uma técnica para criar elementos e componentes React. Por exemplo, `<h1>Hello</h1>` é um elemento React escrito em JSX. O mesmo elemento React pode ser escrito em JavaScript usando `React.DOM.h1(null, 'Hello');`. O JSX facilita a escrita e a leitura e é transformado em JavaScript antes de ser executado no browser.
+**JSX** é uma técnica para criar elementos e componentes React. Por exemplo, `<h1>Hello</h1>` é um elemento React escrito em JSX. O mesmo elemento React pode ser escrito em JavaScript usando `React.createElement('h1', null, 'Hello');`. O JSX facilita a escrita e a leitura e é transformado em JavaScript antes de ser executado no browser.
 
 **O Virtual DOM** é uma árvore JavaScript de elementos e componentes React. O React renderiza o virtual DOM no browser para tornar a interface de usuário visível. O React observa o virtual DOM procurando por alterações, automaticamente mutando o DOM do browser para corresponder com o virtual DOM.
 
