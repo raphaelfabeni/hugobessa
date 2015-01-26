@@ -29,6 +29,10 @@
 @import "../_bower_components/inuit-functions/tools.functions";
 @import "../_bower_components/inuit-mixins/tools.mixins";
 
+@import "tools.functions";
+@import "tools.mixins";
+@import "tools.aliases";
+
 @import "../_bower_components/inuit-normalize/generic.normalize";
 @import "../_bower_components/inuit-box-sizing/generic.box-sizing";
 @import "../_bower_components/inuit-shared/generic.shared";
@@ -53,9 +57,6 @@
 
 
 
-@import "tools.functions";
-@import "tools.mixins";
-@import "tools.aliases";
 
 
 

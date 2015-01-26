@@ -4,7 +4,7 @@ title: "Newsletter #1: Criando produtos de qualidade"
 description: "Validar ideias, se questionar e trabalhar em conjunto são coisas essenciais."
 featured-image: "/_assets/images/posts/newsletter-1/macbook.jpg"
 date:   2014-11-21 02:44:00
-categories: dev
+category: dev
 ---
 
 Essa foi a primeira newsletter enviada para quem se inscreveu para receber minhas dicas de leitura.

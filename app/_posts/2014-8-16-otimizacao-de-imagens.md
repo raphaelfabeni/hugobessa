@@ -5,7 +5,7 @@ byline: "Imagens não precisam ser tão pesadas assim"
 description: "Imagens são uma das partes mais pesadas de um site. Otimize seu site usando ferramentas para diminuir o peso de suas imagens"
 featured-image: "/_assets/images/posts/otimizacao-de-imagens/hero.jpg"
 date:   2014-8-30 03:11:00
-categories: dev
+category: dev
 ---
 
 Imagens são uma das partes mais pesadas de um site, principalmente na era das telas de alta-resolução. Otimizá-las pode ser a linha que divide um site lento de um site rápido.

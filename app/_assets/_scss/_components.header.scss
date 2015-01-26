@@ -22,18 +22,15 @@
         font-size: 40px;
         line-height: 1em;
 
-        padding: 0 quarter($inuit-base-spacing-unit);
-
         display: inline-block;
-        color: $color-background;
-        background-color: $color-attention;
+        letter-spacing: -0.1rem;
     }
 
         .header__title--in {
             width: 1.1em;
             padding: 0;
             color: $color-background;
-            background-color: $color-attention;
+            background-color: $color-black;
         }
 
 

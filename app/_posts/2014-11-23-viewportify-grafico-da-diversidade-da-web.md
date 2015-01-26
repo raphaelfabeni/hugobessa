@@ -3,7 +3,7 @@ layout: post
 title: "Viewportify, um gráfico da diversidade da web"
 featured-image: "/_assets/images/posts/viewportify/viewportify-hugobessa.com.br.jpg"
 date:   2014-11-21 02:44:00
-categories: dev
+category: dev
 ---
 
 Desenvolver para Web é algo fantástico para mim. As possibilidades que existem em uma plataforma tão distribuída e acessível são enormes. A diversidade da Web é algo lindo. 

@@ -4,7 +4,7 @@ title: "ITCSS: pensando em uma arquitetura CSS"
 description: "O ITCCS é uma proposta de como criarmos uma boa arquitetura CSS, feito pelo Harry Roberts."
 featured-image: "/_assets/images/posts/itcss/itcss.png"
 date:   2014-11-20 03:09:00
-categories: dev
+category: dev
 ---
 
 Escrever CSS é muito fácil, mas escrever CSS escalável, reutilizável, manutenível e de fácil compreensão não é assim tão fácil. Não é à toa que este assunto gera uma quantidade colossal de artigos, palestras, discussões e projetos Open Source.

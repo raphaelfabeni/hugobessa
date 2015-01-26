@@ -4,7 +4,7 @@ title: "Começando com React"
 description: "Uma pequena visão geral de como construir interfaces com React JS"
 # featured-image: "/_assets/images/posts/santos-frontend/santos-frontend.jpg"
 date:   2015-01-17 01:44:00
-categories: dev
+category: dev
 ---
 
 Traduzido de [The React Quick Start Guide](http://www.jackcallister.com/2015/01/05/the-react-quick-start-guide.html), escrito por [Jack Callister](http://www.jackcallister.com/).

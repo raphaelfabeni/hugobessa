@@ -2,7 +2,7 @@
 layout: post
 title:  'Um ano como desenvolvedor front-end'
 date:   2014-4-9 01:17:00
-categories: pessoal
+category: pessoal
 draft: true
 ---
 
