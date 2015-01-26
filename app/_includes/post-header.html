@@ -2,8 +2,16 @@
 
     <h1 class="[ post__title post__title--single ] ps">{{ page.title }}</h1>
 
-    <small>
-        <span>Leia em {% if page.reading_time %}{{ page.reading_time }}{% else %}{{ page.content | reading_time }}{% endif %}</span>
-    </small>
+    <ul class="[ nav nav--ui ]">
+        <li>
+            <span>{{ page.date | date: '%d/%m/%Y' }}</span>
+        </li>
+        <li>
+            {{ page.category }}
+        </li>
+        <li>
+            <span>{% if page.reading_time %}{{ page.reading_time }}{% else %}{{ page.content | reading_time }}{% endif %}</span>
+        </li>
+    </ul>
 
 </header>

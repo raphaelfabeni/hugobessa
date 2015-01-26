@@ -3,7 +3,7 @@ layout: post
 title: "Mobile is burning, and free-to-play binds the hands of devs who want to help"
 link: http://www.polygon.com/2014/5/9/5699058/free-to-play-mobile-candy-crush-the-room
 date: 2014-5-10 1:45:00
-categories: games
+category: games
 ---
 
 Barry Meade, no [Polygon](http://www.polygon.com/2014/5/9/5699058/free-to-play-mobile-candy-crush-the-room) (tradução livre):

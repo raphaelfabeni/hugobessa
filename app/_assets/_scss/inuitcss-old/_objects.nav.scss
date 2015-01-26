@@ -42,3 +42,10 @@
     }
   }
 }
+
+.nav--spaced,
+%nav--spaced {
+  li {
+    padding: $spacing-unit--tiny;
+  }
+}

@@ -2,7 +2,7 @@
 layout: post
 title:  "5 comandos git para aumentar sua produtividade"
 date:   2014-4-23 1:47:00
-categories: git
+category: git
 ---
 
 Não versionar seus arquivos pode ser uma grande dor de cabeça. Afinal, quem nunca desejou ter salvado uma versão alternativa quando o `Undo` não deu mais conta de voltar todas as alterações feitas nas últimas horas? Eu já, e várias vezes.

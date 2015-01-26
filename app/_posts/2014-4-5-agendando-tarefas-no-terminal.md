@@ -3,7 +3,7 @@ layout: post
 title:  'Agendando tarefas no Terminal'
 link: http://www.vitorbritto.com.br/blog/agendando-tarefas-com-crontab/
 date:   2014-4-5 01:17:00
-categories: unix
+category: unix
 draft: true
 ---
 

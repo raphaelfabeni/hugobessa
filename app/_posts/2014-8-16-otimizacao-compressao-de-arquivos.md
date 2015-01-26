@@ -5,7 +5,7 @@ byline: "Sempre dá pra espremer mais um byte"
 description: "Uma das melhores técnicas para otimizar seu site é comprimir seus arquivos e utilizar gzip"
 featured-image: "/_assets/images/posts/otimizacao-compressao-de-arquivos/hero.png"
 date:   2014-8-16 13:44:00
-categories: dev
+category: dev
 ---
 
 Para iniciar a [série sobre otimização de sites]({{ site.baseurl }}/posts/introducao-a-otimizacao), quero falar sobre **compressão de arquivos**. Esta é uma das formas clássicas de diminuir o tamanho das suas páginas.

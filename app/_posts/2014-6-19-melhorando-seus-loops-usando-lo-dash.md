@@ -3,7 +3,7 @@ layout: post
 title:  "Melhorando seus loops usando o Lo-Dash"
 description: "Loops complexos podem virar um grande problema. O Lo-Dash resolve este problema com métodos simples e úteis"
 date:   2014-6-19 11:59:00
-categories: dev
+category: dev
 ---
 
 Os loops são uma grande parte de diversas aplicações. Usamos eles para iterar dentro de listas, filtrar dados, retirar dados, analisar objetos, ordenar valores e muito mais.

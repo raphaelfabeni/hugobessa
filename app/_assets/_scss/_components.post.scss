@@ -7,8 +7,6 @@
 }
 
     .post__title {
-        @extend %alpha;
-
         margin-top: 0;
         margin-bottom: 0;
 
@@ -21,13 +19,14 @@
     }
 
     .post__info {
-        color: highlight($color-background, 30);
+        color: highlight($color-background, 40);
+        font-weight: 400;
     }
 
 
 @media all and (min-width: $content-width * 0.7) {
     .post__title {
-        font-size: 40px;
+        font-size: 35px;
     }
 }
 

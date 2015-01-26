@@ -4,7 +4,7 @@ title:  "Quem quer contar tudo não conta nada"
 description: "Um site que tenta passar todas as informações de uma só vez é como uma rua cheia de outdoors que agridem os olhos de quem por ali passa"
 featured-image: "/_assets/images/posts/quem-quer-contar-tudo-nao-conta-nada/times-square.jpg"
 date:   2014-5-14 19:46:00
-categories: design
+category: design
 ---
 
 Sejam histórias da sua infância, contos fantásticos ou serviços realizados, sempre queremos falar para os outros o que sentimos, o que fizemos, o que queremos fazer e muitas outras coisas mais. Porém, falar tudo isso de uma vez pode deixar seus amigos, familiares e, principalmente, seus clientes, frustrados.

@@ -5,7 +5,7 @@ date:   2013-12-26 17:26:00
 header-image:
   src: "posts/2013-12-26-funcao-sass-cor-clarear-ou-escurecer/exemplo-de-codigo-no-codepen.jpg"
   alt: "Exemplo de código da função Sass no Codepen.io"
-categories: sass
+category: sass
 ---
 
 Foi-se o tempo que a web tinha o fundo branco (o cinza já morreu faz tempo também), letras pretas serifadas e links azuis. Designers ajudaram a transformar a web em um local colorido e bonito.

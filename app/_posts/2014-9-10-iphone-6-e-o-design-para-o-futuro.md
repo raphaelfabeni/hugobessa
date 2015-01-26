@@ -5,7 +5,7 @@ byline: "Devemos pensar em soluções criadas hoje que funcionam em dispositivos
 description: "O iPhone 6 chegou com resoluções de tela nova. Nossos sites responsivos estão preparados?"
 featured-image: "/_assets/images/posts/iphone-6-e-o-design-para-o-futuro/hero.jpg"
 date:   2014-9-10 00:43:00
-categories: dev
+category: dev
 ---
 
 O mais novo iPhone chegou, com uma grande quantidade de funcionalidades novas e coisas interessantes. Porém, uma me chamou a atenção: a resolução das telas. A Apple disse adeus aos famosíssimos 320 pixels de largura do iPhone, que recebeu uma tela de alta-resolução com 3 vezes a densidade normal. Nossos sites estão preparados para isso?

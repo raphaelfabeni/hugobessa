@@ -4,7 +4,7 @@ title: "santos.frontend()"
 description: "Vamos reunir a comunidade front-end caiçara no primeiro meetup da região."
 featured-image: "/_assets/images/posts/santos-frontend/santos-frontend.jpg"
 date:   2015-01-17 01:44:00
-categories: meetup
+category: meetup
 ---
 
 A comunidade de desenvolvimento front-end santista acabou de ganhar um novo meetup. Na verdade, seu primeiro. O meetup **santos.frontend()** é uma iniciativa sem fins lucrativos que pretende reunir desenvolvedores da região em encontros frequentes.

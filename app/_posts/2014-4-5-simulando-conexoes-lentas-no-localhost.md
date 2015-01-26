@@ -3,7 +3,7 @@ layout: post
 title:  'Simulando conexões lentas no localhost'
 link: https://github.com/tjgq/grunt-throttle
 date:   2014-4-5 10:52:00
-categories: grunt
+category: grunt
 draft: true
 ---
 

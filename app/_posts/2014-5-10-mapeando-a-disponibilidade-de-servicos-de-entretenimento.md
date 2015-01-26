@@ -3,7 +3,7 @@ layout: post
 title: "Mapeando a disponibilidade de serviços de entretenimento"
 link: http://www.macstories.net/stories/mapping-the-international-availability-of-entertainment-services/
 date: 2014-5-10 2:15:00
-categories: services
+category: services
 ---
 
 Graham Spencer fez um [ótimo trabalho para o MacStories](http://www.macstories.net/stories/mapping-the-international-availability-of-entertainment-services/) ao mapear a disponibilidade internacional de serviços de entretenimento. Por estarem quase todos disponíveis nos Estados Unidos, a imprensa de lá tende a ignorar o fato que quase todo o resto do mundo não tem acesso a muitos destes serviços.
