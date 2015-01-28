@@ -15,12 +15,31 @@
 
         a {
             @extend %link--clean;
+
+            &:hover, &:focus, &:active {
+                color: $color-attention;
+            }
         }
     }
 
-    .post__info {
-        color: highlight($color-background, 40);
-        font-weight: 400;
+    .post__category {
+        margin-top: $spacing-unit--small;
+        text-align: center;
+
+        a {
+            @extend %link--clean;
+            @extend %delta;
+
+            padding: 0px $spacing-unit--small halve($spacing-unit--tiny);
+            border-radius: 100px;
+            border: 2px solid;
+            line-height: 0.9;
+            color: lighten($color-text, 50);
+
+            &:hover, &:focus, &:active {
+                color: $color-attention;
+            }
+        }
     }
 
 

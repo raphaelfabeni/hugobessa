@@ -11,17 +11,9 @@ home: true
 
             <h2 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
 
-            <ul class="[ nav nav--ui ] billboard--center post__info">
-                <li>
-                    <span>{{ post.date | date: '%d/%m/%Y' }}</span>
-                </li>
-                <li>
-                    {{ post.category }}
-                </li>
-                <li>
-                    <span>{% if post.reading_time %}{{ post.reading_time }}{% else %}{{ post.content | reading_time }}{% endif %}</span>
-                </li>
-            </ul>
+            <div class="post__category">
+                {% categorylink post.category %}{{ post.category }}{% endcategorylink %}
+            </div>
 
             <div class="post__excerpt">
                 {{ post.excerpt }}

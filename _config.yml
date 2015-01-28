@@ -59,3 +59,8 @@ pygments: true
 # Base url is for assets. Full url is for non-relative urls, such as Facebook meta tags
 baseurl:
 fullurl: http://192.168.1.16:3000
+
+category_archive:
+  slugify: true
+  layout: default
+  path: /categoria
