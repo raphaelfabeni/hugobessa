@@ -4,15 +4,15 @@
 
 .content {
 
-    word-wrap: break-word;
-
     /**
      * [1]: better spacing for headings
+     * [2]: prevent big words to break
      */
     h2, h3, h4, h5, h6 {
         @extend %element;
 
         margin-bottom: 0; // [1]
+        word-wrap: break-word; // [2]
     }
 
     h2 {
