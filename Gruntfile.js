@@ -119,7 +119,8 @@ module.exports = function(grunt) {
             dev: {
                 options: {
                     dest: '<%= paths.build.dev %>',
-                    config: '_config.yml'
+                    config: '_config.yml',
+                    trace: true
                     // drafts: true,
                 }
             },

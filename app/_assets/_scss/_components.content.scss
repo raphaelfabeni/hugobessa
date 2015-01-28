@@ -45,7 +45,6 @@
 
     p, ul, ol, blockquote, .highlight, table, hr {
         @extend %element;
-        line-height: 1.7em;
     }
 
     hr {
@@ -59,6 +58,10 @@
 
     ul, ol {
         padding-left: $spacing-unit--huge;
+    }
+
+    > p {
+        margin-top: 0;
     }
 
 }
