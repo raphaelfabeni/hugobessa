@@ -49,3 +49,11 @@
     padding: $spacing-unit--tiny;
   }
 }
+
+.nav--stacked,
+%nav--stacked {
+  li {
+    display: block;
+    margin: $spacing-unit--tiny 0;
+  }
+}

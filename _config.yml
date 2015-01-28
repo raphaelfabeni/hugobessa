@@ -62,5 +62,5 @@ fullurl: http://192.168.1.16:3000
 
 category_archive:
   slugify: true
-  layout: default
+  layout: category_archive
   path: /categoria
