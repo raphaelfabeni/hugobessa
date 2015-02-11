@@ -5,7 +5,7 @@ byline: "Dando espaço para a parte legal durante seu dia"
 description: "Aprenda a automatizar tarefas com o incrível Grunt"
 featured-image: "/_assets/images/posts/automacao-com-grunt/palestra-automacao-com-grunt.jpg"
 date:   2014-8-10 14:23:00
-category: dev
+category: Palestras
 reading_time: "10 min"
 ---
 
