@@ -3,7 +3,7 @@ layout: post
 title: "Performance em animações"
 description: "Palestra sobre performance em animações CSS, mostrando vantagens de usar Composite Layers"
 featured-image: "/_assets/images/posts/performance-em-animacoes/hero.jpg"
-date:   2015-02-17 01:44:00
+date:   2015-2-11 01:20:00
 category: Palestras
 ---
 
