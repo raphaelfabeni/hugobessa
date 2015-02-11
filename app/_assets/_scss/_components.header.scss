@@ -27,8 +27,7 @@
     }
 
         .header__title--in {
-            width: 1.1em;
-            padding: 0;
+            padding: 2px 8px 3px;
             color: $color-background;
             background-color: $color-black;
         }
@@ -38,4 +37,8 @@
     .header__title {
         font-size: 60px;
     }
+
+        .header__title--in {
+            padding: 2px 13px 4px 11px;
+        }
 }
