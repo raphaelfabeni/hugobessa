@@ -210,25 +210,6 @@ module.exports = function(grunt) {
             }
         },
 
-        // get the contents of secret.json file
-        secret: grunt.file.readJSON('secret.json'),
-
-        // Rsync: copy files from local computer to VPS
-        rsync: {
-            options: {
-                args: ['--verbose', '--chmod=Du=rwx,Dgo=rx,Fu=rw,Fgo=r'],
-                recursive: true,
-                compareMode: 'checksum'
-            },
-            dist: {
-                options: {
-                    src: '<%= paths.build.prod %>',
-                    dest: '<%= secret.path %>',
-                    host: '<%= secret.username %>@<%= secret.host %>'
-                }
-            }
-        },
-
         surge: {
             prod: {
                 options: {
