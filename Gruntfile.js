@@ -21,6 +21,12 @@ module.exports = function(grunt) {
             js:     'js/'
         },
 
+        surgeConfig: {
+            domains: {
+                prod: 'hugobessa.surge.sh'
+            }
+        },
+
         // Watch: trigger tasks on file changes/add
         watch: {
             options: {
@@ -223,6 +229,15 @@ module.exports = function(grunt) {
             }
         },
 
+        surge: {
+            prod: {
+                options: {
+                    project: '<%= paths.build.prod %>',
+                    domain: '<%= surgeConfig.domains.prod %>'
+                }
+            }
+        },
+
         cssmin: {
             prod: {
                 files: {
@@ -328,7 +343,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('deploy', [
         'build:prod',
-        'rsync',
+        'surge:prod',
         'pageres',
         'ping'
     ]);

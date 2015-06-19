@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "0.12"
+install:
+  - travis_retry npm install -g grunt-cli
+  - travis_retry npm install -g bower
+  - travis_retry bundle install
+  - travis_retry npm install
+  - travis_retry bower install
+script:
+  - grunt deploy
