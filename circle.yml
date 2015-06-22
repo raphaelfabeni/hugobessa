@@ -10,7 +10,7 @@ deployment:
   staging:
     branch: develop
     commands:
-      - grunt deploy:staging
+      - grunt deploy:develop
   production:
     branch: master
     commands:
