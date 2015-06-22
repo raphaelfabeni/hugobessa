@@ -11,4 +11,4 @@ deployment:
   production:
     branch: master
     commands:
-      - grunt deploy:production
+      - grunt deploy:prod
