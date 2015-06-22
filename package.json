@@ -10,7 +10,9 @@
     "fastr": "~0.0.3",
     "lodash.foreach": "^2.4.1"
   },
-  "test": "echo 'Error, no tests",
+  "scripts": {
+    "test": "echo 'No tests, exiting'"
+  },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-browser-sync": "^1.5.3",
