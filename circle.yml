@@ -1,6 +1,8 @@
 dependencies:
   pre:
     - npm install grunt-cli bower --global
+  post:
+    - bower install
 deployment:
   staging:
     branch: develop
