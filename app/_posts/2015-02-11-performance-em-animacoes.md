@@ -7,7 +7,7 @@ date:   2015-2-11 01:20:00
 category: Palestras
 ---
 
-No primeiro Meetup CSSSP de 2015, eu apresentei uma palestra sobre Performance em Animações. Ela foca bastante em mostrar o que acontece em cada frame de uma animação e quais técnicas utilizar ou evitar para manter animações rápidas.
+No primeiro Meetup CSS SP de 2015, eu apresentei uma palestra sobre Performance em Animações. Ela foca bastante em mostrar o que acontece em cada frame de uma animação e quais técnicas utilizar ou evitar para manter animações rápidas.
 
 <!--more-->
 
