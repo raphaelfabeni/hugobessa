@@ -1,7 +1,5 @@
-# Hugo Bessa
+# Hugo Bessa [![Circle CI](https://circleci.com/gh/hugobessaa/hugobessa.svg?style=svg)](https://circleci.com/gh/hugobessaa/hugobessa)
 > Website of Hugo Bessa
-
-Master: [![Circle CI](https://circleci.com/gh/hugobessaa/hugobessa.svg?style=svg)](https://circleci.com/gh/hugobessaa/hugobessa)
 
 ====
 [![Screenshot of hugobessa.com.br](https://raw.githubusercontent.com/hugobessaa/hugobessa/master/hugobessa.com.br-1024x768-cropped.png)](http://hugobessa.com.br/)
