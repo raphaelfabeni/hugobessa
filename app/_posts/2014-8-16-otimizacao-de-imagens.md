@@ -77,7 +77,7 @@ Criar *sprites* é uma técnica que também pode diminuir bastante o número de 
 Realizar todo esse trabalho "na mão" pode ser bastante custoso e muitas vezes chato. Algumas ferramentas podem ajudar bastante na hora de otimizar as imagens do seu site. Segue uma lista das principais que uso em projetos de diversos tamanhos:
 
 - [imagemin](https://github.com/imagemin/imagemin-app), um aplicativo multi-plataforma que otimiza imagens de todos os formatos citados neste post.
-- [grunt-imagemin]() e [gulp-imagemin](), plugins para os dois mais famosos *task runners* em JavaScript.
+- [grunt-imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) e [gulp-imagemin](https://github.com/sindresorhus/gulp-imagemin), plugins para os dois mais famosos *task runners* em JavaScript.
 - [ImageOptim](https://imageoptim.com), incrível aplicativo de otimização de imagens para OS X.
 - [JPEGmini](http://www.jpegmini.com), que otimiza JPEGs com reduções consideráveis de até 5 vezes no tamanho da imagem.
 - [TinyPNG](https://tinypng.com), uma ótima ferramenta específica para PNGs com ótimos resultados.
