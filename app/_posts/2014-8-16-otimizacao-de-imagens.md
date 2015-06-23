@@ -86,7 +86,7 @@ Realizar todo esse trabalho "na mão" pode ser bastante custoso e muitas vezes c
 - [Compass Sprinting](http://compass-style.org/help/tutorials/spriting/), funções do Compass para gerar sprites de imagens de forma automatizada.
 - [Icomoon](https://icomoon.io), Icon Fonts predefinidas e também personalizáveis.
 - [grunt-webfonts](https://github.com/sapegin/grunt-webfont), plugin para o Grunt para converter uma série de SVGs em uma Icon Font.
-- [Smush.it](http://www.smushit.com/ysmush.it/), ferramenta do Yahoo para comprimir imagens sem perda de qualidade. *[(dica do Suissa)](http://www.hugobessa.com.br/posts/otimizacao-de-imagens/#comment-1570988504)*
+- [Smush.it](http://www.imgopt.com/), ferramenta do Yahoo para comprimir imagens sem perda de qualidade. *[(dica do Suissa)](http://www.hugobessa.com.br/posts/otimizacao-de-imagens/#comment-1570988504)*
 
 ## Dicas de leitura
 
