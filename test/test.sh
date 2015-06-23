@@ -3,4 +3,4 @@
 set -e # halt on any error
 
 grunt build:prod; # build site
-htmlproof ./dist --check-favicon; # test html
+bundle exec htmlproof ./dist --check-favicon; # test html
