@@ -5,27 +5,25 @@ description: Desenvolvedor front-end focado em experiências digitais que atinge
 home: true
 ---
 
+<section class="entries">
 {% for post in paginator.posts %}
-    <article class="element post post--listing">
-        <header class="billboard">
+    <article class="entry">
+        <a class="entry__link" href="{{ post.url }}">
+            <header class="entry__header">
 
-            <h2 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <h2 class="entry__title">
+                    {{ post.title }}
+                </h2>
 
-            <div class="post__category">
-                {% categorylink post.category %}{{ post.category }}{% endcategorylink %}
-            </div>
+                <div class="entry__info">
+                    {{ post.date | date: "%d/%m/%Y" }}
+                </div>
 
-            <div class="post__excerpt">
-                {{ post.excerpt }}
-            </div>
-
-            <p class="post__info">
-                <span><a href="{{ post.url }}">Leia mais</a></span>
-            </p>
-
-        </header>
+            </header>
+        </a>
     </article>
 {% endfor %}
+</section>
 
 {% if paginator.next_page or paginator.previous_page %}
 
@@ -33,7 +31,7 @@ home: true
         {% if paginator.previous_page %}
             <li class="m-">
                 {% if paginator.previous_page == 1 %}
-                    <a href="{{ site.baseulr}}/" class="button button--secondary">Anteriores</a>
+                    <a href="{{ site.baseulr}}/" class="button button--secondary">anteriores</a>
                 {% else %}
                     <a href="{{ site.baseulr}}/page/{{ paginator.previous_page }}" class="button button--secondary">Anteriores</a>
                 {% endif %}
@@ -42,7 +40,7 @@ home: true
 
         {% if paginator.next_page %}
             <li class="m-">
-                <a href="{{ site.baseulr}}/page/{{ paginator.next_page }}" class="button">Próximos</a>
+                <a href="{{ site.baseulr}}/page/{{ paginator.next_page }}" class="button">próximos</a>
             </li>
         {% endif %}
     </ul>

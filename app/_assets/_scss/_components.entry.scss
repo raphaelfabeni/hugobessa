@@ -1,0 +1,40 @@
+.entries {
+    max-width: 800px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.entry {
+    width: 100%;
+    padding: 10px;
+    word-break: break-word;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+    .entry__link {
+        text-decoration: none;
+        color: $color-black;
+
+        @include attention {
+            color: $color-blue;
+        }
+    }
+
+    .entry__title {
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: $inuit-heading-size-4;
+    }
+
+    .entry__info {
+        font-size: $inuit-heading-size-6;
+    }
+
+@media screen and (min-width: $break-desk) {
+    .entry__title {
+        font-size: $inuit-heading-size-2;
+    }
+
+}
