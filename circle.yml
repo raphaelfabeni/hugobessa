@@ -3,8 +3,11 @@ dependencies:
     - npm install grunt-cli bower --global
   post:
     - bower install
+test:
+  pre:
+    - grunt build:prod
 deployment:
-  staging:
+  develop:
     branch: develop
     commands:
       - grunt deploy:develop

@@ -330,14 +330,11 @@ module.exports = function(grunt) {
     ]);
 
     grunt.registerTask('deploy:develop', [
-        'build:prod',
         'surge:develop'
     ]);
 
     grunt.registerTask('deploy:prod', [
-        'build:prod',
         'surge:prod',
-        'pageres',
         'ping'
     ]);
 
