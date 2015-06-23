@@ -11,7 +11,7 @@
     "lodash.foreach": "^2.4.1"
   },
   "scripts": {
-    "test": "echo 'No tests, exiting'"
+    "test": "./test/test.sh"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
