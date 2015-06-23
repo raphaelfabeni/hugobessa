@@ -8,15 +8,21 @@ home: true
 <section class="entries">
 {% for post in paginator.posts %}
     <article class="entry">
-        <header class="entry__content">
+        <a class="entry__link" href="{{ post.url }}">
+            <div class="entry__content" style="background: {{ post.bg }}; color: {{ post.color }};">
+                <header class="entry__header">
 
-            <h2 class="entry__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                    <h2 class="entry__title">
+                        {{ post.title }}
+                    </h2>
 
-            <div class="entry__category">
-                {% categorylink post.category %}{{ post.category }}{% endcategorylink %}
+                    <div class="entry__category">
+                        {{ post.category }}
+                    </div>
+
+                </header>
             </div>
-
-        </header>
+        </a>
     </article>
 {% endfor %}
 </section>
@@ -27,7 +33,7 @@ home: true
         {% if paginator.previous_page %}
             <li class="m-">
                 {% if paginator.previous_page == 1 %}
-                    <a href="{{ site.baseulr}}/" class="button button--secondary">Anteriores</a>
+                    <a href="{{ site.baseulr}}/" class="button button--secondary">anteriores</a>
                 {% else %}
                     <a href="{{ site.baseulr}}/page/{{ paginator.previous_page }}" class="button button--secondary">Anteriores</a>
                 {% endif %}
@@ -36,7 +42,7 @@ home: true
 
         {% if paginator.next_page %}
             <li class="m-">
-                <a href="{{ site.baseulr}}/page/{{ paginator.next_page }}" class="button">Próximos</a>
+                <a href="{{ site.baseulr}}/page/{{ paginator.next_page }}" class="button">próximos</a>
             </li>
         {% endif %}
     </ul>

@@ -5,3 +5,53 @@
     flex-wrap: wrap;
 }
 
+.entry {
+    width: 100%;
+    padding: 5px;
+    word-break: break-word;
+}
+
+    .entry__link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .entry__content {
+        background: lightgray;
+        position: relative;
+        min-height: 155px;
+    }
+
+    .entry__header {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .entry__title {
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+
+    .entry__category {
+        font-size: 16px;
+    }
+
+@media screen and (min-width: 300px) {
+    .entry {
+        width: 50%;
+    }
+
+    .entry__content {
+        min-height: 165px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .entry__header {
+        padding: 15px;
+    }
+}
