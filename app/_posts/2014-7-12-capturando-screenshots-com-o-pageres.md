@@ -27,10 +27,10 @@ npm install --global pageres
 
 ## Usando o Pageres
 
-Agora você já pode utilizar o Pageres através do seu terminal. Para tirar uma screenshot de [hugobessa.com.br](http://hugobessa.com.br/), por exemplo, basta executar o seguinte comando:
+Agora você já pode utilizar o Pageres através do seu terminal. Para tirar uma screenshot de [www.hugobessa.com.br](http://www.hugobessa.com.br/), por exemplo, basta executar o seguinte comando:
 
 ```bash
-pageres hugobessa.com.br 1024x768 320x480
+pageres www.hugobessa.com.br 1024x768 320x480
 ```
 
 Isto capturará duas screenshots do site. Além de poder especificar quantas resoluções quiser, você pode omiti-las e o Pageres usará as 10 resoluções mais comuns de acordo com o w3counter.
