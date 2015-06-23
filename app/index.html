@@ -9,19 +9,17 @@ home: true
 {% for post in paginator.posts %}
     <article class="entry">
         <a class="entry__link" href="{{ post.url }}">
-            <div class="entry__content" style="background: {{ post.bg }}; color: {{ post.color }};">
-                <header class="entry__header">
+            <header class="entry__header">
 
-                    <h2 class="entry__title">
-                        {{ post.title }}
-                    </h2>
+                <h2 class="entry__title">
+                    {{ post.title }}
+                </h2>
 
-                    <div class="entry__category">
-                        {{ post.category }}
-                    </div>
+                <div class="entry__info">
+                    {{ post.date | date: "%d/%m/%Y" }}
+                </div>
 
-                </header>
-            </div>
+            </header>
         </a>
     </article>
 {% endfor %}
