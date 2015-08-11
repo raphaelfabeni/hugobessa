@@ -2,7 +2,6 @@
 layout: post
 title: "Clojure vs. JavaScript"
 description: "Um pequeno exemplo da diferença entre as linguagens"
-featured-image: "/_assets/images/posts/clojure-vs-js/hero.png"
 date:   2015-8-11 07:40:00
 category: clojure
 ---
@@ -97,3 +96,4 @@ Clojure:
 ```
 
 \* alguns exemplos usam novidades do ES2015 e ES2016
+\*\* [um vídeo mostrando código em JavaScript e Clojure](https://www.youtube.com/watch?v=8UYa8PV3CXQ)
