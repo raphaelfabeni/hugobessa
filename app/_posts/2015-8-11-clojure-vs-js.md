@@ -14,10 +14,10 @@ JavaScript*:
 [1, 2]   // array
 {"a": 1} // object
 
-(new Map()).set({"a", 1}, 1)                // Map
-(new WeakMap()).set({"a", 1}, 1)            // WeakMap
-(new Set()).add(1).add(2)                   // Set
-(new WeakSet()).add({"a", 1}).add({"b", 2}) // WeakSet
+new Map([[a:1]])            // Map
+new WeakMap([[{a:1}, 1]])   // WeakMap
+new Set([1, 2])             // Set
+new WeakSet([{a:1}, {b:2}]) // WeakSet
 ```
 
 Clojure: 
