@@ -6,11 +6,9 @@ dependencies:
 test:
   pre:
     - grunt build:prod
+  post:
+    - grunt deploy:develop
 deployment:
-  develop:
-    branch: develop
-    commands:
-      - grunt deploy:develop
   production:
     branch: master
     commands:
