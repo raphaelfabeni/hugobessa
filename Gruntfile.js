@@ -221,7 +221,7 @@ module.exports = function(grunt) {
             develop: {
                 options: {
                     project: '<%= paths.build.prod %>',
-                    domain: '<%= surgeConfig.domains.prod %>'
+                    domain: '<%= surgeConfig.domains.develop %>'
                 }
             }
         },
