@@ -25,7 +25,7 @@ Clojure:
 ```clojure
 (1 2)  ;; list
 [1 2]  ;; vector
-{:a 1}  ;; hash map / sorted-map
+{:a 1} ;; hash map / sorted-map
 #{1 2} ;; set / sorted-set
 ```
 
@@ -96,4 +96,5 @@ Clojure:
 ```
 
 \* alguns exemplos usam novidades do ES2015 e ES2016
+
 \*\* [um vídeo mostrando código em JavaScript e Clojure](https://www.youtube.com/watch?v=8UYa8PV3CXQ)
