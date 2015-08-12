@@ -82,7 +82,7 @@ Realizar todo esse trabalho "na mão" pode ser bastante custoso e muitas vezes c
 - [JPEGmini](http://www.jpegmini.com), que otimiza JPEGs com reduções consideráveis de até 5 vezes no tamanho da imagem.
 - [TinyPNG](https://tinypng.com), uma ótima ferramenta específica para PNGs com ótimos resultados.
 - [GIF Optimizer](http://ezgif.com/optimize), um aplicativo web para otimizar GIFs.
-- [Unveil](http://luis-almeida.github.io/unveil/), um plugin jQuery para *lazy-load*.
+- [Unveil](https://github.com/luis-almeida/unveil/), um plugin jQuery para *lazy-load*.
 - [Compass Sprinting](http://compass-style.org/help/tutorials/spriting/), funções do Compass para gerar sprites de imagens de forma automatizada.
 - [Icomoon](https://icomoon.io), Icon Fonts predefinidas e também personalizáveis.
 - [grunt-webfonts](https://github.com/sapegin/grunt-webfont), plugin para o Grunt para converter uma série de SVGs em uma Icon Font.
