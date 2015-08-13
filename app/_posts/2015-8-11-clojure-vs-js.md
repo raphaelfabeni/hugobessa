@@ -6,6 +6,10 @@ date:   2015-8-11 07:40:00
 category: clojure
 ---
 
+Atualmente tenho estudado [Clojure](http://clojure.org/), uma linguagem de programação funcional
+bastante diferente das que estamos acostumados. Para ilustrar algumas diferenças
+com JavaScript, resolvi compilar alguns exemplos. Aproveitem a beleza de um [LISP](https://en.wikipedia.org/wiki/Lisp_%28programming_language%29) :).
+
 ### Estruturas de dados
 
 JavaScript*:
