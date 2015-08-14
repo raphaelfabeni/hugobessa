@@ -10,6 +10,10 @@ Atualmente tenho estudado [Clojure](http://clojure.org/), uma linguagem de progr
 bastante diferente das que estamos acostumados. Para ilustrar algumas diferenças
 com JavaScript, resolvi compilar alguns exemplos. Aproveitem a beleza de um [LISP](https://en.wikipedia.org/wiki/Lisp_%28programming_language%29) :).
 
+(É importante ressaltar que existem diferenças entre diversas funcionalidades na
+linguagem, como as estrutura de dados que em Clojure são imutáveis e possuem
+outras funcionalidades)
+
 ### Estruturas de dados
 
 JavaScript*:
