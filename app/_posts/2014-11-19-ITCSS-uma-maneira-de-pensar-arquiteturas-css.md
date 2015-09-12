@@ -10,8 +10,6 @@ published: true
 
 
 **Nota**: desde que escrevi este post, passei a não utilizar algumas partes do ITCSS. Hoje sigo uma abordagem que centraliza os estilos em componentes, em vez de espalhá-los em *base*, *generic*, *objects*, *components* e *trumps*. Apesar disso, ainda recomendo bastante as ideias de estruturação do ITCSS. Boa leitura :-).
-
-Develop yo
 ***
 
 Escrever CSS é muito fácil, mas escrever CSS escalável, reutilizável, manutenível e de fácil compreensão não é assim tão fácil. Não é à toa que este assunto gera uma quantidade colossal de artigos, palestras, discussões e projetos Open Source.
