@@ -12,10 +12,10 @@ Desenvolver para Web é algo fantástico para mim. As possibilidades que existem
 
 <!--more-->
 
-Este é o gráfico do meu site, [http://hugobessa.com.br](http://hugobessa.com.br):
+Este é o gráfico do meu site, [http://www.hugobessa.com.br](http://www.hugobessa.com.br):
 
 <p class="element element--wide">
-    <img src="{{ site.baseurl }}/_assets/images/posts/viewportify/viewportify.png" alt="Viewportify de hugobessa.com.br">
+    <img src="{{ site.baseurl }}/_assets/images/posts/viewportify/viewportify.png" alt="Viewportify de www.hugobessa.com.br">
 </p>
 
 Bonito, não? Este projeto foi criado por Phil Hawksworth, com o intuito de mostrar a importância do design responsivo. O Viewportify mostra claramente que não podemos nos dar ao luxo de supor muito sobre como nosso usuário usará nosso site.

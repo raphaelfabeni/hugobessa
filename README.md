@@ -1,4 +1,4 @@
-# Hugo Bessa
+# Hugo Bessa [![Circle CI](https://circleci.com/gh/hugobessaa/hugobessa.svg?style=svg)](https://circleci.com/gh/hugobessaa/hugobessa)
 > Website of Hugo Bessa
 
 ====
@@ -6,6 +6,23 @@
 ====
 
 This is the source code of my website. Here I play with the stuff I'm learning, be it a development thing or just design. Here I have the freedom to test, improve and write.
+
+## Install (OS X)
+
+you must have:
+
+- Ruby `brew install ruby`
+- Node [install link](http://nodejs.org/dist/v0.12.4/node-v0.12.4.pkg)
+- Grunt `npm install -g grunt-cli`
+- Bower `npm install -g bower`
+
+and install:
+
+```bash
+bundle install; \
+npm install; \
+bower install; \
+```
 
 ## License
 

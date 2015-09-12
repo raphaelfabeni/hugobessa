@@ -1,0 +1,15 @@
+dependencies:
+  pre:
+    - npm install grunt-cli bower --global
+  post:
+    - bower install
+test:
+  pre:
+    - grunt build:prod
+  post:
+    - grunt deploy:develop
+deployment:
+  production:
+    branch: master
+    commands:
+      - grunt deploy:prod

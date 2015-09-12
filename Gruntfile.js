@@ -21,6 +21,13 @@ module.exports = function(grunt) {
             js:     'js/'
         },
 
+        surgeConfig: {
+            domains: {
+                prod: 'www.hugobessa.com.br',
+                develop: 'develop.hugobessa.com.br'
+            }
+        },
+
         // Watch: trigger tasks on file changes/add
         watch: {
             options: {
@@ -204,21 +211,17 @@ module.exports = function(grunt) {
             }
         },
 
-        // get the contents of secret.json file
-        secret: grunt.file.readJSON('secret.json'),
-
-        // Rsync: copy files from local computer to VPS
-        rsync: {
-            options: {
-                args: ['--verbose', '--chmod=Du=rwx,Dgo=rx,Fu=rw,Fgo=r'],
-                recursive: true,
-                compareMode: 'checksum'
-            },
-            dist: {
+        surge: {
+            prod: {
                 options: {
-                    src: '<%= paths.build.prod %>',
-                    dest: '<%= secret.path %>',
-                    host: '<%= secret.username %>@<%= secret.host %>'
+                    project: '<%= paths.build.prod %>',
+                    domain: '<%= surgeConfig.domains.prod %>'
+                }
+            },
+            develop: {
+                options: {
+                    project: '<%= paths.build.prod %>',
+                    domain: '<%= surgeConfig.domains.develop %>'
                 }
             }
         },
@@ -326,10 +329,12 @@ module.exports = function(grunt) {
         'browserSync:prod',
     ]);
 
-    grunt.registerTask('deploy', [
-        'build:prod',
-        'rsync',
-        'pageres',
+    grunt.registerTask('deploy:develop', [
+        'surge:develop'
+    ]);
+
+    grunt.registerTask('deploy:prod', [
+        'surge:prod',
         'ping'
     ]);
 

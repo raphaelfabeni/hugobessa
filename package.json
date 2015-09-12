@@ -10,23 +10,26 @@
     "fastr": "~0.0.3",
     "lodash.foreach": "^2.4.1"
   },
+  "scripts": {
+    "test": "./test/test.sh"
+  },
   "devDependencies": {
-    "matchdep": "^0.3.0",
     "grunt": "^0.4.5",
-    "grunt-contrib-watch": "^0.6.1",
     "grunt-browser-sync": "^1.5.3",
-    "grunt-contrib-imagemin": "^0.9.1",
-    "grunt-contrib-clean": "^0.6.0",
-    "grunt-sass": "^0.16.0",
-    "grunt-jekyll": "^0.4.2",
-    "grunt-contrib-copy": "^0.7.0",
-    "grunt-rsync": "^0.6.2",
-    "grunt-uncss": "^0.3.7",
     "grunt-browserify": "3.1.0",
-    "grunt-pageres": "^1.1.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-cssmin": "^0.10.0",
     "grunt-contrib-htmlmin": "^0.3.0",
+    "grunt-contrib-imagemin": "^0.9.1",
     "grunt-contrib-uglify": "^0.6.0",
-    "grunt-contrib-cssmin": "^0.10.0"
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jekyll": "^0.4.2",
+    "grunt-pageres": "^1.1.0",
+    "grunt-sass": "^0.16.0",
+    "grunt-surge": "^0.6.1",
+    "grunt-uncss": "^0.3.7",
+    "matchdep": "^0.3.0"
   },
   "engines": {
     "node": ">=0.8.0"

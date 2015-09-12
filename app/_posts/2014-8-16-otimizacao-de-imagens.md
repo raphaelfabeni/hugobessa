@@ -77,16 +77,16 @@ Criar *sprites* é uma técnica que também pode diminuir bastante o número de 
 Realizar todo esse trabalho "na mão" pode ser bastante custoso e muitas vezes chato. Algumas ferramentas podem ajudar bastante na hora de otimizar as imagens do seu site. Segue uma lista das principais que uso em projetos de diversos tamanhos:
 
 - [imagemin](https://github.com/imagemin/imagemin-app), um aplicativo multi-plataforma que otimiza imagens de todos os formatos citados neste post.
-- [grunt-imagemin]() e [gulp-imagemin](), plugins para os dois mais famosos *task runners* em JavaScript.
+- [grunt-imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) e [gulp-imagemin](https://github.com/sindresorhus/gulp-imagemin), plugins para os dois mais famosos *task runners* em JavaScript.
 - [ImageOptim](https://imageoptim.com), incrível aplicativo de otimização de imagens para OS X.
 - [JPEGmini](http://www.jpegmini.com), que otimiza JPEGs com reduções consideráveis de até 5 vezes no tamanho da imagem.
 - [TinyPNG](https://tinypng.com), uma ótima ferramenta específica para PNGs com ótimos resultados.
 - [GIF Optimizer](http://ezgif.com/optimize), um aplicativo web para otimizar GIFs.
-- [Unveil](http://luis-almeida.github.io/unveil/), um plugin jQuery para *lazy-load*.
+- [Unveil](https://github.com/luis-almeida/unveil/), um plugin jQuery para *lazy-load*.
 - [Compass Sprinting](http://compass-style.org/help/tutorials/spriting/), funções do Compass para gerar sprites de imagens de forma automatizada.
 - [Icomoon](https://icomoon.io), Icon Fonts predefinidas e também personalizáveis.
 - [grunt-webfonts](https://github.com/sapegin/grunt-webfont), plugin para o Grunt para converter uma série de SVGs em uma Icon Font.
-- [Smush.it](http://www.smushit.com/ysmush.it/), ferramenta do Yahoo para comprimir imagens sem perda de qualidade. *[(dica do Suissa)](http://hugobessa.com.br/posts/otimizacao-de-imagens/#comment-1570988504)*
+- [Smush.it](http://www.imgopt.com/), ferramenta do Yahoo para comprimir imagens sem perda de qualidade. *[(dica do Suissa)](http://www.hugobessa.com.br/posts/otimizacao-de-imagens/#comment-1570988504)*
 
 ## Dicas de leitura
 
