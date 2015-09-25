@@ -55,7 +55,7 @@ var sendButton = () => button('Send')
 var likeButton = () => button('Like')
 ```
 
-Isso tudo é só JavaScript, certo? Então poderíamos diminuir o boilerplate deste pequeno código usando [currying](#):
+Isso tudo é só JavaScript, certo? Então poderíamos diminuir o boilerplate deste pequeno código usando [currying](http://www.dustindiaz.com/javascript-curry/):
 
 ```js
 var cButton = (text) => () => button(text)
@@ -231,7 +231,7 @@ Utilizar apenas funções para criar nossos componentes se mostrou bastante flex
 - Retornam um valor reutilizável por outras funções
 - Podem ser usadas como dado
 
-Este exemplo não funciona por si só. Eu também escondi alguns detalhes para mantê-lo ditático. Porém, isso não significa que fazer isso não é possível: o [React](#) funciona praticamente desta forma, assim como o [virtual-dom](#).
+Este exemplo não funciona por si só. Eu também escondi alguns detalhes para mantê-lo ditático. Porém, isso não significa que fazer isso não é possível: o [React](https://facebook.github.io/react/) funciona praticamente desta forma, assim como o [virtual-dom](https://github.com/Matt-Esch/virtual-dom).
 
 Existe uma alternativa à complicada API dos Web Components e diretivas Angular. Uma alternativa que torna possível usarmos componentes como argumentos, compô-los e usar apenas JavaScript para resolver nossos problemas. E por ser apenas JavaScript, podemos até renderizar estes componentes no servidor, usando Node.
 
