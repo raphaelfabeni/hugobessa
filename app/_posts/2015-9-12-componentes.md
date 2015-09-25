@@ -2,13 +2,13 @@
 layout: post
 title: "Componentes"
 description: ""
-date:   2015-9-12 13:40:00
+date:   2015-8-11 07:40:00
 category: dev
 ---
 
-Recentemente muitos estão falando sobre componentes. Essas unidades de funcionalidade que podem ser reutilizadas por toda uma interface, como botões e menus do Bootstrap.
+Recentemente muito se está falando de componentes, unidades de funcionalidade que podem ser reutilizadas por toda uma interface, como botões e menus no Bootstrap.
 
-Toda a comunidade está procurando uma solução definitiva para esse problema. Temos soluções simples como o [module pattern](#) e mais complexas como diretivas do Angular. Além dessa, temos também aquela incrívelmente complexa e nunca acabada especificação: Web Components.
+Toda a comunidade está procurando uma solução definitiva para esse problema. Temos coisas tão simples quando o [module pattern](http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html) até [diretivas](https://docs.angularjs.org/guide/directive) do Angular. Temos também aquela incrívelmente complexa e nunca acabada especificação: Web Components.
 
 E se nossos componentes pudessem ser como funções?
 
@@ -21,9 +21,12 @@ Funções no JavaScript possuem certas características, dentre elas:
 
 Ora, se funções são tão poderosas na nossa linguagem, e podem ser utilizadas de tantas formas, por que nossos componentes também não podem ser assim?
 
-Apesar de estas características serem extremamente simples, quase todas as formas atuais de escrever componentes falham em oferecer a flexibilidade na simplicidade de funções.
+Apesar de estas características serem extremamente simples, quase todas as formas atuais de escrever componentes falham em oferecer a flexibilidade que temos com funções.
 
 Vamos então começar a imaginar como seria um sistema de componentes simples e eficiente como funções.
+
+*Importante: Os exemplos a seguir usam sintaxe ES2015 e ES2016. Não conhece? Aprenda aqui:
+[JSRocks](http://jsrocks.org/pt-br/).*
 
 ```js
 var component = (data) => output
@@ -55,7 +58,7 @@ var likeButton = () => button('Like')
 Isso tudo é só JavaScript, certo? Então poderíamos diminuir o boilerplate deste pequeno código usando [currying](#):
 
 ```js
-var cButton = (text) => button(text)
+var cButton = (text) => () => button(text)
 
 var searchButton = cButton('Search')
 var loginButton = cButton('Login')
@@ -83,7 +86,7 @@ var style = {
 }
 
 var box = (content) => (DOM.form({
-  . . .style,
+  ...style,
   children: content
 })
 ```
@@ -152,14 +155,12 @@ var searchResults = (results) => DOM.ul({
 })
 ```
 
-***
-
-Recaptulando, já temos os dois componentes necessários para fazer nosso aplicativo de busca: `searchBox` e `searchResults`. Cada um deles foi criado a partir de funções e outros componentes. Usamos o método `map` de arrays para transformar uma simples coleção de nomes em uma coleção de elementos `li`.
+Já temos os dois componentes necessários para fazer nosso aplicativo de busca: `searchBox` e `searchResults`. Cada um deles foi criado a partir de funções e outros componentes. Usamos o método `map` de arrays para transformar uma simples coleção de nomes em uma coleção de elementos `li`.
 
 Vamos então finalizar a conexão entre eles para construir nosso aplicativo. Precisamos agora de uma forma de conectar esses componentes e renderizá-los na nossa página:
 
 ```js
-var App = (results) =>
+var app = (results) =>
   DOM.div({
     children: [
       searchBox('/search'),
@@ -171,7 +172,7 @@ var App = (results) =>
 Para podermos atualizar os resultados quando enviamos nossa pesquisa dentro do `searchBox`, vamos adicionar a possibilidade de passar uma função para cuidar do evento `submit`.
 
 ```js
-// primeiro atualizamos `box`
+// primeiro atualizamos `box`, para recever `onSubmit`
 var box = (action, content, onSubmit) => (DOM.form({
   ...style,
   children: content,
