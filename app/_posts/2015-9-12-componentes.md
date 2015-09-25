@@ -2,7 +2,7 @@
 layout: post
 title: "Componentes"
 description: ""
-date:   2015-8-11 07:40:00
+date:   2015-9-22 09:30:00
 category: dev
 ---
 
