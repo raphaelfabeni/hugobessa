@@ -38,7 +38,8 @@ A visão sobre escrever código que será lido e mantido por humanos que o livro
 
 Com certeza mudou bastante a forma como eu encaro o desenvolvimento, principalmente com JavaScript. Acho uma leitura obrigatória para qualquer desenvolvedor web.
 
-[**Human JavaScript** está a venda por cerca de R$80 em sua versão ebook](http://www.amazon.com.br/gp/product/B00G9FGHFW/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00G9FGHFW&linkCode=as2&tag=hugbes-20).
+[**Human JavaScript** está a venda por cerca de US$39 em sua versão
+ebook](http://humanjavascript.com/).
 
 ### Rework - Jason Fried e David Heinemeier
 Muitos livros sobre "empreendedorismo" falam demais sobre escrever planos de negócio, estudar a concorrência, procurar investidores e essas coisas. O livro **Rework** toma um rumo diferente e mostra como planos podem destruir seu negócio, o porquê de você não precisar de investidores externos e como você talvez se saia melhor se ignorar a concorrência.
