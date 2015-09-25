@@ -57,11 +57,18 @@
     }
 
     ul, ol {
-        padding-left: $spacing-unit--huge;
+        padding-left: $spacing-unit--large * 1.5;
     }
 
     > p {
         margin-top: 0;
     }
 
+}
+
+
+@media screen and (min-width: $break-desk) {
+    .content ul, .content ol {
+        padding-left: $spacing-unit--huge;
+    }
 }
