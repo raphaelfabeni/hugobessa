@@ -6,24 +6,24 @@ date:   2015-9-25 09:30:00
 category: dev
 ---
 
-Muitos estão falando sobre componentes: unidades de funcionalidade que podem ser reutilizadas por toda uma interface, como botões e menus no Bootstrap. Toda a comunidade está procurando uma solução definitiva para esse problema. Temos coisas tão simples quanto o [module pattern](http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html) até [diretivas](https://docs.angularjs.org/guide/directive) do Angular. Temos também aquela incrívelmente complexa e nunca acabada especificação: Web Components.
+Muitos estão falando sobre componentes: unidades de funcionalidade que podem ser reutilizadas por toda uma interface, como botões e menus no Bootstrap. Toda a comunidade está procurando uma solução definitiva para esse problema. Temos coisas tão simples quanto o [module pattern](http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html) até [diretivas](https://docs.angularjs.org/guide/directive) do Angular. Temos também aquela incrivelmente complexa e nunca acabada especificação: Web Components.
 
 E se nossos componentes pudessem ser como funções?
 
-Funções no JavaScript possuem certas características, dentre elas:
+As funções no JavaScript possuem certas características, dentre elas:
 
-- Recebem dados a partir de argumentos
-- Trabalham de forma encapsulada, em um escopo próprio
-- Retornam um valor reutilizável por outras funções
-- Podem ser usadas como dado
+- receber dados a partir de argumentos;
+- trabalhar de forma encapsulada, em um escopo próprio;
+- retornar um valor reutilizável por outras funções;
+- e, podem ser usadas como dado.
 
-Ora, se funções são tão poderosas na nossa linguagem, e podem ser utilizadas de tantas formas, por que nossos componentes também não podem ser assim?
+Ora, se as funções são tão poderosas na nossa linguagem e podem ser utilizadas de tantas formas, por que nossos componentes também não podem ser assim?
 
-Apesar de estas características serem extremamente simples, quase todas as formas atuais de escrever componentes falham em oferecer a flexibilidade que temos com funções.
+Apesar de estas características serem extremamente simples, quase todas as formas atuais de escrever componentes falham em oferecer a flexibilidade que temos com as funções.
 
-Vamos então começar a imaginar como seria um sistema de componentes simples e eficiente como funções.
+Vamos então começar a imaginar como seria um sistema de componentes simples e eficiente como as funções.
 
-*Importante: Os exemplos a seguir usam sintaxe ES2015 e ES2016. Não conhece? Aprenda aqui:
+*Importante: os exemplos a seguir usam sintaxe ES2015 e ES2016. Não conhece? Aprenda aqui:
 [JSRocks](http://jsrocks.org/pt-br/).*
 
 ```js
@@ -199,7 +199,7 @@ var app = (results) =>
   })
 ```
 
-Esta função `onSubmit` não é nada útil por enquanto. Precisamos de alguma forma de renderizar nosso aplicativo com os resultados atualizados. Vamos imaginar então uma forma bem simples de fazer isso: usando uma função.
+Esta função `onSubmit` não é nada útil por enquanto. Precisamos de alguma forma de renderizar nosso aplicativo com os resultados atualizados. Vamos imaginar, então, uma forma bem simples de fazer isso: usando uma função.
 
 ```js
 render(app([]), document.body)
@@ -224,13 +224,13 @@ function onSubmit (event) {
 
 Utilizar apenas funções para criar nossos componentes se mostrou bastante flexível. Podemos compor simples funções para gerar um aplicativo inteiro. Essas funções podem ser reutilizadas em outros contextos. E continuamos tendo as vantagens das funções:
 
-- Recebem dados a partir de argumentos
-- Trabalham de forma encapsulada, em um escopo próprio
-- Retornam um valor reutilizável por outras funções
-- Podem ser usadas como dado
+- recebem dados a partir de argumentos;
+- trabalham de forma encapsulada, em um escopo próprio;
+- retornam um valor reutilizável por outras funções;
+- podem ser usadas como dado
 
-Este exemplo não funciona por si só. Eu também escondi alguns detalhes para mantê-lo ditático. Porém, isso não significa que fazer isso não é possível: o [React](https://facebook.github.io/react/) funciona praticamente desta forma, assim como o [virtual-dom](https://github.com/Matt-Esch/virtual-dom).
+Este exemplo não funciona por si só. Eu também escondi alguns detalhes para mantê-lo didático. Porém, você pode utilizar o [React](https://facebook.github.io/react/), que funciona praticamente desta forma, assim como o [virtual-dom](https://github.com/Matt-Esch/virtual-dom).
 
-Existe uma alternativa à complicada API dos Web Components e diretivas Angular. Uma alternativa que torna possível usarmos componentes como argumentos, compô-los e usar apenas JavaScript para resolver nossos problemas. E por ser apenas JavaScript, podemos até renderizar estes componentes no servidor, usando Node.
+Existe uma alternativa à complicada API dos Web Components e diretivas Angular. Uma alternativa que torna possível usarmos componentes como argumentos é compô-los e usar apenas JavaScript para resolver nossos problemas. E por ser apenas JavaScript, podemos até renderizar estes componentes no servidor, usando Node.
 
 λ
