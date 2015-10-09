@@ -23,7 +23,7 @@ module.exports = function(grunt) {
 
         surgeConfig: {
             domains: {
-                prod: 'www.hugobessa.com.br',
+                prod: 'https://www.hugobessa.com.br',
                 develop: 'develop.hugobessa.com.br'
             }
         },
