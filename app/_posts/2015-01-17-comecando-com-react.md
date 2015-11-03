@@ -96,7 +96,7 @@ Vale notar que um componente nunca deve alterar suas props, elas são imutáveis
 
 ## Estado
 
-O objeto de estado é interno a um componente. Ele contém os dados de podem ser alterados com o tempo.
+O objeto de estado é interno a um componente. Ele contém os dados que podem ser alterados com o tempo.
 
 ``` js
 var Photo = React.createClass({
